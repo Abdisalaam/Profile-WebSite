@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>@ViewBag.Title</title>
+    <!-- Favicon Icon -->
+
+    <link rel="shortcut icon" href="@Url.Content("~/assets/images/logos/LeadersSolutionLogo.png")" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="@Url.Content("~/assets/css/font-awesome-5.9.0.css")">
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="@Url.Content("~/assets/css/bootstrap.min.css")">
+    <!-- Magnific Popup -->
+
+    <link rel="stylesheet" href="@Url.Content("~/assets/css/magnific-popup.css")">
+    <!-- Falticon -->
+
+    <link rel="stylesheet" href="@Url.Content("~/assets/css/flaticon.css")">
+    <!-- Animate -->
+
+    <link rel="stylesheet" href="@Url.Content("~/assets/css/animate.css")">
+    <!-- Slick -->
+
+    <link rel="stylesheet" href="@Url.Content("~/assets/css/slick.css")">
+    <!-- Main Style -->
+
+    <link rel="stylesheet" href="@Url.Content("~/assets/css/style.css")">
+    <link rel="stylesheet" href="@Url.Content("~/assets/css/rtl-style.css")">
+
+
+    <link rel="stylesheet" href="@Url.Content("~/assets/css/rtl-responsive.css")">
+
+
+
+</head>
+<body class="home-nine text-white">
+    <div class="page-wrapper">
+        @*<div class="preloader">
+                <div class="theme-loader"></div>
+            </div>*@
+        <div class="preloader-container">
+            <div class="scene">
+                <div class="cube">
+                    <div class="face front"><span class="text-center">Leaders Solutions</span></div>
+                    <div class="face back"><span class="text-center">Leaders Solutions</span></div>
+                    <div class="face right"><span class="text-center">Leaders Solutions</span></div>
+                    <div class="face left"><span class="text-center">Leaders Solutions</span></div>
+                    <div class="face top"><span class="text-center">Leaders Solutions</span></div>
+                    <div class="face bottom"><span class="text-center">Leaders Solutions</span></div>
+                </div>
+            </div>
+        </div>
+        <!-- main header -->
+        <header class="main-header header-nine text-white">
+            <!--Header-Upper-->
+            <div class="header-upper">
+                <div class="container clearfix">
+                    <div class="header-inner d-flex align-items-center">
+                        <div class="logo-outer">
+                            <div class="logo">
+
+                                <a href='@Url.Action("Index", "Home")'><img src="@Url.Content("~/assets/images/logos/LSLeadersWhiteText.png")" alt="Leaders Solution" title="Logo" width="120px" height="70px"></a>
+                            </div>
+                        </div>
+
+                        <div class="nav-outer clearfix d-flex align-items-center">
+                            <!-- Main Menu -->
+                            <nav class="main-menu navbar-expand-lg ml-lg-auto">
+                                <div class="navbar-header">
+                                    <div class="mobile-logo py-15">
+                                        <a href='@Url.Action("Index", "Home")'>
+                                            <img src="@Url.Content("~/assets/images/logos/LSLeadersWhiteText.png")" alt="Leaders Solution" title="Logo" width="120px" height="70px">
+                                        </a>
+                                    </div>
+
+                                    <!-- Toggle Button -->
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="navbar-collapse collapse clearfix">
+                                    <ul class="navigation clearfix lsnavbtn">
+                                        <li>
+                                            <a href='@Url.Action("Index", "Home")'><b> Home </b></a>
+
+                                        </li>
+                                        <li>
+                                            <a href='@Url.Action("LSServises", "Home")'><b> Services </b></a>
+
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Solutions</a>
+                                            <ul>
+                                                <li class="dropdown">
+                                                    <a href="#">Automation</a>
+                                                    <ul>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution One</a></li>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution Two</a></li>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution Three</a></li>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution Four</a></li>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution Five</a></li>
+
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a href="#">Cybersecurity</a>
+                                                    <ul>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution One</a></li>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution Two</a></li>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution Three</a></li>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution Four</a></li>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution Five</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a href="#">Education</a>
+                                                    <ul>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution One</a></li>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution Two</a></li>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution Three</a></li>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution Four</a></li>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution Five</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a href="#">AI</a>
+                                                    <ul>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution One</a></li>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution Two</a></li>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution Three</a></li>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution Four</a></li>
+                                                        <li><a href='@Url.Action("LSSolutions", "Home")'>Solution Five</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+
+                                        <li>
+                                            <a href='@Url.Action("About", "Home")'><b> About Us </b></a>
+
+                                        </li>
+
+
+
+                                        <li>
+                                            <a href='@Url.Action("LSBlogs", "Home")'><b> News </b></a>
+
+                                        </li>
+
+                                        <li>
+                                            <a href='@Url.Action("Contact", "Home")'> <b> Contact </b></a>
+                                        </li>
+
+                                        <li>
+
+                                            <a href='@Url.Action("ChangeLanguage", "Account", new { url = Request.Url.AbsoluteUri, languageChoice = "ar" })'><img src="@Url.Content("~/assets/images/SaudiFlag.png")" width="33px" height="33px" class="img-rounded" alt="flag"></a>
+
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </nav>
+                            <!-- Main Menu End-->
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Header Upper-->
+        </header>
+        @RenderBody()
+
+        <!-- Footer Area Start -->
+        <footer class="main-footer footer-two bgs-cover text-white" style="background-image: url('/assets/images/footer/footer-bg-map.png');">
+            <div class="container">
+                <div class="footer-top pt-75">
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="content">
+                                <span class="text-white">Call Us</span>
+                                <h5><a class="lsfooterlink" href="callto:+96651245447">+966-512-454-479</a></h5>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div class="content">
+                                <span>Write to Us</span>
+                                <h5><a class="lsfooterlink" href="mailto:info@leaderssolution.com">info@leaderssolution.com</a></h5>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div class="content">
+                                <span>Office hours</span>
+                                <h5>Sun-Th 9:00 - 7:00</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-widget-area pt-85 pb-20">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-widget about-widget">
+                                <div class="footer-logo mb-35">
+                                    <a href="index.html">
+                                        <img src="@Url.Content("~/assets/images/logos/LSLeadersWhiteText.png")" alt="Leaders Solution" title="Logo" width="120px" height="70px">
+                                    </a>
+                                </div>
+                                <div class="text text-white">
+                                    <h5>
+                                        Leading businesses are more efficient and secure with LS.
+                                    </h5>
+                                </div>
+                                <ul class="contact-info mt-20 text-white">
+                                    <li><i class="fas fa-map-marker-alt lsTextColor-terqui"></i><span>123 Al-Ola Center <br>Riyadh City, KSA</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-6">
+                            <div class="footer-widget link-widget ml-20 rml-0">
+                                <h4 class="footer-title">Services</h4>
+                                <ul class="list-style-two">
+                                    <li><a class="lsfooterlink" href="#">Ceyper Security</a></li>
+                                    <li><a class="lsfooterlink" href="#">Data Managment</a></li>
+                                    <li><a class="lsfooterlink" href="#">Strategy Proformance</a></li>
+                                    <li><a class="lsfooterlink" href="#">Consulting</a></li>
+                                    <li><a class="lsfooterlink" href="#">Development</a></li>
+                                    <li><a class="lsfooterlink" href="#">Project Management</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="footer-widget link-widget ml-20 rml-0">
+                                <h4 class="footer-title">Solutions</h4>
+                                <ul class="list-style-two">
+                                    <li><a class="lsfooterlink" href="#">Help Center</a></li>
+                                    <li><a class="lsfooterlink" href="#">Platform Status</a></li>
+                                    <li><a class="lsfooterlink" href="#">Partners</a></li>
+                                    <li><a class="lsfooterlink" href="#">Blog</a></li>
+                                    <li><a class="lsfooterlink" href="#">Docs</a></li>
+                                    <li><a class="lsfooterlink" href="#">Newsletter</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="footer-widget newsletter-widget">
+                                <h4 class="footer-title">Newsletter</h4>
+                                <p class="text-white">Subscribing helps you stay informed, simplifies recurring needs,  <br>and creates a sense of connection with Leaders Solutions</p>
+                                <form action="#" method="post">
+                                    <input type="email" name="EMAIL" placeholder="Your Email Address" required>
+                                    <button value="submit"><i class="fa fa-location-arrow lsfooterlink"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="copyright-inner pt-15">
+                        <div class="social-style-one mb-10 text-white">
+                            <a class="lsTextColor-terqui" href="http://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="lsTextColor-terqui" href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+
+                        </div>
+                        <button class="scroll-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></button>
+                        <p class="text-white">Copyrights &copy; @DateTime.Now.Year . <span class="lsTextColor-terqui">Leaders Solutions </span> All rights reserved.</p>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area End -->
+    </div>
+   
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Jquery -->
+
+    <script src="@Url.Content("~/assets/js/jquery-3.6.0.min.js")"></script>
+    <!-- Bootstrap -->
+
+    <script src="@Url.Content("~/assets/js/bootstrap.min.js")"></script>
+    <!-- Appear Js -->
+
+    <script src="@Url.Content("~/assets/js/appear.min.js")"></script>
+    <!-- Slick -->
+
+    <script src="@Url.Content("~/assets/js/slick.min.js")"></script>
+    <!-- Countdown -->
+
+    <script src="@Url.Content("~/assets/js/jquery.countdown.min.js")"></script>
+    <!-- Magnific Popup -->
+
+    <script src="@Url.Content("~/assets/js/jquery.magnific-popup.min.js")"></script>
+    <!-- Image Loader -->
+
+    <script src="@Url.Content("~/assets/js/imagesloaded.pkgd.min.js")"></script>
+    <!-- Isotope -->
+
+    <script src="@Url.Content("~/assets/js/isotope.pkgd.min.js")"></script>
+    <!--  WOW Animation -->
+
+    <script src="@Url.Content("~/assets/js/wow.js")"></script>
+    <!-- Custom script -->
+
+    <script src="@Url.Content(" ~/assets/js/script.js")"></script>
+    <script src="@Url.Content("~/assets/js/rtl-script.js")"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

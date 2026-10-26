@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AllServiceViewBtn" xml:space="preserve">
+    <value>View all services</value>
+  </data>
+  <data name="ConsultancyServices" xml:space="preserve">
+    <value>Consulting services</value>
+  </data>
+  <data name="ConsultancyServicesParagraf" xml:space="preserve">
+    <value>Our consulting services enable organizations to make informed decisions</value>
+  </data>
+  <data name="CustomSoftwareDevelopment" xml:space="preserve">
+    <value>Custom software development</value>
+  </data>
+  <data name="CustomSoftwareDevelopmentParagraf" xml:space="preserve">
+    <value>We build software that reflects your vision, not your limitations</value>
+  </data>
+  <data name="CustomSoftwareDevText" xml:space="preserve">
+    <value>Our custom software development services deliver solutions tailored to your organization’s unique requirements, ensuring scalability, security, and seamless performance. We leverage modern technologies such as .NET Core, Java, Python, and Node.js for back‑end development, combined with React, Angular, and Vue.js for intuitive front‑end experiences. With robust API integration, cloud deployment (AWS, Azure, GCP), and optimized databases (SQL Server, PostgreSQL, MongoDB), we build systems that are both powerful and future‑ready. Every project is engineered with enterprise security standards, automated testing frameworks, and CI/CD pipelines to guarantee reliability, speed, and continuous improvement. By combining futuristic design, we deliver custom software that empowers businesses to innovate, perform, and lead with confidence in the digital era.</value>
+  </data>
+  <data name="DeskTopAppDevelopment" xml:space="preserve">
+    <value>Desktop application development</value>
+  </data>
+  <data name="DeskTopDevelopmentParagraf" xml:space="preserve">
+    <value>Our desktop application development services are designed to deliver powerful solutions that empower your streamlined operations</value>
+  </data>
+  <data name="DeskTopDevText" xml:space="preserve">
+    <value>Our desktop app development services deliver powerful, secure, and user‑friendly solutions tailored to your organization’s operational needs. We specialize in building applications using .NET (WPF, WinForms), JavaFX, Electron, and Qt, ensuring cross‑platform compatibility across Windows, macOS, and Linux. With optimized database integration (SQL Server, PostgreSQL, SQLite, MongoDB) and seamless API connectivity, our desktop solutions are engineered for performance and scalability. We implement enterprise‑grade security protocols, automated testing frameworks, and CI/CD pipelines to guarantee reliability, speed, and continuous improvement. By combining futuristic design, we create desktop applications that empower businesses to streamline operations, enhance productivity, and lead confidently in the digital era.</value>
+  </data>
+  <data name="MobileAppDevelopment" xml:space="preserve">
+    <value>Mobile application development</value>
+  </data>
+  <data name="MobileDevelopmentParagraf" xml:space="preserve">
+    <value>Our mobile application development services deliver intuitive, secure and authentic cultural experiences that reflect Saudi excellence while driving growth and engagement.</value>
+  </data>
+  <data name="MobileDevText" xml:space="preserve">
+    <value>Our mobile app development services empower businesses to connect with users anytime, anywhere through secure, scalable, and high‑performance applications. We specialize in building native apps using Swift (iOS) and Kotlin/Java (Android), as well as cross‑platform solutions with Flutter and React Native for faster delivery and unified experiences. Back‑end systems are powered by Node.js, .NET Core, and Firebase, with seamless API integration and cloud deployment (AWS, Azure, GCP) to ensure reliability and scalability. We implement enterprise security standards, automated testing frameworks, and CI/CD pipelines to guarantee speed, resilience, and continuous improvement. By combining futuristic design, authentic Arabic typography, and Saudi excellence, we deliver mobile applications that not only meet technical requirements but also inspire confidence and engagement across diverse audiences.</value>
+  </data>
+  <data name="ResidentEngineer" xml:space="preserve">
+    <value>Resident engineer</value>
+  </data>
+  <data name="ResidentEngServicesParagraf" xml:space="preserve">
+    <value>Our Resident Engineer services provide you with highly skilled professionals who integrate seamlessly into your team, ensuring smooth operations and proactive problem solving.</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Our services</value>
+  </data>
+  <data name="ServiceSubTitle" xml:space="preserve">
+    <value>Strategic Services for Sustainable Growth</value>
+  </data>
+  <data name="ServiceTitle" xml:space="preserve">
+    <value>Delivering Excellence Through Innovation</value>
+  </data>
+  <data name="WebDevelopment" xml:space="preserve">
+    <value>Web App development</value>
+  </data>
+  <data name="WebDevelopmentParagraf" xml:space="preserve">
+    <value>Our web application development services deliver scalable, secure, and culturally authentic solutions that empower organizations</value>
+  </data>
+  <data name="WebDevText" xml:space="preserve">
+    <value>Our web development services deliver secure, scalable, and high‑performance solutions tailored to your organization’s needs. We specialize in building responsive websites and enterprise‑grade web applications using modern frameworks such as React, Angular, and Vue.js for front‑end development, and Node.js, .NET Core, and Django for back‑end systems. With robust API integration, cloud deployment (AWS, Azure, GCP), and database optimization (SQL, NoSQL), we ensure seamless functionality and reliability. Every project is designed with enterprise security standards, automated testing, and CI/CD pipelines to guarantee speed, resilience, and continuous improvement. By combining futuristic design,  we create web platforms that empower businesses to innovate, scale, and lead confidently in the digital era</value>
+  </data>
+  <data name="ConsultingServicesText" xml:space="preserve">
+    <value>Our IT consulting services empower businesses to harness technology as a catalyst for success. We don’t just solve problems—we design future-ready solutions that align with your vision, culture, and strategic objectives.</value>
+  </data>
+  <data name="ResidentServiceText" xml:space="preserve">
+    <value>Our Resident Engineer primary focus is to ensure the stability and optimization of specific hardware or software solutions, handling everything from daily operational maintenance and troubleshooting to complex upgrades and network architecture planning.</value>
+  </data>
+  <data name="ServiceContactCallUs" xml:space="preserve">
+    <value>Call Us</value>
+  </data>
+  <data name="ServiceContactComment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="ServiceContactEmail" xml:space="preserve">
+    <value>Your email address</value>
+  </data>
+  <data name="ServiceContactName" xml:space="preserve">
+    <value>Your name</value>
+  </data>
+  <data name="ServiceContactOfficeHours" xml:space="preserve">
+    <value>Office hours</value>
+  </data>
+  <data name="ServiceContactPhone" xml:space="preserve">
+    <value>Your phone number</value>
+  </data>
+  <data name="ServiceContactSendMessage" xml:space="preserve">
+    <value>Send Message</value>
+  </data>
+  <data name="ServiceContactServiceRequired" xml:space="preserve">
+    <value>Service Required</value>
+  </data>
+  <data name="ServiceContactSubTitle" xml:space="preserve">
+    <value>Don't hesitate to contact us</value>
+  </data>
+  <data name="ServiceContactSunTillTh" xml:space="preserve">
+    <value>Sun-Th</value>
+  </data>
+  <data name="ServiceContactTitle" xml:space="preserve">
+    <value>Get In Touch</value>
+  </data>
+  <data name="ServiceContactWriteToUs" xml:space="preserve">
+    <value>Write to Us</value>
+  </data>
+  <data name="GRCParagraf" xml:space="preserve">
+    <value>Transforming Governance, Risk &amp; Compliance into Strategic Advantage</value>
+  </data>
+  <data name="GRCText" xml:space="preserve">
+    <value>Strengthen your organization with a unified Governance, Risk, and Compliance (GRC) framework designed for modern enterprises. At Leaders Solutions, we help you build a resilient, secure, and compliant environment that aligns with national regulations, global standards, and your strategic objectives.</value>
+  </data>
+  <data name="GRCTitle" xml:space="preserve">
+    <value>Governance, Risk &amp; Compliance</value>
+  </data>
+</root>

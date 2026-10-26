@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PageTitle" xml:space="preserve">
+    <value>نبذة عنّا</value>
+  </data>
+  <data name="PageSubTitle" xml:space="preserve">
+    <value>.جذورنا في السعودية، وتأثيرنا عالمي</value>
+  </data>
+  <data name="HeadTitle" xml:space="preserve">
+    <value>عن حلول القادة</value>
+  </data>
+  <data name="HeadSubtitle" xml:space="preserve">
+    <value>من السعودية انطلقنا</value>
+  </data>
+  <data name="HeadSubtitle1" xml:space="preserve">
+    <value>وللمستقبل العالمي ابتكرنا</value>
+  </data>
+  <data name="HeadTitleText" xml:space="preserve">
+    <value>شركة سعودية المنشأ، تقودها الابتكار، ومتخصصة في التحول الرقمي، حوكمة المؤسسات، الأمن السيبراني، تحديث البنية السحابية، الأتمتة وتحسين العمليات، وحلول الذكاء الاصطناعي المتقدمة.</value>
+  </data>
+  <data name="CompanySnapshot" xml:space="preserve">
+    <value>لمحة عن الشركة</value>
+  </data>
+  <data name="CompanySnapshotTitle" xml:space="preserve">
+    <value>جذورنا سعودية، ورؤيتنا عالمية</value>
+  </data>
+  <data name="Slogan" xml:space="preserve">
+    <value>شعارنا</value>
+  </data>
+  <data name="SloganText" xml:space="preserve">
+    <value>تقنية سعودية تُصمَّم لمستقبل العالم</value>
+  </data>
+  <data name="HeadQuarter" xml:space="preserve">
+    <value>مقرّنا الرئيسي في السعودية</value>
+  </data>
+  <data name="ServingClient" xml:space="preserve">
+    <value>نلبي احتياجات عملائنا في دول مجلس التعاون وفي أسواق دولية متعددة</value>
+  </data>
+  <data name="FoucusOn" xml:space="preserve">
+    <value>نقود الابتكار في المنتجات الرقمية والمنصات والتحول الرقمي</value>
+  </data>
+  <data name="LSProfile" xml:space="preserve">
+    <value>الملف التعريفي لشركة حلول القادة</value>
+  </data>
+  <data name="DownloadProfile" xml:space="preserve">
+    <value>تحميل الملف التعريفي للشركة</value>
+  </data>
+  <data name="CompanySnapshotSubTitle" xml:space="preserve">
+    <value>لمحة موجزة عن حلول القادة</value>
+  </data>
+  <data name="Founded" xml:space="preserve">
+    <value>تأسست</value>
+  </data>
+  <data name="Focus" xml:space="preserve">
+    <value>محاور تركيزنا</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>المملكة العربية السعودية</value>
+  </data>
+  <data name="FoucusText" xml:space="preserve">
+    <value>حلول رقمية واستشارات تقنية متقدمة تشمل الأمن السيبراني وحلول السحابة والبيانات</value>
+  </data>
+  <data name="Approach" xml:space="preserve">
+    <value>رؤى عميقة مدعومة بمعايير عالمية لنقدّم حلولًا واضحة، قابلة للتوسع، وتُحدث أثرًا حقيقيًا</value>
+  </data>
+  <data name="ApproachText" xml:space="preserve">
+    <value>منهجيتنا</value>
+  </data>
+  <data name="Mindset" xml:space="preserve">
+    <value>عقلية العمل</value>
+  </data>
+  <data name="MindsetText" xml:space="preserve">
+    <value>نتبنّى عقلية نمو ترتكز على الوضوح والابتكار لصناعة حلول تُحدث أثرًا ملموسًا</value>
+  </data>
+  <data name="TrustedByPartners" xml:space="preserve">
+    <value>نحظى بثقة شركائنا</value>
+  </data>
+  <data name="SaudiSpirit" xml:space="preserve">
+    <value> بُني بروح الابتكار السعودي</value>
+  </data>
+  <data name="OurStory" xml:space="preserve">
+    <value>قصتنا</value>
+  </data>
+  <data name="OurStoryHead" xml:space="preserve">
+    <value>من محليتنا… نصنع أثرًا عالميًا</value>
+  </data>
+  <data name="OurStoryHeadText" xml:space="preserve">
+    <value>انطلقت رحلتنا من المملكة العربية السعودية بإيمان راسخ بأن التكنولوجيا يجب أن تكون طبيعية وسهلة الاستخدام لمن يتعاملون معها، وفي الوقت نفسه متوافقة مع أعلى المعايير العالمية. نعمل عند نقطة التقاء الفهم المحلي العميق وأفضل الممارسات الدولية، لنمكّن المؤسسات من التقدّم بثقة نحو المستقبل.
+
+نشارك الشركات والجهات والمؤسسات الابتكارية في تصميم وتنفيذ حلول تجمع بين القوة التقنية والاتساق الاستراتيجي مع رؤيتهم—سواء كانوا يخدمون حيًا، منطقة، أو العالم بأسره</value>
+  </data>
+  <data name="StoryHeadTextTwo" xml:space="preserve">
+    <value>نتعاون مع الشركات والمؤسسات وروّاد الابتكار لصناعة حلول تجمع بين القوة التقنية والرؤية الاستراتيجية، لنمكّنهم من تحقيق أثرٍ يتجاوز حدود الحي والمنطقة ليصل إلى العالم بأسره</value>
+  </data>
+  <data name="WhatWeDoTitle" xml:space="preserve">
+    <value>قدراتنا</value>
+  </data>
+  <data name="WhatWeDoTextTitle" xml:space="preserve">
+    <value>نحوّل الأفكار إلى منتجات رقمية قابلة للنمو والتوسع</value>
+  </data>
+  <data name="WhatWeDoText" xml:space="preserve">
+    <value>يمتد عملنا ليشمل الاستراتيجية والتصميم والتنفيذ، مع تركيزٍ على بناء منتجات ومنصات رقمية قابلة للتوسع، آمنة، وممتعة في الاستخدام</value>
+  </data>
+  <data name="WhatWeDoOptionOne" xml:space="preserve">
+    <value>الاستراتيجية الرقمية والاستشارات — مواءمة التكنولوجيا مع أهداف أعمالك وخارطة نموّك</value>
+  </data>
+  <data name="WhatWeDoOptionTwo" xml:space="preserve">
+    <value>تصميم المنتجات وتجارب الاستخدام — ابتكار واجهات ورحلات رقمية متقنة، سهلة، ومصمّمة بعمق لتتمحور حول الإنسان وتمنحه تجربة استخدام استثنائية</value>
+  </data>
+  <data name="WhatWeDoOptionFour" xml:space="preserve">
+    <value>شراكة دائمة — نرافقك في كل مرحلة، نطوّر حلولك، ونضمن توسّعها بما يتماشى مع نموك المستمر</value>
+  </data>
+  <data name="WhatWeDoOptionThree" xml:space="preserve">
+    <value>التطوير المخصص والتكامل — إنشاء حلول وأنظمة متينة، قابلة للتوسع، ومهيّأة لمواكبة احتياجات المستقبل بثقة</value>
+  </data>
+  <data name="OurPhilosophy" xml:space="preserve">
+    <value>فلسفتنا</value>
+  </data>
+  <data name="OurPhilosophyTitle" xml:space="preserve">
+    <value>مستوحى من السعودية. ومصمّم للتوسّع عالميًا</value>
+  </data>
+  <data name="OurPhilosophyText" xml:space="preserve">
+    <value>نفتخر بالبداية التي انطلقنا منها، ونتقدّم بوعي نحو المستقبل الذي نصنعه. كل حل نطوّره يستند إلى رؤية سعودية أصيلة، ويُهندَس ليقدّم أداءً عالميًا على أعلى مستوى</value>
+  </data>
+  <data name="SaudiFounded" xml:space="preserve">
+    <value>منطلقها سعودي</value>
+  </data>
+  <data name="GlobalStandards" xml:space="preserve">
+    <value>معايير عالمية</value>
+  </data>
+  <data name="HumanCentered" xml:space="preserve">
+    <value>نهج يركّز على الإنسان</value>
+  </data>
+  <data name="FutureFocused" xml:space="preserve">
+    <value>نهج يستبق المستقبل ويصنع فرصه</value>
+  </data>
+  <data name="PageHeader" xml:space="preserve">
+    <value>.حيث يلتقي التحول الرقمي بابتكار مؤسسي آمن وقابل للتوسع</value>
+  </data>
+  <data name="OurPhilosophyTextTwo" xml:space="preserve">
+    <value>من الفكرة إلى الأثر، نأخذك في رحلة تُصنع بوضوح استثنائي، وثقة راسخة، وحرفية ترتقي بتجربتك إلى مستوى جديد من التميّز</value>
+  </data>
+  <data name="PhilosophyVision" xml:space="preserve">
+    <value>رؤيتنا في بناء القيمة</value>
+  </data>
+  <data name="PhilosophyClientServing" xml:space="preserve">
+    <value>نقدّم خدماتنا لعملائنا في مختلف أنحاء العالم</value>
+  </data>
+  <data name="LSAndGlopalPartners" xml:space="preserve">
+    <value>حلول القادة والشراكات العالمية</value>
+  </data>
+  <data name="LSAndGlopalPartnersText" xml:space="preserve">
+    <value>من خلال شراكاتنا مع روّاد التكنولوجيا العالميين، وشركات الاستشارات الكبرى، ومزوّدي الحلول المتخصصة، نوفّر قدرات متقدمة مباشرة لعملائنا في المملكة العربية السعودية والمنطقة. شركاؤنا الدوليون يشاركوننا الالتزام بالتميّز، والأمن، والتحول الرقمي الموجّه نحو المستقبل. وبالعمل معًا، نمزج الخبرات العالمية مع الفهم المحلي، لنقدّم حلولًا تجمع بين التنافسية الدولية والملاءمة الإقليمية، ومصممة لإحداث أثر حقيقي ومستدام.</value>
+  </data>
+  <data name="LSANDGlopalPartnerOptionOne" xml:space="preserve">
+    <value>نبتكر منصات رقمية متقدمة عبر شراكات استراتيجية مع كبار مطوّري التكنولوجيا حول العالم</value>
+  </data>
+  <data name="LSANDGlopalPartnerOptionTwo" xml:space="preserve">
+    <value>نُوحّد أنظمة عالمية المستوى تُستخدم في مؤسسات دولية، لنقدّم تجربة تقنية أكثر قوة واستقرارًا</value>
+  </data>
+  <data name="LSANDGlopalPartnerOptionThree" xml:space="preserve">
+    <value>نُسخّر المعرفة العالمية والخبرة التقنية لتعزيز الاستراتيجية وتطوير التصميمات والهندسة بتميّز يتجاوز التوقعات</value>
+  </data>
+  <data name="LSANDGlopalPartnerOptionFour" xml:space="preserve">
+    <value>نوفّر أنظمة متوافقة مع أفضل المعايير الدولية في الأمن، والكفاءة، وقابلية التوسع لضمان استدامة الحلول</value>
+  </data>
+  <data name="ITSupport" xml:space="preserve">
+    <value>حلول الدعم التقني المتكاملة لقطاع الأعمال</value>
+  </data>
+  <data name="ITSupportText" xml:space="preserve">
+    <value>نمهّد طريق نجاحك بخدمات تقنية موثوقة واحترافية</value>
+  </data>
+  <data name="YearsExperince" xml:space="preserve">
+    <value>سنوات الخبرة</value>
+  </data>
+  <data name="HappyClients" xml:space="preserve">
+    <value>عملاء راضون</value>
+  </data>
+  <data name="CompanySnapshotSubTitleText" xml:space="preserve">
+    <value>نوفّر حلولًا تقنية تجمع بين بصيرة محلية ومعايير عالمية، لتكون حديثة، مخصّصة، وقابلة للنمو منذ البداية</value>
+  </data>
+  <data name="ElmCompany" xml:space="preserve">
+    <value>علم</value>
+  </data>
+  <data name="ElmCompanyEmployee" xml:space="preserve">
+    <value>عبدالرحمن الحازمي</value>
+  </data>
+  <data name="ElmCompanyEmployeeFunction" xml:space="preserve">
+    <value>مدير التقنية</value>
+  </data>
+  <data name="ElmCompanyEmployeeTestmony" xml:space="preserve">
+    <value>قدّمت شركة حلول القادة تجربة تقنية تُجسّد أعلى درجات الاحتراف، حيث امتزجت الخبرة العميقة مع جودة التنفيذ الرفيع لتصنع أثرًا واضحًا في كفاءة الأنظمة واستقرار العمليات. إن مستوى العناية، ودقة العمل، ورصانة النتائج يجعل من حلول القادة شريكًا استثنائيًا يرتقي بالطموح إلى واقع ملموس</value>
+  </data>
+  <data name="HRSDCompany" xml:space="preserve">
+    <value>وزارة الموارد البشرية والتنمية الاجتماعية</value>
+  </data>
+  <data name="HRSDCompanyEmployee" xml:space="preserve">
+    <value>فهد الحمّادي</value>
+  </data>
+  <data name="HRSDCompanyEmployeeFunction" xml:space="preserve">
+    <value>مدير تطوير ودعم برامج التحول الرقمي</value>
+  </data>
+  <data name="HRSDCompanyEmployeeTestmony" xml:space="preserve">
+    <value>قدّمت شركة حلول القادة قيمة نوعية في تطوير الأداء الاستراتيجي، من خلال منهجيات دقيقة تُعزّز كفاءة العمليات وترفع مستوى الإنتاجية المؤسسية. لقد لمسنا قدرة واضحة على تحليل التحديات، وتصميم حلول عملية تُترجم إلى نتائج ملموسة تدعم تحقيق الأهداف الاستراتيجية بثبات وفاعلية. حلول القادة أثبتت أنها شريك يعتمد عليه في بناء منظومة أداء متوازنة، مستدامة، وقادرة على مواكبة النمو والطموح</value>
+  </data>
+  <data name="GSTCCompany" xml:space="preserve">
+    <value>الأمانة العامة للجان الزكاة والضريبة والجمارك</value>
+  </data>
+  <data name="GSTCCompanyEmployee" xml:space="preserve">
+    <value>هيفاء الثنيان</value>
+  </data>
+  <data name="GSTCCompanyEmployeeFunction" xml:space="preserve">
+    <value>مديرة إدارة استراتيجية الأداء</value>
+  </data>
+  <data name="GSTCCompanyEmployeeTestemony" xml:space="preserve">
+    <value>أسهمت حلول القادة في إحداث نقلة واضحة في استراتيجية الأداء من خلال بناء منهجيات عملية تُركّز على النتائج وتُعزّز كفاءة التنفيذ. لقد قدّم الفريق رؤية دقيقة مكّنتنا من فهم نقاط القوة وفرص التحسين، مما انعكس مباشرة على جودة القرارات وفاعلية العمليات. كان تأثيرهم ملموسًا في رفع مستوى الانسجام بين الأهداف الاستراتيجية والواقع التشغيلي، مما يجعلهم شريكًا يعتمد عليه في تطوير منظومة أداء أكثر نضجًا واستدامة</value>
+  </data>
+  <data name="MisaCompany" xml:space="preserve">
+    <value>وزارة الاستثمار</value>
+  </data>
+  <data name="MisaCompanyEmployee" xml:space="preserve">
+    <value>عبدالله علي القحطاني</value>
+  </data>
+  <data name="MisaCompanyEmployeeFunction" xml:space="preserve">
+    <value>مدير إدارة المنتج والتطوير التقني</value>
+  </data>
+  <data name="MisaCompanyEmployeeTestemony" xml:space="preserve">
+    <value>تتقدم وزارة الاستثمار بخالص تقديرها لشركة ليدرز سوليوشنز على مساهمتها المتميزة في تعزيز التمكين الرقمي ورفع كفاءة العمليات داخل منظومة الاستثمار في المملكة. لقد أثبتت الشركة مستوى عاليًا من القدرات التقنية، والانضباط في تنفيذ المشاريع، والالتزام بالجودة والامتثال، مما يعكس فهمًا عميقًا لأولويات المملكة واحتياجات المستثمرين. وتثمن الوزارة دور ليدرز سوليوشنز كشريك تقني موثوق، وتُشيد بإسهاماتها في تحسين كفاءة الخدمات الرقمية، وتعزيز الشفافية، ودعم تنافسية بيئة الاستثمار في المملكة</value>
+  </data>
+  <data name="GetInTouch" xml:space="preserve">
+    <value>تواصل معنا</value>
+  </data>
+  <data name="YourName" xml:space="preserve">
+    <value>الاسم الكامل</value>
+  </data>
+  <data name="YourEmail" xml:space="preserve">
+    <value>عنوان بريدك الإلكتروني</value>
+  </data>
+  <data name="YourPhone" xml:space="preserve">
+    <value>رقم الهاتف المحمول</value>
+  </data>
+  <data name="ServiceRequired" xml:space="preserve">
+    <value>الخدمة المرغوبة</value>
+  </data>
+  <data name="ServiceOptionOne" xml:space="preserve">
+    <value>خدمات تقنية المعلومات</value>
+  </data>
+  <data name="ServiceOptionTwo" xml:space="preserve">
+    <value>الحل التقني</value>
+  </data>
+  <data name="ServiceOptionThree" xml:space="preserve">
+    <value>تواصل</value>
+  </data>
+  <data name="ServiceOptionFour" xml:space="preserve">
+    <value>علاقة شراكة</value>
+  </data>
+  <data name="ServiceComment" xml:space="preserve">
+    <value>أطلعنا على احتياجاتك</value>
+  </data>
+  <data name="SendMessage" xml:space="preserve">
+    <value>أرسل الرسالة</value>
+  </data>
+  <data name="DontHesitateToContactUs" xml:space="preserve">
+    <value>نحن هنا لخدمتكم، لا تترددوا في التواصل</value>
+  </data>
+  <data name="CallUs" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+  <data name="WriteToUs" xml:space="preserve">
+    <value>للمراسلة معنا</value>
+  </data>
+  <data name="OfficeHours" xml:space="preserve">
+    <value>مواعيد العمل</value>
+  </data>
+  <data name="RobotValidateMessag" xml:space="preserve">
+    <value>يرجى التأكد من أنك لست روبوتًا</value>
+  </data>
+  <data name="ThanksAndProcesContactMessage" xml:space="preserve">
+    <value>شكرًا لتواصلك معنا. لقد استلمنا رسالتك، وسيقوم فريقنا بالرد عليك في أقرب وقت</value>
+  </data>
+  <data name="FillAllRequiredFields" xml:space="preserve">
+    <value>يرجى تعبئة الحقول المطلوبة</value>
+  </data>
+  <data name="EnterValidEmail" xml:space="preserve">
+    <value>الرجاء إدخال بريد إلكتروني صالح للاستخدام</value>
+  </data>
+  <data name="RateLimitMessag" xml:space="preserve">
+    <value>يرجى الانتظار لمدة 5 دقائق قبل المحاولة مرة أخرى</value>
+  </data>
+</root>

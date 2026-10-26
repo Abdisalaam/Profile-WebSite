@@ -1,0 +1,1294 @@
+﻿@{
+    ViewBag.Title = LeadersSolutionWebSite.Resources.LayoutPage.Home;
+    HttpCookie cookie = Request.Cookies["Language"];
+    string _align = "text-align:Right";
+
+
+}
+
+<head>
+    @{
+
+        if (cookie != null && cookie.Value != null)
+        {
+            if (cookie.Value == "en")
+            {
+                Layout = "~/Views/Shared/_LayoutNine.cshtml";
+
+                _align = "text-align:left";
+
+
+
+            }
+            else
+            {
+                Layout = "~/Views/Shared/_LayoutNine.cshtml";
+
+                _align = "text-align:right";
+
+
+
+            }
+        }
+        else
+        {
+            Layout = "~/Views/Shared/_LayoutNine.cshtml";
+            _align = "text-align:right";
+
+
+        }
+    }
+</head>
+
+<!-- Main Slider Start -->
+<section class="main-slider bg-black text-white">
+    <div class="main-slider-wrap">
+        <div class="main-slider-item" style="background-image: url('@Url.Content("~/assets/images/carsoul/DASHBOARDLS.png")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+            <div class="slider-caption">
+                <div class="container">
+                    <div class="main-slider-content" style="backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+                        <h2 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpan5</h2>
+
+                        <h1 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpanH5</h1>
+                        <p class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpanP5</p>
+
+                    </div>
+                    <div class="main-slider-content">
+
+                        <div class="slider-btns text-center">
+                            <a href='@Url.Action("LSServises", "Home")' class="theme-btn style-ten">@LeadersSolutionWebSite.Resources.HomePage.SlidersBTNOne <i class="far fa-paper-plane"></i></a>
+                            <a href='@Url.Action("Contact", "Home")' class="theme-btn style-eleven">@LeadersSolutionWebSite.Resources.HomePage.SlidersBTNTwo <i class="far fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-slider-item" style="background-image: url('@Url.Content("~/assets/images/carsoul/DataanalyzeArab.png")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+            <div class="slider-caption">
+                <div class="container">
+                    <div class="main-slider-content" style="backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+                        <h2 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpan</h2>
+                        <h1 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpanH</h1>
+                        <p class="text-center">
+                            @LeadersSolutionWebSite.Resources.HomePage.SlidersSpanP
+                        </p>
+
+                    </div>
+                    <div class="main-slider-content">
+
+                        <div class="slider-btns text-center">
+                            <a href='@Url.Action("LSServises", "Home")' class="theme-btn style-ten">@LeadersSolutionWebSite.Resources.HomePage.SlidersBTNOne <i class="far fa-paper-plane"></i></a>
+                            <a href='@Url.Action("Contact", "Home")' class="theme-btn style-eleven">@LeadersSolutionWebSite.Resources.HomePage.SlidersBTNTwo <i class="far fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-slider-item" style="background-image: url('@Url.Content("~/assets/images/carsoul/DatawareHouseRealistic2.png")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+            <div class="slider-caption">
+                <div class="container">
+                    <div class="main-slider-content" style="backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+                        <h2 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpan1</h2>
+                        <h1 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpanH1</h1>
+                        <p class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpanP1</p>
+
+                    </div>
+                    <div class="main-slider-content">
+
+                        <div class="slider-btns text-center">
+                            <a href='@Url.Action("LSServises", "Home")' class="theme-btn style-ten">@LeadersSolutionWebSite.Resources.HomePage.SlidersBTNOne <i class="far fa-paper-plane"></i></a>
+                            <a href='@Url.Action("Contact", "Home")' class="theme-btn style-eleven">@LeadersSolutionWebSite.Resources.HomePage.SlidersBTNTwo <i class="far fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-slider-item" style="background-image:  url('@Url.Content("~/assets/images/carsoul/RelaisticAI.png")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+            <div class="slider-caption">
+                <div class="container">
+                    <div class="main-slider-content" style="backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+                        <h2 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpan2</h2>
+                        <h1 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpanH2</h1>
+                        <p class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpanP2</p>
+
+                    </div>
+                    <div class="main-slider-content">
+
+                        <div class="slider-btns text-center">
+                            <a href='@Url.Action("LSServises", "Home")' class="theme-btn style-ten">@LeadersSolutionWebSite.Resources.HomePage.SlidersBTNOne <i class="far fa-paper-plane"></i></a>
+                            <a href='@Url.Action("Contact", "Home")' class="theme-btn style-eleven">@LeadersSolutionWebSite.Resources.HomePage.SlidersBTNTwo <i class="far fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-slider-item" style="background-image: url('@Url.Content("~/assets/images/carsoul/ISMRealisticSaudiMen.png")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+            <div class="slider-caption">
+                <div class="container">
+                    <div class="main-slider-content" style="backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+                        <h2 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpan3</h2>
+                        <h1 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpanH3</h1>
+                        <p class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpanP3</p>
+
+                    </div>
+                    <div class="main-slider-content">
+
+                        <div class="slider-btns text-center">
+                            <a href='@Url.Action("LSServises", "Home")' class="theme-btn style-ten">@LeadersSolutionWebSite.Resources.HomePage.SlidersBTNOne <i class="far fa-paper-plane"></i></a>
+                            <a href='@Url.Action("Contact", "Home")' class="theme-btn style-eleven">@LeadersSolutionWebSite.Resources.HomePage.SlidersBTNTwo <i class="far fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-slider-item" style="background-image: url('@Url.Content("~/assets/images/carsoul/CyberSecurityRealistic.png")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+            <div class="slider-caption">
+                <div class="container">
+                    <div class="main-slider-content" style="backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+                        <h2 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpan4</h2>
+                        <h1 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpanH4</h1>
+                        <p class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpanP4</p>
+
+                    </div>
+                    <div class="main-slider-content">
+
+                        <div class="slider-btns text-center">
+                            <a href='@Url.Action("LSServises", "Home")' class="theme-btn style-ten">@LeadersSolutionWebSite.Resources.HomePage.SlidersBTNOne <i class="far fa-paper-plane"></i></a>
+                            <a href='@Url.Action("Contact", "Home")' class="theme-btn style-eleven">@LeadersSolutionWebSite.Resources.HomePage.SlidersBTNTwo <i class="far fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-slider-item" style="background-image: url('@Url.Content("~/assets/images/carsoul/DatawareHouse2.png")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+            <div class="slider-caption">
+                <div class="container">
+                    <div class="main-slider-content" style="backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+                        <h2 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpan6</h2>
+                        <h1 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpanH6</h1>
+                        <p class="text-center">@LeadersSolutionWebSite.Resources.HomePage.SlidersSpanP6</p>
+
+                    </div>
+                    <div class="main-slider-content">
+
+                        <div class="slider-btns text-center">
+                            <a href='@Url.Action("LSServises", "Home")' class="theme-btn style-ten">@LeadersSolutionWebSite.Resources.HomePage.SlidersBTNOne <i class="far fa-paper-plane"></i></a>
+                            <a href='@Url.Action("Contact", "Home")' class="theme-btn style-eleven">@LeadersSolutionWebSite.Resources.HomePage.SlidersBTNTwo <i class="far fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Main Slider End -->
+<!-- Gallery Section Start -->
+<section class="gallery-section-two overlay pt-115 rpt-95 rpb-65 px-60 rpx-0">
+    <div class="container-fluid">
+        <div class="section-title text-center mb-55">
+
+            <h2> @LeadersSolutionWebSite.Resources.HomePage.QprSigningTitle</h2>
+        </div>
+        <div class="row text-white justify-content-center">
+            <div class="col-xl-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="gallery-item style-two wow fadeInUp delay-0-2s">
+                    <img src="@Url.Content("~/assets/images/qprcontract/Signing.JPG")" alt="News">
+
+                </div>
+            </div>
+            <div class="col-xl-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="gallery-item style-two wow fadeInUp delay-0-2s">
+                    <img src="@Url.Content("~/assets/images/qprcontract/Shaking.JPG")" alt="News">
+
+                </div>
+            </div>
+            @{
+
+                if (cookie != null && cookie.Value != null)
+                {
+                    if (cookie.Value == "en")
+                    {
+                        <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="gallery-item style-two wow fadeInUp delay-0-2s">
+                                <p style="text-align:justify;">
+
+                                    @LeadersSolutionWebSite.Resources.HomePage.QprSigningText1
+                                    <br />
+                                    @LeadersSolutionWebSite.Resources.HomePage.QprSigningText2
+                                    <br />
+                                    @LeadersSolutionWebSite.Resources.HomePage.QprSigningText3
+                                    <br />
+                                    @LeadersSolutionWebSite.Resources.HomePage.QprSigningText4
+                                    <br />
+                                    @LeadersSolutionWebSite.Resources.HomePage.QprSigningText5
+                                </p>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+
+                        <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="gallery-item style-two wow fadeInUp delay-0-2s">
+                                <p dir="rtl" style="text-align:justify;">
+
+                                    @LeadersSolutionWebSite.Resources.HomePage.QprSigningText1
+                                    <br />
+                                    @LeadersSolutionWebSite.Resources.HomePage.QprSigningText2
+                                    <br />
+                                    @LeadersSolutionWebSite.Resources.HomePage.QprSigningText3
+                                    <br />
+                                    @LeadersSolutionWebSite.Resources.HomePage.QprSigningText4
+                                    <br />
+                                    @LeadersSolutionWebSite.Resources.HomePage.QprSigningText5
+                                </p>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="gallery-item style-two wow fadeInUp delay-0-2s">
+                            <p dir="rtl" style="text-align:justify;">
+
+                                @LeadersSolutionWebSite.Resources.HomePage.QprSigningText1
+                                <br />
+                                @LeadersSolutionWebSite.Resources.HomePage.QprSigningText2
+                                <br />
+                                @LeadersSolutionWebSite.Resources.HomePage.QprSigningText3
+                                <br />
+                                @LeadersSolutionWebSite.Resources.HomePage.QprSigningText4
+                                <br />
+                                @LeadersSolutionWebSite.Resources.HomePage.QprSigningText5
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                }
+            }
+
+        </div>
+    </div>
+</section>
+<!-- Gallery Section End -->
+
+@{
+
+    if (cookie != null && cookie.Value != null)
+    {
+        if (cookie.Value == "en")
+        {
+            <!-- English News Section Start -->
+            <section class="news-six-area rel z-1 pb-90" id="news">
+                <div class="container">
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="news-six-item wow fadeInUp delay-0-4s" style="background-image: url('@Url.Content("~/assets/images/background/240_F_433604231_NXQKVBxg7K1ueYnK0GgqoSz4LUNbm6Uz.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+                                <div class="image myclassImageBlurry">
+                                    <img src="@Url.Content("~/assets/images/news/Invest500EnglishBlured.png")" height="717px" alt="News">
+                                </div>
+                                <h4 class="text-white" style="@_align">@LeadersSolutionWebSite.Resources.HomePage.NewsSectionH1</h4>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="news-six-item wow fadeInUp delay-0-8s" style="background-image: url('@Url.Content("~/assets/images/background/240_F_428756389_2g5i9usdVIkk4PhXWffNDraYQAqtTweL.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+                                <div class="image">
+                                    <img src="@Url.Content("~/assets/images/news/invest78English.jpg")" height="717px" alt="News">
+                                </div>
+                                <h4 class="text-white" style="@_align">@LeadersSolutionWebSite.Resources.HomePage.NewsSectionH2</h4>
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </section>
+            <!--  English News Section End -->
+
+
+
+        }
+        else
+        {
+
+            <!--Arabic News Section Start -->
+            <section class="news-six-area rel z-1 pb-90" id="news">
+                <div class="container">
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="news-six-item wow fadeInUp delay-0-4s" style="background-image: url('@Url.Content("~/assets/images/background/240_F_433604231_NXQKVBxg7K1ueYnK0GgqoSz4LUNbm6Uz.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+                                <div class="image myclassImageBlurry">
+                                    <img src="@Url.Content("~/assets/images/news/Invest500ArabicBlured.png")" height="717px" alt="News">
+                                </div>
+                                <h4 class="text-white" style="@_align">@LeadersSolutionWebSite.Resources.HomePage.NewsSectionH1</h4>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="news-six-item wow fadeInUp delay-0-8s" style="background-image: url('@Url.Content("~/assets/images/background/240_F_428756389_2g5i9usdVIkk4PhXWffNDraYQAqtTweL.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+                                <div class="image">
+                                    <img src="@Url.Content("~/assets/images/news/Invest78Arabic.JPG")" height="717px" alt="News">
+                                </div>
+                                <h4 class="text-white" style="@_align">@LeadersSolutionWebSite.Resources.HomePage.NewsSectionH2</h4>
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </section>
+            <!-- Arabick News Section End -->
+
+        }
+    }
+    else
+    {
+        <!-- Arabic News Section Start -->
+        <section class="news-six-area rel z-1 pb-90" id="news">
+            <div class="container">
+                @*<div class="section-title text-center mb-65">
+
+                        <h2>@LeadersSolutionWebSite.Resources.HomePage.NewsSectionTitle</h2>
+                    </div>*@
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="news-six-item wow fadeInUp delay-0-4s" style="background-image: url('@Url.Content("~/assets/images/background/240_F_433604231_NXQKVBxg7K1ueYnK0GgqoSz4LUNbm6Uz.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+                            <div class="image myclassImageBlurry">
+                                <img src="@Url.Content("~/assets/images/news/Invest500ArabicBlured.png")" height="717px" alt="News">
+                            </div>
+                            <h4 class="text-white" style="@_align">@LeadersSolutionWebSite.Resources.HomePage.NewsSectionH1</h4>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="news-six-item wow fadeInUp delay-0-8s" style="background-image: url('@Url.Content("~/assets/images/background/240_F_428756389_2g5i9usdVIkk4PhXWffNDraYQAqtTweL.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+                            <div class="image">
+                                <img src="@Url.Content("~/assets/images/news/Invest78Arabic.JPG")" height="717px" alt="News">
+                            </div>
+                            <h4 class="text-white" style="@_align">@LeadersSolutionWebSite.Resources.HomePage.NewsSectionH2</h4>
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+        <!-- Arabic News Section End -->
+
+
+    }
+}
+<!-- Solutions Section Start -->
+<section class="gallery-section-three pt-20 rpt-95 pb-105 rpb-85">
+    <div class="container">
+        <div class="section-title gellery-section-title mb-55 wow fadeInUp delay-0-2s text-center">
+
+            <h2>@LeadersSolutionWebSite.Resources.HomePage.OurSolutionSectionTitle</h2>
+            <div class="gallery-carousel-arrow mt-25 text-center">
+                <button class="gallery-prev slick-arrow"><i class="fas fa-arrow-left"></i></button>
+                <button class="gallery-next slick-arrow"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="gallery-three-wrap wow fadeInRight delay-0-4s">
+            <div class="gallery-item style-three">
+                <img src="@Url.Content("~/assets/images/customImages/Security1.jpg")" width="500px" height="240px" alt="Gallery">
+                <div class="gallery-content">
+                    <h5 class="text-center"><a href='@Url.Action("LSCyberSecurity", "Home")'>@LeadersSolutionWebSite.Resources.HomePage.Solution</a></h5>
+                </div>
+            </div>
+
+            <div class="gallery-item style-three">
+                <img src="@Url.Content("~/assets/images/customImages/Operation1.jpg")" width="500px" height="240px" alt="Gallery">
+
+                <div class="gallery-content">
+                    <h5 class="text-center"><a href='@Url.Action("LSSolutions", "Home")'>@LeadersSolutionWebSite.Resources.HomePage.Solution1</a></h5>
+                </div>
+            </div>
+            <div class="gallery-item style-three">
+                <img src="@Url.Content("~/assets/images/customImages/Cloud1.jpg")" width="500px" height="240px" alt="Gallery">
+
+                <div class="gallery-content">
+                    <h5 class="text-center"><a href='@Url.Action("LSSolutions", "Home")'>@LeadersSolutionWebSite.Resources.HomePage.Solution2</a></h5>
+                </div>
+            </div>
+            <div class="gallery-item style-three">
+                <img src="@Url.Content("~/assets/images/customImages/Performance Management.png")" width="500px" height="240px" alt="Gallery">
+
+                <div class="gallery-content">
+                    <h5 class="text-center"><a href='@Url.Action("LSSolutions", "Home")'>@LeadersSolutionWebSite.Resources.HomePage.Solution3</a></h5>
+                </div>
+            </div>
+            <div class="gallery-item style-three">
+                <img src="@Url.Content("~/assets/images/customImages/Business-Process-Modeling-process-automation.png")" width="500px" height="240px" alt="Gallery">
+
+                <div class="gallery-content">
+                    <h5 class="text-center"><a href='@Url.Action("LSSolutions", "Home")'>@LeadersSolutionWebSite.Resources.HomePage.Solution4</a></h5>
+                </div>
+            </div>
+            <div class="gallery-item style-three">
+                <img src="@Url.Content("~/assets/images/customImages/Ai1.jpg")" width="500px" height="240px" alt="Gallery">
+
+                <div class="gallery-content">
+                    <h5 class="text-center"><a href='@Url.Action("LSSolutions", "Home")'>@LeadersSolutionWebSite.Resources.HomePage.Solution5</a></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Solutions Section End -->
+<!-- Service Section Start -->
+
+<section class="featured-section bgs-cover pt-240 rpt-150 pb-120 rpb-100" style="background-image: url('@Url.Content("~/assets/images/customImages/AI.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-10">
+                <div class="section-title text-center mb-35">
+                    <h1>@LeadersSolutionWebSite.Resources.HomePage.Services</h1>
+                    <h2>@LeadersSolutionWebSite.Resources.HomePage.ServicesHead</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-xl-12 col-md-12 col-sm-12">
+                <a href='@Url.Action("LSServises", "Home")'>
+
+                    <div class="feature-item" style="background-image: url('@Url.Content("~/assets/images/customImages/GRC1.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+                        <div class="icon">
+                            <i class="flaticon flaticon-cloud-servers"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.GRCTitle</h4>
+                            <p style="@_align">
+                                @LeadersSolutionWebSite.Resources.HomePage.GRCParagraph
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-4 col-md-6">
+                <a href='@Url.Action("LSServises", "Home")'>
+
+                    <div class="feature-item" style="background-image: url('@Url.Content("~/assets/images/customImages/MobileSD.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                        <div class="icon">
+                            <i class="flaticon flaticon-application"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.MobileAppDevelopment</h4>
+                            <p style="@_align">
+                                @LeadersSolutionWebSite.Resources.HomePage.MobileDevelopmentParagraf
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-4 col-md-6">
+                <a href='@Url.Action("LSServises", "Home")'>
+
+                    <div class="feature-item" style="background-image: url('@Url.Content("~/assets/images/customImages/DSKSD.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                        <div class="icon">
+                            <i class="flaticon flaticon-computer"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.DeskTopAppDevelopment</h4>
+                            <p style="@_align">
+                                @LeadersSolutionWebSite.Resources.HomePage.DeskTopDevelopmentParagraf
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <a href='@Url.Action("LSServises", "Home")'>
+
+                    <div class="feature-item" style="background-image: url('@Url.Content("~/assets/images/customImages/CSD3.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                        <div class="icon">
+                            <i class="flaticon flaticon-art"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.CustomSoftwareDevelopment</h4>
+                            <p style="@_align">
+                                @LeadersSolutionWebSite.Resources.HomePage.CustomSoftwareDevelopmentParagraf
+
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-4 col-md-6">
+                <a href='@Url.Action("LSServises", "Home")'>
+
+                    <div class="feature-item" style="background-image: url('@Url.Content("~/assets/images/customImages/ConsultingSR.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                        <div class="icon">
+                            <i class="flaticon flaticon-customer-service"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.ConsultancyServices</h4>
+                            <p style="@_align">
+                                @LeadersSolutionWebSite.Resources.HomePage.ConsultancyServicesParagraf
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <a href='@Url.Action("LSServises", "Home")'>
+
+                    <div class="feature-item" style="background-image: url('@Url.Content("~/assets/images/customImages/WebSD1.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                        <div class="icon">
+                            <i class="flaticon flaticon-web-development"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.WebDevelopment</h4>
+                            <p style="@_align">
+                                @LeadersSolutionWebSite.Resources.HomePage.WebDevelopmentParagraf
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <a href='@Url.Action("LSServises", "Home")'>
+
+                    <div class="feature-item" style="background-image: url('@Url.Content("~/assets/images/customImages/ResedintSR.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                        <div class="icon">
+                            <i class="flaticon flaticon-admin"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4 class="text-center">@LeadersSolutionWebSite.Resources.HomePage.ResidentEngineer</h4>
+                            <p style="@_align">
+                                @LeadersSolutionWebSite.Resources.HomePage.ResidentEngServicesParagraf
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="feature-btn text-center mt-20">
+            <a href='@Url.Action("LSServises", "Home")' class="theme-btn">@LeadersSolutionWebSite.Resources.HomePage.AllServiceViewBtn</a>
+        </div>
+    </div>
+</section>
+<!-- Service Section End -->
+<!-- Intro Start -->
+<section class="services-four pt-115">
+    <div class="container">
+        <div class="row justify-content-between align-items-center mb-40">
+            @{
+
+                if (cookie != null && cookie.Value != null)
+                {
+                    if (cookie.Value == "en")
+                    {
+                        <div class="col-sm-12 col-md-6 col-lg-6 wow fadeInLeft delay-0-4s">
+                            <div class="section-title mb-35" style="@_align">
+                                <h4 class="text-white">@LeadersSolutionWebSite.Resources.HomePage.SectionIntroH4</h4>
+                                <h2>@LeadersSolutionWebSite.Resources.HomePage.SectionIntroH2</h2>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-5 wow fadeInRight delay-0-8s" style="@_align">
+                            <h4>
+                                @LeadersSolutionWebSite.Resources.HomePage.SectionIntroH4Paragraf
+
+                            </h4>
+                        </div>
+
+
+
+                    }
+                    else
+                    {
+
+                        <div class="col-sm-12 col-md-6 col-lg-5 wow fadeInRight delay-0-8s" style="@_align">
+                            <h4>
+                                @LeadersSolutionWebSite.Resources.HomePage.SectionIntroH4Paragraf
+
+                            </h4>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-6 wow fadeInLeft delay-0-4s">
+                            <div class="section-title mb-35" style="@_align">
+                                <h4 class="text-white">@LeadersSolutionWebSite.Resources.HomePage.SectionIntroH4</h4>
+                                <h2>@LeadersSolutionWebSite.Resources.HomePage.SectionIntroH2</h2>
+                            </div>
+                        </div>
+
+                    }
+                }
+                else
+                {
+                    <div class="col-sm-12 col-md-6 col-lg-5 wow fadeInRight delay-0-8s" style="@_align">
+                        <h4>
+                            @LeadersSolutionWebSite.Resources.HomePage.SectionIntroH4Paragraf
+
+                        </h4>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 wow fadeInLeft delay-0-4s">
+                        <div class="section-title mb-35" style="@_align">
+                            <h4 class="text-white">@LeadersSolutionWebSite.Resources.HomePage.SectionIntroH4</h4>
+                            <h2>@LeadersSolutionWebSite.Resources.HomePage.SectionIntroH2</h2>
+                        </div>
+                    </div>
+
+
+                }
+            }
+
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="service-item-four wow fadeInUpBig delay-0-4s">
+                    <div class="image">
+
+                        <img src="@Url.Content("~/assets/images/customImages/Digital_Transformation.jpg")" alt="Service">
+                    </div>
+                    <div class="service-four-content">
+                        <div class="service-title-area text-center">
+                            <i class="flaticon flaticon-settings-1"></i>
+                            <h3><a href='@Url.Action("LSServises", "Home")' class="lsservicelink">@LeadersSolutionWebSite.Resources.HomePage.SectionIntroDigitalH </a></h3>
+                            <p style="@_align">
+                                @LeadersSolutionWebSite.Resources.HomePage.SectionIntroDigitalSpan
+
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="service-item-four wow fadeInDownBig delay-0-6s">
+                    <div class="image">
+
+                        <img src="@Url.Content("~/assets/images/customImages/StrategicSolutions.jpg")" alt="Service">
+                    </div>
+                    <div class="service-four-content">
+                        <div class="service-title-area text-center">
+                            <i class="flaticon flaticon-seo-1"></i>
+                            <h3><a href='@Url.Action("LSServises", "Home")' class="lsservicelink">@LeadersSolutionWebSite.Resources.HomePage.SectionIntroStrategiclH</a></h3>
+                            <p style="@_align">
+                                @LeadersSolutionWebSite.Resources.HomePage.SectionIntroStrategiclSpan
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="service-item-four wow fadeInRightBig delay-0-8s">
+                    <div class="image">
+
+                        <img src="@Url.Content("~/assets/images/customImages/Technologically_Exceptional.jpg")" alt="Service">
+                    </div>
+                    <div class="service-four-content">
+                        <div class="service-title-area text-center">
+                            <i class="flaticon flaticon-web"></i>
+                            <h3><a href='@Url.Action("LSServises", "Home")' class="lsservicelink">@LeadersSolutionWebSite.Resources.HomePage.SectionIntroTechH</a></h3>
+                            <p style="@_align">
+
+                                @LeadersSolutionWebSite.Resources.HomePage.SectionIntroTechSpan
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Intro End -->
+<!-- Core Business Section Start -->
+<section class="services-section  pt-115">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-md-12 col-sm-12">
+                <div class="section-title service-box-Header text-center mb-55">
+
+                    <h2 class="service-box wow fadeInDown delay-0-2s">@LeadersSolutionWebSite.Resources.HomePage.LineOfBusinessTitle</h2>
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-sm-6">
+
+                <div class="service-box" style="background-image: url('@Url.Content("~/assets/images/customImages/ITServices.jpeg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                    <div class="service-normal text-center">
+                        @*<div class="icon">
+                                <i class="flaticon flaticon-computer lsservicehead"></i>
+                            </div>*@
+
+                        <div class="bottom-fixed">
+                            <h3>
+                                <b>@LeadersSolutionWebSite.Resources.HomePage.LineOfBusinessFirstColH</b>
+                            </h3>
+
+                        </div>
+
+                    </div>
+                    <div class="service-hover bg-blue text-white">
+                        <p style="@_align">
+                            @LeadersSolutionWebSite.Resources.HomePage.LineOfBusinessFirstColP
+                        </p>
+                        @*<a href='@Url.Action("LSSolutions", "Home")' class="theme-btn">
+                                Start Your Journey
+                            </a>*@
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+
+                <div class="service-box" style="background-image: url('@Url.Content("~/assets/images/customImages/Cybersecurity2.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                    <div class="service-normal text-center">
+                        @*<div class="icon">
+                                <i class="flaticon flaticon-web-development-4 lsservicehead"></i>
+                            </div>*@
+
+                        <div class="bottom-fixed">
+                            <h3>
+                                <b>@LeadersSolutionWebSite.Resources.HomePage.LineOfBusinessSecondColH</b>
+                            </h3>
+
+                        </div>
+                    </div>
+                    <div class="service-hover bg-blue text-white">
+                        <p style="@_align">
+                            @LeadersSolutionWebSite.Resources.HomePage.LineOfBusinessSecondColP
+                        </p>
+                        @*<a href='@Url.Action("LSSolutions", "Home")' class="theme-btn">Find Out More</a>*@
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+
+                <div class="service-box" style="background-image: url('@Url.Content("~/assets/images/customImages/Education2.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                    <div class="service-normal text-center">
+                        @*<div class="icon">
+                                <i class="flaticon flaticon-web lsservicehead"></i>
+                            </div>*@
+                        <div class="bottom-fixed">
+                            <h3>
+                                @LeadersSolutionWebSite.Resources.HomePage.LineOfBusinessThirdColH
+                            </h3>
+
+                        </div>
+
+                    </div>
+                    <div class="service-hover bg-blue text-white">
+                        <p style="@_align">
+                            @LeadersSolutionWebSite.Resources.HomePage.LineOfBusinessThirdColP
+                        </p>
+                        @*<a href='@Url.Action("LSSolutions", "Home")' class="theme-btn">See How It Works</a>*@
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+
+                <div class="service-box" style="background-image: url('@Url.Content("~/assets/images/customImages/Foundaition4.jpeg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                    <div class="service-normal text-center">
+                        @*<div class="icon">
+                                <i class="flaticon flaticon-data"></i>
+                            </div>*@
+
+                        <div class="bottom-fixed">
+                            <h3>
+                                <b>@LeadersSolutionWebSite.Resources.HomePage.LineOfBusinessFourthColH</b>
+                            </h3>
+
+                        </div>
+
+                    </div>
+                    <div class="service-hover bg-blue text-white">
+                        <p style="@_align">
+                            @LeadersSolutionWebSite.Resources.HomePage.LineOfBusinessFourthColP
+
+                        </p>
+
+                        @*<a href='@Url.Action("LSSolutions", "Home")' class="theme-btn">Uncover the Details</a>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Core Business Section End -->
+<!-- Sector Start -->
+<section class="services-three text-white pt-115 rpt-95 pb-180 rpb-150">
+    <div class="container">
+        <div class="section-title-with-btn mb-55">
+            <div class="section-title" style="@_align">
+
+                <h2>
+                    @LeadersSolutionWebSite.Resources.HomePage.StrategicSectorSolutionsTitle
+
+                </h2>
+                <p>
+
+                    @LeadersSolutionWebSite.Resources.HomePage.StrategicSectorSolutionsP
+
+
+                </p>
+            </div>
+
+        </div>
+        <div class="row text-white justify-content-center">
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="gallery-item style-four wow fadeInUp delay-0-2s">
+                    <img src="@Url.Content("~/assets/images/customImages/banking-finance-lg.jpg")" alt="Gallery">
+                    <div class="gallery-content">
+                        <div class="gallery-content-inner">
+
+                            <h3>
+                                @LeadersSolutionWebSite.Resources.HomePage.SectorFinanceH
+                            </h3>
+                            <span class="category">
+                                @LeadersSolutionWebSite.Resources.HomePage.SectorFinanceP
+                            </span>
+                            @*<a href="portfolio-details.html"><i class="fas fa-arrow-right"></i></a>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="gallery-item style-four wow fadeInUp delay-0-4s">
+                    <img src="@Url.Content("~/assets/images/customImages/transportation-logistic-cr-Digitalpen.jpg")" alt="Gallery">
+                    <div class="gallery-content">
+                        <div class="gallery-content-inner">
+
+                            <h3>
+                                @LeadersSolutionWebSite.Resources.HomePage.SectorTranspotH
+                            </h3>
+                            <span class="category">
+                                @LeadersSolutionWebSite.Resources.HomePage.SectorTranspotP
+                            </span>
+                            @*<a href="portfolio-details.html"><i class="fas fa-arrow-right"></i></a>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="gallery-item style-four wow fadeInUp delay-0-6s">
+                    <img src="@Url.Content("~/assets/images/customImages/Goverment.jpg")" alt="Gallery">
+
+                    <div class="gallery-content">
+                        <div class="gallery-content-inner">
+
+                            <h3>
+                                @LeadersSolutionWebSite.Resources.HomePage.SectorGovermentH
+
+                            </h3>
+                            <span class="category">
+                                @LeadersSolutionWebSite.Resources.HomePage.SectorGovermentP
+                            </span>
+                            @*<a href="portfolio-details.html"><i class="fas fa-arrow-right"></i></a>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="gallery-item style-four wow fadeInUp delay-0-8s">
+                    <img src="@Url.Content("~/assets/images/customImages/Healthcare.jpeg")" alt="Gallery">
+
+                    <div class="gallery-content">
+                        <div class="gallery-content-inner">
+
+                            <h3>
+                                @LeadersSolutionWebSite.Resources.HomePage.SectorHealthcareH
+
+                            </h3>
+                            <span class="category">
+                                @LeadersSolutionWebSite.Resources.HomePage.SectorHealthcareP
+                            </span>
+                            @*<a href="portfolio-details.html"><i class="fas fa-arrow-right"></i></a>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="gallery-item style-four wow fadeInUp delay-0-2s">
+                    <img src="@Url.Content("~/assets/images/customImages/SmartCities.jpg")" alt="Gallery">
+
+                    <div class="gallery-content">
+                        <div class="gallery-content-inner">
+
+                            <h3>
+                                @LeadersSolutionWebSite.Resources.HomePage.SectorSmartCitiesH
+
+
+                            </h3>
+                            <span class="category">
+                                @LeadersSolutionWebSite.Resources.HomePage.SectorSmartCitiesP
+                            </span>
+                            @*<a href="portfolio-details.html"><i class="fas fa-arrow-right"></i></a>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="gallery-item style-four wow fadeInUp delay-0-4s">
+                    <img src="@Url.Content("~/assets/images/customImages/Telecommunication1.jpg")" alt="Gallery">
+
+                    <div class="gallery-content">
+                        <div class="gallery-content-inner">
+
+                            <h3>
+                                @LeadersSolutionWebSite.Resources.HomePage.SectorTelecommunicationH
+
+
+
+                            </h3>
+                            <span class="category">
+
+                                @LeadersSolutionWebSite.Resources.HomePage.SectorTelecommunicationP
+                            </span>
+                            @*<a href="portfolio-details.html"><i class="fas fa-arrow-right"></i></a>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="gallery-item style-four wow fadeInUp delay-0-6s">
+                    <img src="@Url.Content("~/assets/images/customImages/Energy-Utilities-1.jpg")" alt="Gallery">
+
+                    <div class="gallery-content">
+                        <div class="gallery-content-inner">
+
+                            <h3>
+                                @LeadersSolutionWebSite.Resources.HomePage.SectorEnergyH
+
+                            </h3>
+                            <span class="category">
+
+                                @LeadersSolutionWebSite.Resources.HomePage.SectorEnergyP
+                            </span>
+                            @*<a href="portfolio-details.html"><i class="fas fa-arrow-right"></i></a>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="gallery-item style-four wow fadeInUp delay-0-8s">
+                    <img src="@Url.Content("~/assets/images/customImages/ManufacturingRetail.png")" alt="Gallery">
+
+                    <div class="gallery-content">
+                        <div class="gallery-content-inner">
+
+                            <h3>
+                                @LeadersSolutionWebSite.Resources.HomePage.SectorManufacturingH
+                            </h3>
+                            <span class="category">
+                                @LeadersSolutionWebSite.Resources.HomePage.SectorManufacturingP
+                            </span>
+                            @*<a href="portfolio-details.html"><i class="fas fa-arrow-right"></i></a>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Sector End -->
+<!-- Logo Section Start -->
+<div class="logo-section">
+    <div class="container">
+        <div class="section-title text-center mb-65">
+            <h2>
+                @LeadersSolutionWebSite.Resources.HomePage.OurClientTitle
+            </h2>
+        </div>
+        <div class="logo-carousel-wrap">
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Pif.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Pss.jpeg")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Elm.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/neom-logo-png_seeklogo-358578.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/HRSD.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/MinistrieOfEducation.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Ministry_of_housing_Logo.svg.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/MinstryOfInvestment.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/MISA.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Saudi-Aramco-Logo.jpg")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Saudi-ministry-of-sport.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Saudi_Ministry_of_Health_Logo.svg")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/The_Saudi_Ministry_of_Investment_-_logo.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Saudi_Ministry_of_National_Guard_Logo.svg")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Saudi_Ministry_of_Tourism_Logo.svg.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/GSTC.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/DGDA.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/KAFD.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/AlrajehiIron.png")" alt="Client Logo">
+            </div>
+
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/ArabianDrilling.jpg")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/CPPA.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/CST.jpg")" alt="Client Logo">
+            </div>
+
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/DiwanAlmathalim.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/ElectricCompany.png")" alt="Client Logo">
+            </div>
+
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/EMKAN.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/GCC.png")" alt="Client Logo">
+            </div>
+
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Gulf.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Haboob.png")" alt="Client Logo">
+            </div>
+
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/IMCTC.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/IPA.png")" alt="Client Logo">
+            </div>
+
+
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Marafiq.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Matarat_Logo.svg.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/mcitlogo_0.png")" alt="Client Logo">
+            </div>
+
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/MoC.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/MoE_Logo_V1.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/MOE_of_KSA.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Municieble.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Nazaha.png")" alt="Client Logo">
+            </div>
+
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/newl.png")" alt="Client Logo">
+            </div>
+
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Red_Sea_Global_Logo.svg.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Riyad_Bank_logo.svg.png")" alt="Client Logo">
+            </div>
+
+            <div class="logo-item">
+
+                <img src="@Url.Content("~/assets/images/clientLogos/RiyadhChameper.jpg")" alt="Client Logo">
+
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/SABIC_logo.svg.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Sadara-Chemical-Company-Logo-Vector.svg-.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/SASO.jpg")" alt="Client Logo">
+            </div>
+
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Saudi_Standards,_Metrology_and_Quality_Organization-Logo.svg.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/SaudiExport.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/SEDA.svg")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Sukuk.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/SWARM.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/Tabadul.jpg")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/TamkeenIT.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/TamweelAloula.png")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/tdf-no-background-colored-font-logo-copy-2.png")" alt="Client Logo">
+            </div>
+
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/yusr.jpg")" alt="Client Logo">
+            </div>
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/ZATCA.png")" alt="Client Logo">
+            </div>
+
+            <div class="logo-item">
+                <img src="@Url.Content("~/assets/images/clientLogos/TVTC.png")" alt="Client Logo">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Logo Section End -->
+<!-- Achivement Section Start -->
+<section class="testimonial-section pt-115 rpt-95 pb-120 rpb-100">
+    <div class="container">
+        <div class="section-title text-center mb-65">
+            <h2>
+                @LeadersSolutionWebSite.Resources.HomePage.OurAchievementsTitle
+            </h2>
+        </div>
+        <div class="fact-counter-color text-center mb-30">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="success-item wow fadeInUp delay-0-4s">
+                        <img src="@Url.Content("~/assets/images/ProjectsIcon.png")" alt="Author">
+                        <span class="count-text plus" data-speed="5000" data-stop="@(DateTime.Now.Year - 2009)">0</span>
+                        <p> @LeadersSolutionWebSite.Resources.HomePage.OurAchievementsYears</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="success-item wow fadeInUp delay-0-6s">
+                        <img src="@Url.Content("~/assets/images/ClientIcon.png")" alt="Author">
+                        <span class="count-text plus" data-speed="5000" data-stop="352">0</span>
+                        <p> @LeadersSolutionWebSite.Resources.HomePage.OurAchievementsHappyClients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+     document.addEventListener('DOMContentLoaded', function () {
+
+         var message = "@ViewBag.Message";
+
+         if (message) {
+             Snackbar.show({
+                 text: message,
+                 pos: 'top-center'
+             });
+         }
+
+
+    });
+    </script>
+}

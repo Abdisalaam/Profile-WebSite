@@ -1,0 +1,139 @@
+﻿
+@{
+    ViewBag.Title = "Servises Details";
+    Layout = "~/Views/Shared/_LayoutNine.cshtml";
+}
+
+@*<div class="header-top-wrap bg-blue py-10">
+    <div class="container">
+        <div class="header-top">
+            <div class="top-left">
+                <ul>
+                    <li>Call Us: <a href="callto:0548978478">0548978478</a></li>
+                    <li>Email us: <a href="mailto:info@leadersSolution.com">info@leadersSolution.com</a></li>
+                </ul>
+            </div>
+            <div class="top-right">
+                <div class="office-time">
+                    <i class="far fa-clock"></i><span>08:00 am - 06:00 pm</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+<!-- Page Banner Start -->
+<section class="page-banner bgs-cover overlay pt-50" style="background-image: url('/assets/images/banner.jpg');">
+    <div class="container">
+        <div class="banner-inner">
+            <h1 class="page-title">Service details</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href='@Url.Action("Index", "Home")'>Leaders Solution</a></li>
+                    <li class="breadcrumb-item active">Service details</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</section>
+<!-- Page Banner End -->
+<!-- Service Details Start -->
+<section class="service-details pt-120 rpt-100 pb-100 rpb-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="service-sidebar rmb-55 wow fadeInLeft delay-0-2s">
+                    <div class="widget widget-services">
+                        <ul>
+                            <li><a href='@Url.Action("LSServisesDetails", "Home")'>Data Center</a></li>
+                            <li><a href='@Url.Action("LSServisesDetails", "Home")'>IT Management</a></li>
+                            <li><a href='@Url.Action("LSServisesDetails", "Home")'>Software Development</a></li>
+                            <li><a href='@Url.Action("LSServisesDetails", "Home")'>Web Development</a></li>
+                            <li><a href='@Url.Action("LSServisesDetails", "Home")'>Cloud Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget contact-info-widget contact-image-number style-two bgs-cover overlay" style="background-image: url('/assets/images/contact/home-two.jpg');">
+                        <div class="contact-informations text-white">
+                            <h3>Don't hesitate to contact us</h3>
+                            <ul class="contact-info">
+                                <li>
+                                    <i class="fas fa-phone-alt"></i>
+                                    <div class="content">
+                                        <span>Call Us</span>
+                                        <h5><a href="callto:+966548978478">+966548978478</a></h5>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <div class="content">
+                                        <span>Write to Us</span>
+                                        <h5><a href="mailto:info@leadersSolution.com">info@leadersSolution.com</a></h5>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-clock"></i>
+                                    <div class="content">
+                                        <span>Office hours</span>
+                                        <h5>Mon-Sat 9:00 - 7:00</h5>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="service-details-content wow fadeInRight delay-0-2s">
+                    <div class="image mb-40">
+
+                        <img src="@Url.Content("~/assets/images/services/service-details.jpg")" alt="Service Details">
+                    </div>
+                    <h2>Cyber Security</h2>
+                    <p>Cybersecurity is the practice of protecting systems, networks, and data from digital attacks, damage, or unauthorized access. It uses technologies, processes, and controls to safeguard against threats like hacking, malware, and phishing, and its goal is to ensure the confidentiality, integrity, and availability of information. </p>
+
+                    <ul class="list-style-three pt-15 pb-30">
+                        <li>Test Test</li>
+                        <li>Test Test</li>
+                        <li>Test Test</li>
+                        <li>Test Test</li>
+                    </ul>
+                    <h3>Explore our audit & assurance services</h3>
+                    <p>Cybersecurity is the practice of protecting systems, networks, and data from digital attacks, damage, or unauthorized access. It uses technologies, processes, and controls to safeguard against threats like hacking, malware, and phishing, and its goal is to ensure the confidentiality, integrity, and availability of information. </p>
+
+                    <div class="row pt-25">
+                        <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6">
+                            <div class="service-normal style-two wow fadeInUp delay-0-2s">
+                                <div class="icon">
+                                    <i class="flaticon flaticon-computer"></i>
+                                </div>
+                                <h6>Software Development</h6>
+                                <p>Cybersecurity is the practice of protecting systems, networks, and data from digital attacks, damage, or unauthorized access. </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6">
+                            <div class="service-normal style-two wow fadeInUp delay-0-4s">
+                                <div class="icon">
+                                    <i class="flaticon flaticon-analysis"></i>
+                                </div>
+                                <h6>Machine Learning</h6>
+                                <p>Cybersecurity is the practice of protecting systems, networks, and data from digital attacks, damage, or unauthorized access. </p>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6">
+                            <div class="service-normal style-two wow fadeInUp delay-0-6s">
+                                <div class="icon">
+                                    <i class="flaticon flaticon-design-process"></i>
+                                </div>
+                                <h6>Software Development</h6>
+                                <p>Cybersecurity is the practice of protecting systems, networks, and data from digital attacks, damage, or unauthorized access. </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Service Details End -->

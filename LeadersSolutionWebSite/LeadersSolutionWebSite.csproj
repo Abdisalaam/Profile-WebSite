@@ -1,0 +1,1110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC99C5E8-2509-4C1E-994E-1CCAEE5ECC57}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LeadersSolutionWebSite</RootNamespace>
+    <AssemblyName>LeadersSolutionWebSite</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.2\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.2\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.2\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.4.0.0\lib\net451\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.4.0.0\lib\net451\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.4.0.0\lib\net451\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.4.0.0\lib\net451\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.4.0.0\lib\net451\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.4.0.0\lib\net451\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.4.0.0\lib\net451\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.4.0.0\lib\net451\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.4.0.0\lib\net451\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="ContactUs.cs">
+      <DependentUpon>LSDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LSDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LSDataModel.Context.tt</DependentUpon>
+      <CustomToolNamespace>LeadersSolutionWebSite.Models</CustomToolNamespace>
+    </Compile>
+    <Compile Include="LSDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LSDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LSDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LSDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ContactUs.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\RateLimiter.cs" />
+    <Compile Include="NewsLetter.cs">
+      <DependentUpon>LSDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\ABoutUSPage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ABoutUSPage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CEOStatementPage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CEOStatementPage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ContactUsPage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactUsPage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CyberSecurityPage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CyberSecurityPage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\LayoutPage.Designer.cs">
+      <DependentUpon>LayoutPage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\LayoutPage.ar.Designer.cs">
+      <DependentUpon>LayoutPage.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\HomePage.ar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HomePage.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\HomePage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HomePage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SolutionsPage.Designer.cs">
+      <DependentUpon>SolutionsPage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\SolutionsPage.ar.Designer.cs">
+      <DependentUpon>SolutionsPage.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\ServicePage.ar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServicePage.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ServicePage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServicePage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
+    <Compile Include="Utilities\CryptoHelper.cs" />
+    <Compile Include="VM\ContactUsVM.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\animate.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\flaticon.css" />
+    <Content Include="assets\css\font-awesome-5.9.0.css" />
+    <Content Include="assets\css\home7fonts.css" />
+    <Content Include="assets\css\magnific-popup.css" />
+    <Content Include="assets\css\rtl-responsive.css" />
+    <Content Include="assets\css\rtl-style.css" />
+    <Content Include="assets\css\slick.css" />
+    <Content Include="assets\css\snackbar.min.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\fonts\fa-brands-400.svg" />
+    <Content Include="assets\fonts\fa-regular-400.svg" />
+    <Content Include="assets\fonts\fa-solid-900.svg" />
+    <Content Include="assets\images\404.png" />
+    <Content Include="assets\images\about\about-bg-dots.png" />
+    <Content Include="assets\images\about\about-bg-shape.png" />
+    <Content Include="assets\images\about\about-circle-dots.png" />
+    <Content Include="assets\images\about\about-eight-bg.png" />
+    <Content Include="assets\images\about\about-eight-content-bg.jpg" />
+    <Content Include="assets\images\about\about-eight1.jpg" />
+    <Content Include="assets\images\about\about-eight2.jpg" />
+    <Content Include="assets\images\about\about-five-two.jpg" />
+    <Content Include="assets\images\about\about-five.jpg" />
+    <Content Include="assets\images\about\about-four-2.jpg" />
+    <Content Include="assets\images\about\about-four-bg-shape.png" />
+    <Content Include="assets\images\about\about-four.jpg" />
+    <Content Include="assets\images\about\about-graph.png" />
+    <Content Include="assets\images\about\about-seven.png" />
+    <Content Include="assets\images\about\about-six.png" />
+    <Content Include="assets\images\about\about-tab.png" />
+    <Content Include="assets\images\about\about-ten.jpg" />
+    <Content Include="assets\images\about\about-three-1.jpg" />
+    <Content Include="assets\images\about\about-three-2.jpg" />
+    <Content Include="assets\images\about\about-two.jpg" />
+    <Content Include="assets\images\about\about.png" />
+    <Content Include="assets\images\about\customization-1.png" />
+    <Content Include="assets\images\about\customization2.png" />
+    <Content Include="assets\images\about\made-easy-left.png" />
+    <Content Include="assets\images\about\made-easy.png" />
+    <Content Include="assets\images\about\solution-place.png" />
+    <Content Include="assets\images\about\why-choose-mobile.png" />
+    <Content Include="assets\images\actions\action1.jpg" />
+    <Content Include="assets\images\actions\action2.jpg" />
+    <Content Include="assets\images\actions\action3.jpg" />
+    <Content Include="assets\images\actions\action4.jpg" />
+    <Content Include="assets\images\actions\author1.jpg" />
+    <Content Include="assets\images\actions\author2.jpg" />
+    <Content Include="assets\images\actions\author3.jpg" />
+    <Content Include="assets\images\actions\author4.jpg" />
+    <Content Include="assets\images\actions\collection1.jpg" />
+    <Content Include="assets\images\actions\collection2.jpg" />
+    <Content Include="assets\images\actions\collection3.jpg" />
+    <Content Include="assets\images\actions\collection4.jpg" />
+    <Content Include="assets\images\actions\collection5.jpg" />
+    <Content Include="assets\images\actions\collection6.jpg" />
+    <Content Include="assets\images\actions\collection7.jpg" />
+    <Content Include="assets\images\actions\collection8.jpg" />
+    <Content Include="assets\images\AwardsIcon.png" />
+    <Content Include="assets\images\background\240_F_167235520_AFrB955JhCwhkpz1ev2L7X9SBcpVgAyg.jpg" />
+    <Content Include="assets\images\background\240_F_183503137_B5T4RcnEJKCmaOe434iKyeN4BjwZM0VO.jpg" />
+    <Content Include="assets\images\background\240_F_183503230_heDoLySnwt4W968RVTJOf7LFHbkZdCHA.jpg" />
+    <Content Include="assets\images\background\240_F_215796247_U9YuC2eGtFcNmPkioGhv3h750v48AGpU.jpg" />
+    <Content Include="assets\images\background\240_F_315924231_ARwuFaPa1NzlsYbnFQfQukX4QxY6MNNM.jpg" />
+    <Content Include="assets\images\background\240_F_428756389_2g5i9usdVIkk4PhXWffNDraYQAqtTweL.jpg" />
+    <Content Include="assets\images\background\240_F_433604231_NXQKVBxg7K1ueYnK0GgqoSz4LUNbm6Uz.jpg" />
+    <Content Include="assets\images\background\call-action-bg.png" />
+    <Content Include="assets\images\background\call-action-three-bg.jpg" />
+    <Content Include="assets\images\background\counter-bg.png" />
+    <Content Include="assets\images\background\footer-bg.png" />
+    <Content Include="assets\images\background\footer-call-action-bg.png" />
+    <Content Include="assets\images\background\price-bg-balls.png" />
+    <Content Include="assets\images\background\price-five-bg.png" />
+    <Content Include="assets\images\background\pricing-bg.png" />
+    <Content Include="assets\images\background\pricing-seven-bg.png" />
+    <Content Include="assets\images\background\progress-bg-line.png" />
+    <Content Include="assets\images\background\progress.png" />
+    <Content Include="assets\images\background\services.png" />
+    <Content Include="assets\images\background\subscribe-bg.png" />
+    <Content Include="assets\images\background\work-progress.jpg" />
+    <Content Include="assets\images\banner.jpg" />
+    <Content Include="assets\images\call-action\call-action-bg.png" />
+    <Content Include="assets\images\call-action\call-action-right.png" />
+    <Content Include="assets\images\carsoul\AbstractMIS.png" />
+    <Content Include="assets\images\carsoul\Cloud.png" />
+    <Content Include="assets\images\carsoul\Cloud2.png" />
+    <Content Include="assets\images\carsoul\CloudRealistic.png" />
+    <Content Include="assets\images\carsoul\Cyberpunk cityscap.png" />
+    <Content Include="assets\images\carsoul\Cyberpunkcityscap.png" />
+    <Content Include="assets\images\carsoul\CyberSecurity Color.png" />
+    <Content Include="assets\images\carsoul\CyberSecurityColor.png" />
+    <Content Include="assets\images\carsoul\CyberSecurity.png" />
+    <Content Include="assets\images\carsoul\CyberSecurityRealistic.png" />
+    <Content Include="assets\images\carsoul\CyberSecurityRealistic2.png" />
+    <Content Include="assets\images\carsoul\DASHBOARDLS.png" />
+    <Content Include="assets\images\carsoul\Dataanalyze.png" />
+    <Content Include="assets\images\carsoul\DataanalyzeArab.png" />
+    <Content Include="assets\images\carsoul\DatawareHouse.png" />
+    <Content Include="assets\images\carsoul\DatawareHouse2.png" />
+    <Content Include="assets\images\carsoul\DatawareHouseAbstract.png" />
+    <Content Include="assets\images\carsoul\DatawareHouseRealistic.png" />
+    <Content Include="assets\images\carsoul\DatawareHouseRealistic2.png" />
+    <Content Include="assets\images\carsoul\DigitalInfrastructure.png" />
+    <Content Include="assets\images\carsoul\DigitalInfrastructureRealistic.png" />
+    <Content Include="assets\images\carsoul\DigitalInfrastructureRealistic2.png" />
+    <Content Include="assets\images\carsoul\DigitalInfrastructureRealistic3.png" />
+    <Content Include="assets\images\carsoul\EnterpriseModeling.png" />
+    <Content Include="assets\images\carsoul\Futuristic AI-them.png" />
+    <Content Include="assets\images\carsoul\Futuristic MIS.png" />
+    <Content Include="assets\images\carsoul\ISM.jpg" />
+    <Content Include="assets\images\carsoul\ISM.png" />
+    <Content Include="assets\images\carsoul\ISMRealistic.png" />
+    <Content Include="assets\images\carsoul\ISMRealisticSaudiMen.png" />
+    <Content Include="assets\images\carsoul\ProcesMining.png" />
+    <Content Include="assets\images\carsoul\RelaisticAI.png" />
+    <Content Include="assets\images\carsoul\ServiceAndOperaition.png" />
+    <Content Include="assets\images\carsoul\StrategyProformance.png" />
+    <Content Include="assets\images\carsoul\StrategyProformanceElagant.png" />
+    <Content Include="assets\images\carsoul\VisualDashboard.png" />
+    <Content Include="assets\images\carsoul\VisualDashboard2.png" />
+    <Content Include="assets\images\categories\category1.png" />
+    <Content Include="assets\images\categories\category10.png" />
+    <Content Include="assets\images\categories\category2.png" />
+    <Content Include="assets\images\categories\category3.png" />
+    <Content Include="assets\images\categories\category4.png" />
+    <Content Include="assets\images\categories\category5.png" />
+    <Content Include="assets\images\categories\category6.png" />
+    <Content Include="assets\images\categories\category7.png" />
+    <Content Include="assets\images\categories\category8.png" />
+    <Content Include="assets\images\categories\category9.png" />
+    <Content Include="assets\images\ClientIcon.png" />
+    <Content Include="assets\images\clientLogos\AlrajehiIron.png" />
+    <Content Include="assets\images\clientLogos\ArabianDrilling.jpg" />
+    <Content Include="assets\images\clientLogos\CPPA.png" />
+    <Content Include="assets\images\clientLogos\CST.jpg" />
+    <Content Include="assets\images\clientLogos\DGDA.png" />
+    <Content Include="assets\images\clientLogos\DiwanAlmathalim.png" />
+    <Content Include="assets\images\clientLogos\ElectricCompany.png" />
+    <Content Include="assets\images\clientLogos\Elm.png" />
+    <Content Include="assets\images\clientLogos\EMKAN.png" />
+    <Content Include="assets\images\clientLogos\GCC.png" />
+    <Content Include="assets\images\clientLogos\GSTC.png" />
+    <Content Include="assets\images\clientLogos\Gulf.png" />
+    <Content Include="assets\images\clientLogos\Haboob.png" />
+    <Content Include="assets\images\clientLogos\HRSD.png" />
+    <Content Include="assets\images\clientLogos\IMCTC.png" />
+    <Content Include="assets\images\clientLogos\IPA.png" />
+    <Content Include="assets\images\clientLogos\KAFD.png" />
+    <Content Include="assets\images\clientLogos\Marafiq.png" />
+    <Content Include="assets\images\clientLogos\Matarat_Logo.svg.png" />
+    <Content Include="assets\images\clientLogos\mcitlogo_0.png" />
+    <Content Include="assets\images\clientLogos\MinistrieOfEducation.png" />
+    <Content Include="assets\images\clientLogos\Ministry_of_housing_Logo.svg.png" />
+    <Content Include="assets\images\clientLogos\MinstryOfInvestment.png" />
+    <Content Include="assets\images\clientLogos\MISA.png" />
+    <Content Include="assets\images\clientLogos\MoC.png" />
+    <Content Include="assets\images\clientLogos\MoE_Logo_V1.png" />
+    <Content Include="assets\images\clientLogos\MOE_of_KSA.png" />
+    <Content Include="assets\images\clientLogos\Municieble.png" />
+    <Content Include="assets\images\clientLogos\Nazaha.png" />
+    <Content Include="assets\images\clientLogos\neom-logo-png_seeklogo-358578.png" />
+    <Content Include="assets\images\clientLogos\newl.png" />
+    <Content Include="assets\images\clientLogos\Pss.jpeg" />
+    <Content Include="assets\images\clientLogos\Pif.png" />
+    <Content Include="assets\images\clientLogos\Red_Sea_Global_Logo.svg.png" />
+    <Content Include="assets\images\clientLogos\RiyadhChameper.jpg" />
+    <Content Include="assets\images\clientLogos\Riyad_Bank_logo.svg.png" />
+    <Content Include="assets\images\clientLogos\SABIC_logo.svg.png" />
+    <Content Include="assets\images\clientLogos\Sadara-Chemical-Company-Logo-Vector.svg-.png" />
+    <Content Include="assets\images\clientLogos\SASO.jpg" />
+    <Content Include="assets\images\clientLogos\Saudi-Aramco-Logo.jpg" />
+    <Content Include="assets\images\clientLogos\Saudi-ministry-of-sport.png" />
+    <Content Include="assets\images\clientLogos\SaudiExport.png" />
+    <Content Include="assets\images\clientLogos\Saudi_Ministry_of_Health_Logo.svg" />
+    <Content Include="assets\images\clientLogos\Saudi_Ministry_of_National_Guard_Logo.svg" />
+    <Content Include="assets\images\clientLogos\Saudi_Ministry_of_Tourism_Logo.svg.png" />
+    <Content Include="assets\images\clientLogos\Saudi_Standards,_Metrology_and_Quality_Organization-Logo.svg.png" />
+    <Content Include="assets\images\clientLogos\SEDA.svg" />
+    <Content Include="assets\images\clientLogos\Sukuk.png" />
+    <Content Include="assets\images\clientLogos\SWARM.png" />
+    <Content Include="assets\images\clientLogos\Tabadul.jpg" />
+    <Content Include="assets\images\clientLogos\TamkeenIT.png" />
+    <Content Include="assets\images\clientLogos\TamweelAloula.png" />
+    <Content Include="assets\images\clientLogos\tdf-no-background-colored-font-logo-copy-2.png" />
+    <Content Include="assets\images\clientLogos\The_Saudi_Ministry_of_Investment_-_logo.png" />
+    <Content Include="assets\images\clientLogos\TVTC.png" />
+    <Content Include="assets\images\clientLogos\yusr.jpg" />
+    <Content Include="assets\images\clientLogos\ZATCA.png" />
+    <Content Include="assets\images\contact\contact-bg.jpg" />
+    <Content Include="assets\images\contact\contact-page.jpg" />
+    <Content Include="assets\images\contact\home-two.jpg" />
+    <Content Include="assets\images\counter\counter-bg-section.jpg" />
+    <Content Include="assets\images\counter\counter-bg.jpg" />
+    <Content Include="assets\images\counter\icon1.png" />
+    <Content Include="assets\images\counter\icon2.png" />
+    <Content Include="assets\images\counter\icon3.png" />
+    <Content Include="assets\images\customImages\AboutUS.png" />
+    <Content Include="assets\images\customImages\AI.jpg" />
+    <Content Include="assets\images\customImages\Ai1.jpg" />
+    <Content Include="assets\images\customImages\Announcement.png" />
+    <Content Include="assets\images\customImages\AnnouncementBG.jpeg" />
+    <Content Include="assets\images\customImages\AnnouncementBG.jpg" />
+    <Content Include="assets\images\customImages\application-security.jpg" />
+    <Content Include="assets\images\customImages\Application1.jpg" />
+    <Content Include="assets\images\customImages\atom.jpg" />
+    <Content Include="assets\images\customImages\banking-finance-lg.jpg" />
+    <Content Include="assets\images\customImages\big-data-infrastructure-e1645115738758.png" />
+    <Content Include="assets\images\customImages\Broadtek-IT-Solutions.jpeg" />
+    <Content Include="assets\images\customImages\BugBountyPrograms.jpeg" />
+    <Content Include="assets\images\customImages\Business-Process-Modeling-process-automation.png" />
+    <Content Include="assets\images\customImages\Career1.png" />
+    <Content Include="assets\images\customImages\Career2.png" />
+    <Content Include="assets\images\customImages\Cloud1.jpg" />
+    <Content Include="assets\images\customImages\CloudSecurity.jpg" />
+    <Content Include="assets\images\customImages\Collaboration1.jpg" />
+    <Content Include="assets\images\customImages\Compliance-Assessments.jpg" />
+    <Content Include="assets\images\customImages\ConsultingSR.jpg" />
+    <Content Include="assets\images\customImages\contactUs.jpg" />
+    <Content Include="assets\images\customImages\ContactUs.png" />
+    <Content Include="assets\images\customImages\ContactUs1.png" />
+    <Content Include="assets\images\customImages\ContactUs2.png" />
+    <Content Include="assets\images\customImages\CSD1.jpg" />
+    <Content Include="assets\images\customImages\CSD2.jpg" />
+    <Content Include="assets\images\customImages\CSD3.jpg" />
+    <Content Include="assets\images\customImages\CustomSD.png" />
+    <Content Include="assets\images\customImages\Cyber-Security-Awareness1.png" />
+    <Content Include="assets\images\customImages\Cybersecurity-Awareness-Training.jpg" />
+    <Content Include="assets\images\customImages\Cybersecurity.jpg" />
+    <Content Include="assets\images\customImages\Cybersecurity2.jpg" />
+    <Content Include="assets\images\customImages\CybersecurityOperation.jpg" />
+    <Content Include="assets\images\customImages\CybersecurityTraining.jpg" />
+    <Content Include="assets\images\customImages\Data-Analytics-Process-Seasia-Infotech-1024x683.png" />
+    <Content Include="assets\images\customImages\Data-security.png" />
+    <Content Include="assets\images\customImages\data-warehouse-4.jpg" />
+    <Content Include="assets\images\customImages\DataAndAI.png" />
+    <Content Include="assets\images\customImages\DesktopSD.jpg" />
+    <Content Include="assets\images\customImages\DigitalPlatforms.png" />
+    <Content Include="assets\images\customImages\Digital_Transformation.jpg" />
+    <Content Include="assets\images\customImages\DSKSD.jpg" />
+    <Content Include="assets\images\customImages\Education1.jpeg" />
+    <Content Include="assets\images\customImages\Education2.jpg" />
+    <Content Include="assets\images\customImages\Endpoint-Security.jpg" />
+    <Content Include="assets\images\customImages\Energy-Utilities-1.jpg" />
+    <Content Include="assets\images\customImages\enterprise-software.png" />
+    <Content Include="assets\images\customImages\EventsAndCompetitions.jpg" />
+    <Content Include="assets\images\customImages\Foundaition3.jpeg" />
+    <Content Include="assets\images\customImages\Foundaition4.jpeg" />
+    <Content Include="assets\images\customImages\Foundaition5.jpg" />
+    <Content Include="assets\images\customImages\Goverment.jpg" />
+    <Content Include="assets\images\customImages\GRC1.jpg" />
+    <Content Include="assets\images\customImages\Healthcare.jpeg" />
+    <Content Include="assets\images\customImages\Identity-Security.png" />
+    <Content Include="assets\images\customImages\IncidentResponseAndForensics.jpg" />
+    <Content Include="assets\images\customImages\Intelligent-Apps-Are-Changing.jpg" />
+    <Content Include="assets\images\customImages\IT-infrastructure-security.jpg" />
+    <Content Include="assets\images\customImages\ITServices.jpeg" />
+    <Content Include="assets\images\customImages\Leavemessage.jpg" />
+    <Content Include="assets\images\customImages\LifeStyle1.jpg" />
+    <Content Include="assets\images\customImages\ManagedSOC.jpg" />
+    <Content Include="assets\images\customImages\ManagementConsulting.jpg" />
+    <Content Include="assets\images\customImages\ManpowerOutsourcing.jpg" />
+    <Content Include="assets\images\customImages\ManufacturingRetail.png" />
+    <Content Include="assets\images\customImages\MobileSD.jpg" />
+    <Content Include="assets\images\customImages\NeomLogo.jpeg" />
+    <Content Include="assets\images\customImages\Network_security.png" />
+    <Content Include="assets\images\customImages\news1.jpg" />
+    <Content Include="assets\images\customImages\news2.jpg" />
+    <Content Include="assets\images\customImages\news3.jpg" />
+    <Content Include="assets\images\customImages\NSB.jpeg" />
+    <Content Include="assets\images\customImages\Operation1.jpg" />
+    <Content Include="assets\images\customImages\OTSecurity.jpg" />
+    <Content Include="assets\images\customImages\Performance Management.png" />
+    <Content Include="assets\images\customImages\ProductSolutionDevelopment.jpg" />
+    <Content Include="assets\images\customImages\ResedintSR.jpg" />
+    <Content Include="assets\images\customImages\RiskAssessment.jpg" />
+    <Content Include="assets\images\customImages\RiskManagment.png" />
+    <Content Include="assets\images\customImages\rocks-together-1920-min.jpg" />
+    <Content Include="assets\images\customImages\SAMen.jpg" />
+    <Content Include="assets\images\customImages\Security1.jpg" />
+    <Content Include="assets\images\customImages\SmartCities.jpg" />
+    <Content Include="assets\images\customImages\software-bpm-1000x600.jpg" />
+    <Content Include="assets\images\customImages\SolutionsAsService.jpg" />
+    <Content Include="assets\images\customImages\SolutionsBG1.jpg" />
+    <Content Include="assets\images\customImages\SolutionsBG2.jpg" />
+    <Content Include="assets\images\customImages\SolutionsBG3.jpg" />
+    <Content Include="assets\images\customImages\StrategicSolutions.jpg" />
+    <Content Include="assets\images\customImages\Technologically_Exceptional.jpg" />
+    <Content Include="assets\images\customImages\Telecommunication1.jpg" />
+    <Content Include="assets\images\customImages\Testimonials.jpg" />
+    <Content Include="assets\images\customImages\transportation-logistic-cr-Digitalpen.jpg" />
+    <Content Include="assets\images\customImages\Vision1.png" />
+    <Content Include="assets\images\customImages\Vision1LeadersSolutions.png" />
+    <Content Include="assets\images\customImages\Vision2.png" />
+    <Content Include="assets\images\customImages\waveBG.png" />
+    <Content Include="assets\images\customImages\WebSD.jpg" />
+    <Content Include="assets\images\customImages\WebSD1.jpg" />
+    <Content Include="assets\images\feature\feature-bg.jpg" />
+    <Content Include="assets\images\feature\icon1.png" />
+    <Content Include="assets\images\feature\icon2.png" />
+    <Content Include="assets\images\feature\icon3.png" />
+    <Content Include="assets\images\footer\footer-bg-dots.png" />
+    <Content Include="assets\images\footer\footer-bg-map.png" />
+    <Content Include="assets\images\footer\footer-bg.png" />
+    <Content Include="assets\images\footer\footer-call-action.png" />
+    <Content Include="assets\images\gallery\gallery-1.jpg" />
+    <Content Include="assets\images\gallery\gallery-2.jpg" />
+    <Content Include="assets\images\gallery\gallery-3.jpg" />
+    <Content Include="assets\images\gallery\gallery-4.jpg" />
+    <Content Include="assets\images\gallery\gallery-bg.png" />
+    <Content Include="assets\images\gallery\gallery-five-1.jpg" />
+    <Content Include="assets\images\gallery\gallery-five-2.jpg" />
+    <Content Include="assets\images\gallery\gallery-five-3.jpg" />
+    <Content Include="assets\images\gallery\gallery-five-4.jpg" />
+    <Content Include="assets\images\gallery\gallery-four-1.jpg" />
+    <Content Include="assets\images\gallery\gallery-four-2.jpg" />
+    <Content Include="assets\images\gallery\gallery-four-3.jpg" />
+    <Content Include="assets\images\gallery\gallery-four-4.jpg" />
+    <Content Include="assets\images\gallery\gallery-four-5.jpg" />
+    <Content Include="assets\images\gallery\gallery-four-6.jpg" />
+    <Content Include="assets\images\gallery\gallery-four-7.jpg" />
+    <Content Include="assets\images\gallery\gallery-four-8.jpg" />
+    <Content Include="assets\images\gallery\gallery-three-1.jpg" />
+    <Content Include="assets\images\gallery\gallery-three-2.jpg" />
+    <Content Include="assets\images\gallery\gallery-three-3.jpg" />
+    <Content Include="assets\images\gallery\gallery-three-4.jpg" />
+    <Content Include="assets\images\gallery\gallery-three-5.jpg" />
+    <Content Include="assets\images\gallery\gallery-three-6.jpg" />
+    <Content Include="assets\images\gallery\gallery-three-7.jpg" />
+    <Content Include="assets\images\gallery\gallery-three-8.jpg" />
+    <Content Include="assets\images\gallery\gallery-three-9.jpg" />
+    <Content Include="assets\images\gallery\gallery-two-1.jpg" />
+    <Content Include="assets\images\gallery\gallery-two-2.jpg" />
+    <Content Include="assets\images\gallery\gallery-two-3.jpg" />
+    <Content Include="assets\images\gallery\portfolio-details.jpg" />
+    <Content Include="assets\images\gallery\portfolio-middle-1.jpg" />
+    <Content Include="assets\images\gallery\portfolio-middle-2.jpg" />
+    <Content Include="assets\images\gallery\project1.jpg" />
+    <Content Include="assets\images\gallery\project2.jpg" />
+    <Content Include="assets\images\gallery\project3.jpg" />
+    <Content Include="assets\images\gallery\project4.jpg" />
+    <Content Include="assets\images\hero\hero-eight.png" />
+    <Content Include="assets\images\hero\hero-five.jpg" />
+    <Content Include="assets\images\hero\hero-four-shape.png" />
+    <Content Include="assets\images\hero\hero-four.jpg" />
+    <Content Include="assets\images\hero\hero-icon1.png" />
+    <Content Include="assets\images\hero\hero-icon2.png" />
+    <Content Include="assets\images\hero\hero-icon3.png" />
+    <Content Include="assets\images\hero\hero-one.jpg" />
+    <Content Include="assets\images\hero\hero-seven-bg.png" />
+    <Content Include="assets\images\hero\hero-seven-right-image.png" />
+    <Content Include="assets\images\hero\hero-six-1.png" />
+    <Content Include="assets\images\hero\hero-six-2.png" />
+    <Content Include="assets\images\hero\hero-six-3.png" />
+    <Content Include="assets\images\hero\hero-six-ellipse.png" />
+    <Content Include="assets\images\hero\hero-ten-1.png" />
+    <Content Include="assets\images\hero\hero-ten-2.png" />
+    <Content Include="assets\images\hero\hero-ten-3.png" />
+    <Content Include="assets\images\hero\hero-ten-4.png" />
+    <Content Include="assets\images\hero\hero-ten-5.png" />
+    <Content Include="assets\images\hero\hero-ten-mobile.png" />
+    <Content Include="assets\images\hero\hero-three.jpg" />
+    <Content Include="assets\images\hero\hero-two.jpg" />
+    <Content Include="assets\images\logos\Logo.png" />
+    <Content Include="assets\images\logos\LeadersSolutionLogo.png" />
+    <Content Include="assets\images\logos\LeadersSolutionLogoWhite.png" />
+    <Content Include="assets\images\logos\LeadersSolutionLogoWhiteBGTransparent.png" />
+    <Content Include="assets\images\logos\LSLeaders.png" />
+    <Content Include="assets\images\logos\LSLeadersWhiteText.png" />
+    <Content Include="assets\images\LSServices\Consulting1.jpg" />
+    <Content Include="assets\images\LSServices\Consulting2.jpg" />
+    <Content Include="assets\images\LSServices\CustomDev1.jpg" />
+    <Content Include="assets\images\LSServices\DeskTopDev2.jpg" />
+    <Content Include="assets\images\LSServices\DeskTopDev3.png" />
+    <Content Include="assets\images\LSServices\Governance-Risk-and-Compliance.jpg" />
+    <Content Include="assets\images\LSServices\ITServices.jpeg" />
+    <Content Include="assets\images\LSServices\MobileAppDev1.png" />
+    <Content Include="assets\images\LSServices\ResidentEng1 .png" />
+    <Content Include="assets\images\LSServices\ResidentEng5 .png" />
+    <Content Include="assets\images\LSServices\ResidentEng7.png" />
+    <Content Include="assets\images\LSServices\ResidentEng9.png" />
+    <Content Include="assets\images\LSServices\webdevelopment1.jpg" />
+    <Content Include="assets\images\meeting\Meeting.png" />
+    <Content Include="assets\images\meeting\Meeting2.png" />
+    <Content Include="assets\images\meeting\Meeting3.png" />
+    <Content Include="assets\images\meeting\Meeting4.png" />
+    <Content Include="assets\images\mobiles\mobile-screens-bg.png" />
+    <Content Include="assets\images\mobiles\mobile1.png" />
+    <Content Include="assets\images\mobiles\mobile2.png" />
+    <Content Include="assets\images\mobiles\mobile3.png" />
+    <Content Include="assets\images\mobiles\mobile4.png" />
+    <Content Include="assets\images\mobiles\mobile5.png" />
+    <Content Include="assets\images\news\AllFour.JPG" />
+    <Content Include="assets\images\news\BadrAndAbuAli.jpg" />
+    <Content Include="assets\images\news\BadrAndInvestStage.jpg" />
+    <Content Include="assets\images\news\BHPartnerShip.jpg" />
+    <Content Include="assets\images\news\blog-1.jpg" />
+    <Content Include="assets\images\news\blog-2.jpg" />
+    <Content Include="assets\images\news\blog-five1.jpg" />
+    <Content Include="assets\images\news\blog-five2.jpg" />
+    <Content Include="assets\images\news\blog-five3.jpg" />
+    <Content Include="assets\images\news\blog-standard-1.jpg" />
+    <Content Include="assets\images\news\blog-standard-2.jpg" />
+    <Content Include="assets\images\news\blog-standard-3.jpg" />
+    <Content Include="assets\images\news\call-action-widget.jpg" />
+    <Content Include="assets\images\news\comment-author-1.jpg" />
+    <Content Include="assets\images\news\comment-author-2.jpg" />
+    <Content Include="assets\images\news\comment-author-3.jpg" />
+    <Content Include="assets\images\news\footer-widget-1.jpg" />
+    <Content Include="assets\images\news\footer-widget-2.jpg" />
+    <Content Include="assets\images\news\Invest500.JPG" />
+    <Content Include="assets\images\news\Invest500ArabicBlured.png" />
+    <Content Include="assets\images\news\Invest500Copy.JPG" />
+    <Content Include="assets\images\news\Invest500EnglishBlured.png" />
+    <Content Include="assets\images\news\Invest78.JPG" />
+    <Content Include="assets\images\news\Invest78Arabic.JPG" />
+    <Content Include="assets\images\news\invest78English.jpg" />
+    <Content Include="assets\images\news\InvestOffice.JPG" />
+    <Content Include="assets\images\news\InvestWithAbdullah.JPG" />
+    <Content Include="assets\images\news\InvestWithOsama.JPG" />
+    <Content Include="assets\images\news\news-1.jpg" />
+    <Content Include="assets\images\news\news-2.jpg" />
+    <Content Include="assets\images\news\news-3.jpg" />
+    <Content Include="assets\images\news\news-4.jpg" />
+    <Content Include="assets\images\news\news-5.jpg" />
+    <Content Include="assets\images\news\news-6.jpg" />
+    <Content Include="assets\images\news\news-author-1.jpg" />
+    <Content Include="assets\images\news\news-author-2.jpg" />
+    <Content Include="assets\images\news\news-author-3.jpg" />
+    <Content Include="assets\images\news\news-bg-two.jpg" />
+    <Content Include="assets\images\news\news-six1.jpg" />
+    <Content Include="assets\images\news\news-six2.jpg" />
+    <Content Include="assets\images\news\news-six3.jpg" />
+    <Content Include="assets\images\news\news-widget-1.jpg" />
+    <Content Include="assets\images\news\news-widget-2.jpg" />
+    <Content Include="assets\images\news\news-widget-3.jpg" />
+    <Content Include="assets\images\productsLogo\AlgoSec.png" />
+    <Content Include="assets\images\productsLogo\Anomali.png" />
+    <Content Include="assets\images\productsLogo\Buguard.png" />
+    <Content Include="assets\images\productsLogo\Darktrace.png" />
+    <Content Include="assets\images\productsLogo\GalaxKey.png" />
+    <Content Include="assets\images\productsLogo\Gitlab.png" />
+    <Content Include="assets\images\productsLogo\HoneybotSolution.png" />
+    <Content Include="assets\images\productsLogo\IronCircle.png" />
+    <Content Include="assets\images\productsLogo\MicroStrategy.png" />
+    <Content Include="assets\images\productsLogo\Phosphorus.png" />
+    <Content Include="assets\images\productsLogo\Picus.png" />
+    <Content Include="assets\images\productsLogo\QPR.png" />
+    <Content Include="assets\images\productsLogo\Resecurity.png" />
+    <Content Include="assets\images\productsLogo\Snowflake.png" />
+    <Content Include="assets\images\productsLogo\Splunk.png" />
+    <Content Include="assets\images\productsLogo\SwissAcademy.png" />
+    <Content Include="assets\images\productsLogo\Tenable.png" />
+    <Content Include="assets\images\productsLogo\Zerofox.png" />
+    <Content Include="assets\images\ProjectsIcon.png" />
+    <Content Include="assets\images\protects\icon1.png" />
+    <Content Include="assets\images\protects\icon2.png" />
+    <Content Include="assets\images\protects\icon3.png" />
+    <Content Include="assets\images\protects\left-image.png" />
+    <Content Include="assets\images\protects\protects-bg.png" />
+    <Content Include="assets\images\protects\ready.jpg" />
+    <Content Include="assets\images\protects\video.jpg" />
+    <Content Include="assets\images\qprcontract\Shaking.JPG" />
+    <Content Include="assets\images\qprcontract\Signing.JPG" />
+    <Content Include="assets\images\sallers\saller1.png" />
+    <Content Include="assets\images\sallers\saller2.png" />
+    <Content Include="assets\images\sallers\saller3.png" />
+    <Content Include="assets\images\sallers\saller4.png" />
+    <Content Include="assets\images\sallers\saller5.png" />
+    <Content Include="assets\images\SaudiFlag.png" />
+    <Content Include="assets\images\SaudiFlagNB.png" />
+    <Content Include="assets\images\SectorsIcon.png" />
+    <Content Include="assets\images\services\icon1.png" />
+    <Content Include="assets\images\services\icon2.png" />
+    <Content Include="assets\images\services\icon3.png" />
+    <Content Include="assets\images\services\icon4.png" />
+    <Content Include="assets\images\services\service-1.jpg" />
+    <Content Include="assets\images\services\service-2.jpg" />
+    <Content Include="assets\images\services\service-3.jpg" />
+    <Content Include="assets\images\services\service-bg-shape.png" />
+    <Content Include="assets\images\services\service-details.jpg" />
+    <Content Include="assets\images\services\service-eight-bg.png" />
+    <Content Include="assets\images\services\service-five-1.jpg" />
+    <Content Include="assets\images\services\service-five-2.jpg" />
+    <Content Include="assets\images\services\service-five-3.jpg" />
+    <Content Include="assets\images\services\service-five-4.jpg" />
+    <Content Include="assets\images\services\service-seven1.png" />
+    <Content Include="assets\images\services\service-seven2.png" />
+    <Content Include="assets\images\services\service-seven3.png" />
+    <Content Include="assets\images\shapes\circle.png" />
+    <Content Include="assets\images\shapes\close.png" />
+    <Content Include="assets\images\shapes\counter-side-line.png" />
+    <Content Include="assets\images\shapes\dots.png" />
+    <Content Include="assets\images\shapes\faq-triangle.png" />
+    <Content Include="assets\images\shapes\gift.png" />
+    <Content Include="assets\images\shapes\hero-shape1.png" />
+    <Content Include="assets\images\shapes\hero-shape2.png" />
+    <Content Include="assets\images\shapes\lines.png" />
+    <Content Include="assets\images\shapes\newsletter.png" />
+    <Content Include="assets\images\shapes\newsletter1.png" />
+    <Content Include="assets\images\shapes\newsletter2.png" />
+    <Content Include="assets\images\shapes\price-bg-shape.png" />
+    <Content Include="assets\images\shapes\service-line.png" />
+    <Content Include="assets\images\shapes\service-triangle.png" />
+    <Content Include="assets\images\shapes\stones.png" />
+    <Content Include="assets\images\shapes\subtitle-bg-white.png" />
+    <Content Include="assets\images\shapes\subtitle-bg.png" />
+    <Content Include="assets\images\shapes\triangle.png" />
+    <Content Include="assets\images\shapes\w-shape.png" />
+    <Content Include="assets\images\shop\preview-1.jpg" />
+    <Content Include="assets\images\shop\preview-2.jpg" />
+    <Content Include="assets\images\shop\preview-3.jpg" />
+    <Content Include="assets\images\shop\preview-4.jpg" />
+    <Content Include="assets\images\shop\preview-5.jpg" />
+    <Content Include="assets\images\shop\preview-6.jpg" />
+    <Content Include="assets\images\shop\product-1.jpg" />
+    <Content Include="assets\images\shop\product-2.jpg" />
+    <Content Include="assets\images\shop\product-3.jpg" />
+    <Content Include="assets\images\shop\product-4.jpg" />
+    <Content Include="assets\images\shop\product-5.jpg" />
+    <Content Include="assets\images\shop\product-6.jpg" />
+    <Content Include="assets\images\shop\product-7.jpg" />
+    <Content Include="assets\images\shop\product-8.jpg" />
+    <Content Include="assets\images\shop\product-9.jpg" />
+    <Content Include="assets\images\shop\reviewer-1.png" />
+    <Content Include="assets\images\shop\thumb-1.jpg" />
+    <Content Include="assets\images\shop\thumb-2.jpg" />
+    <Content Include="assets\images\shop\thumb-3.jpg" />
+    <Content Include="assets\images\shop\thumb-4.jpg" />
+    <Content Include="assets\images\shop\thumb-5.jpg" />
+    <Content Include="assets\images\shop\thumb-6.jpg" />
+    <Content Include="assets\images\shop\widget-1.jpg" />
+    <Content Include="assets\images\shop\widget-2.jpg" />
+    <Content Include="assets\images\shop\widget-3.jpg" />
+    <Content Include="assets\images\shop\widget-4.jpg" />
+    <Content Include="assets\images\shop\widget-5.jpg" />
+    <Content Include="assets\images\slider\slide1.jpg" />
+    <Content Include="assets\images\slider\slide2.jpg" />
+    <Content Include="assets\images\slider\slide3.jpg" />
+    <Content Include="assets\images\team\AbuBadrImage.jpeg" />
+    <Content Include="assets\images\team\AbuBadrImage2.jpeg" />
+    <Content Include="assets\images\testimonials\comment-author.jpg" />
+    <Content Include="assets\images\testimonials\tai1.png" />
+    <Content Include="assets\images\testimonials\tai2.png" />
+    <Content Include="assets\images\testimonials\tai3.png" />
+    <Content Include="assets\images\testimonials\tai4.png" />
+    <Content Include="assets\images\testimonials\tai5.png" />
+    <Content Include="assets\images\testimonials\testi-author-1.jpg" />
+    <Content Include="assets\images\testimonials\testi-author-2.jpg" />
+    <Content Include="assets\images\testimonials\testi-author-3.jpg" />
+    <Content Include="assets\images\testimonials\testi-author-4.jpg" />
+    <Content Include="assets\images\testimonials\testi-five-author.jpg" />
+    <Content Include="assets\images\testimonials\testi-four-author-1.png" />
+    <Content Include="assets\images\testimonials\testi-four-author-2.png" />
+    <Content Include="assets\images\testimonials\testi-four-author-3.png" />
+    <Content Include="assets\images\testimonials\testi-seven-1.png" />
+    <Content Include="assets\images\testimonials\testi-seven-2.png" />
+    <Content Include="assets\images\testimonials\testi-seven-3.png" />
+    <Content Include="assets\images\testimonials\testi-seven-4.png" />
+    <Content Include="assets\images\testimonials\testi-six-author-1.png" />
+    <Content Include="assets\images\testimonials\testi-six-author-2.png" />
+    <Content Include="assets\images\testimonials\testimonial-five-bg.jpg" />
+    <Content Include="assets\images\testimonials\testimonial-seven-bg.jpg" />
+    <Content Include="assets\images\testimonials\testimonial-seven-left.jpg" />
+    <Content Include="assets\images\testimonials\testimonial-three.jpg" />
+    <Content Include="assets\images\testimonials\testimonial-two.jpg" />
+    <Content Include="assets\images\UKFlag.png" />
+    <Content Include="assets\images\UKFlagNB.png" />
+    <Content Include="assets\images\work-progress\icon-1.png" />
+    <Content Include="assets\images\work-progress\icon-2.png" />
+    <Content Include="assets\images\work-progress\icon-3.png" />
+    <Content Include="assets\images\work-progress\icon-4.png" />
+    <Content Include="assets\js\appear.min.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\imagesloaded.pkgd.min.js" />
+    <Content Include="assets\js\isotope.pkgd.min.js" />
+    <Content Include="assets\js\jquery-3.6.0.min.js" />
+    <Content Include="assets\js\jquery.countdown.min.js" />
+    <Content Include="assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="assets\js\rtl-script.js" />
+    <Content Include="assets\js\script.js" />
+    <Content Include="assets\js\slick.min.js" />
+    <Content Include="assets\js\snackbar.min.js" />
+    <Content Include="assets\js\wow.js" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="LSDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LSDataModel.Context.cs</LastGenOutput>
+      <DependentUpon>LSDataModel.edmx</DependentUpon>
+      <CustomToolNamespace>LeadersSolutionWebSite.Models</CustomToolNamespace>
+    </Content>
+    <Content Include="LSDataModel.edmx.sql" />
+    <Content Include="LSDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LSDataModel.cs</LastGenOutput>
+      <DependentUpon>LSDataModel.edmx</DependentUpon>
+      <CustomToolNamespace>LeadersSolutionWebSite.Models</CustomToolNamespace>
+    </Content>
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="assets\fonts\CircularStd-Medium.woff" />
+    <Content Include="assets\fonts\CircularStd-Medium.woff2" />
+    <Content Include="assets\fonts\fa-brands-400.eot" />
+    <Content Include="assets\fonts\fa-brands-400.ttf" />
+    <Content Include="assets\fonts\fa-brands-400.woff" />
+    <Content Include="assets\fonts\fa-brands-400.woff2" />
+    <Content Include="assets\fonts\fa-regular-400.eot" />
+    <Content Include="assets\fonts\fa-regular-400.ttf" />
+    <Content Include="assets\fonts\fa-regular-400.woff" />
+    <Content Include="assets\fonts\fa-regular-400.woff2" />
+    <Content Include="assets\fonts\fa-solid-900.eot" />
+    <Content Include="assets\fonts\fa-solid-900.ttf" />
+    <Content Include="assets\fonts\fa-solid-900.woff" />
+    <Content Include="assets\fonts\fa-solid-900.woff2" />
+    <Content Include="assets\fonts\Flaticon.woff" />
+    <Content Include="assets\fonts\Flaticon.woff2" />
+    <Content Include="assets\fonts\Nunito-ExtraLight.woff" />
+    <Content Include="assets\fonts\Nunito-ExtraLight.woff2" />
+    <Content Include="assets\sass\sections\_about.sass" />
+    <Content Include="assets\sass\sections\_actions.sass" />
+    <Content Include="assets\sass\sections\_banner.sass" />
+    <Content Include="assets\sass\sections\_call-action.sass" />
+    <Content Include="assets\sass\sections\_client-logo.sass" />
+    <Content Include="assets\sass\sections\_contact.sass" />
+    <Content Include="assets\sass\sections\_counter.sass" />
+    <Content Include="assets\sass\sections\_error.sass" />
+    <Content Include="assets\sass\sections\_faqs.sass" />
+    <Content Include="assets\sass\sections\_feature.sass" />
+    <Content Include="assets\sass\sections\_footer.sass" />
+    <Content Include="assets\sass\sections\_gallery.sass" />
+    <Content Include="assets\sass\sections\_header.sass" />
+    <Content Include="assets\sass\sections\_hero.sass" />
+    <Content Include="assets\sass\sections\_mobile.sass" />
+    <Content Include="assets\sass\sections\_news.sass" />
+    <Content Include="assets\sass\sections\_pricing.sass" />
+    <Content Include="assets\sass\sections\_protects.sass" />
+    <Content Include="assets\sass\sections\_sellers.sass" />
+    <Content Include="assets\sass\sections\_services.sass" />
+    <Content Include="assets\sass\sections\_shop.sass" />
+    <Content Include="assets\sass\sections\_slider.sass" />
+    <Content Include="assets\sass\sections\_subscribe.sass" />
+    <Content Include="assets\sass\sections\_team.sass" />
+    <Content Include="assets\sass\sections\_testimonials.sass" />
+    <Content Include="assets\sass\sections\_widgets.sass" />
+    <Content Include="assets\sass\sections\_work-progress.sass" />
+    <Content Include="assets\sass\style.sass" />
+    <Content Include="assets\sass\_common-classes.sass" />
+    <Content Include="assets\sass\_custom-animation.sass" />
+    <Content Include="assets\sass\_default.sass" />
+    <Content Include="assets\sass\_extend.sass" />
+    <Content Include="assets\sass\_mixins.sass" />
+    <Content Include="assets\sass\_spacing.sass" />
+    <Content Include="assets\sass\_variables.sass" />
+    <Content Include="Files\LSProfile.pdf" />
+    <EntityDeploy Include="LSDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LSDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="LSDataModel.edmx.diagram">
+      <DependentUpon>LSDataModel.edmx</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_LayoutNine.cshtml" />
+    <Content Include="Views\Home\LSServises.cshtml" />
+    <Content Include="Views\Home\LSServisesDetails.cshtml" />
+    <Content Include="Views\Home\LSBlogs.cshtml" />
+    <Content Include="Views\Home\LSBlogDetails.cshtml" />
+    <Content Include="Views\Home\LSSolutions.cshtml" />
+    <Content Include="Views\Shared\_LayoutNineArabic.cshtml" />
+    <Content Include="Views\Home\CEOStatementPage.cshtml" />
+    <Content Include="Views\Home\LSCyberSecurity.cshtml" />
+    <Content Include="Views\Shared\_Layout - Copy.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="assets\images\client-logo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ABoutUSPage.ar.resx" />
+    <EmbeddedResource Include="Resources\ABoutUSPage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ABoutUSPage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CEOStatementPage.ar.resx" />
+    <EmbeddedResource Include="Resources\CEOStatementPage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CEOStatementPage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ContactUsPage.ar.resx" />
+    <EmbeddedResource Include="Resources\ContactUsPage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ContactUsPage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CyberSecurityPage.ar.resx" />
+    <EmbeddedResource Include="Resources\CyberSecurityPage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CyberSecurityPage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LayoutPage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LayoutPage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LayoutPage.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LayoutPage.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\HomePage.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>HomePage.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\HomePage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>HomePage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource1.ar.resx" />
+    <EmbeddedResource Include="Resources\SolutionsPage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SolutionsPage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SolutionsPage.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SolutionsPage.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ServicePage.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ServicePage.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ServicePage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ServicePage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2548</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2548/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AllServiceViewBtn" xml:space="preserve">
+    <value>عرض جميع الخدمات</value>
+  </data>
+  <data name="ConsultancyServices" xml:space="preserve">
+    <value>الخدمات الاستشارية</value>
+  </data>
+  <data name="ConsultancyServicesParagraf" xml:space="preserve">
+    <value>خدماتنا الاستشارية تمكن المؤسسات من اتخاذ قرارات مستنيرة</value>
+  </data>
+  <data name="CustomSoftwareDevelopment" xml:space="preserve">
+    <value>تطوير البرمجيات المخصصة</value>
+  </data>
+  <data name="CustomSoftwareDevelopmentParagraf" xml:space="preserve">
+    <value>نحن نبني برامج تعكس رؤيتك، وليس القيود</value>
+  </data>
+  <data name="DeskTopAppDevelopment" xml:space="preserve">
+    <value>تطوير تطبيقات سطح المكتب</value>
+  </data>
+  <data name="DeskTopDevelopmentParagraf" xml:space="preserve">
+    <value>تم تصميم خدمات تطوير تطبيقات سطح المكتب الخاصة بنا لتقديم حلول قوية تعمل على تمكين عملياتك الانسيابية</value>
+  </data>
+  <data name="MobileAppDevelopment" xml:space="preserve">
+    <value>تطوير تطبيقات الجوال</value>
+  </data>
+  <data name="MobileDevelopmentParagraf" xml:space="preserve">
+    <value>تقدم خدمات تطوير تطبيقات الهاتف المحمول لدينا تجارب بديهية وآمنة وثقافية أصيلة تعكس التميز السعودي مع دفع النمو والمشاركة</value>
+  </data>
+  <data name="ResidentEngineer" xml:space="preserve">
+    <value>مهندس مقيم</value>
+  </data>
+  <data name="ResidentEngServicesParagraf" xml:space="preserve">
+    <value>توفر لك خدمات المهندس المقيم لدينا متخصصين من ذوي المهارات العالية الذين يندمجون بسلاسة في فريقك، مما يضمن سلاسة العمليات وحل المشكلات بشكل استباقي</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>خدماتنا</value>
+  </data>
+  <data name="WebDevelopment" xml:space="preserve">
+    <value>تطوير الموقع</value>
+  </data>
+  <data name="WebDevelopmentParagraf" xml:space="preserve">
+    <value>تقدم خدمات تطوير تطبيقات الويب لدينا حلولاً قابلة للتطوير وآمنة وحقيقية ثقافيًا تعمل على تمكين المؤسسات</value>
+  </data>
+  <data name="ConsultingServicesText" xml:space="preserve">
+    <value>تعمل خدماتنا الاستشارية في مجال تكنولوجيا المعلومات على تمكين الشركات من تسخير التكنولوجيا كمحفز للنجاح. نحن لا نحل المشكلات فحسب، بل نصمم حلولاً جاهزة للمستقبل تتوافق مع رؤيتك وثقافتك وأهدافك الإستراتيجية.</value>
+  </data>
+  <data name="CustomSoftwareDevText" xml:space="preserve">
+    <value>تقدم خدمات تطوير البرامج المخصصة لدينا حلولاً مصممة خصيصًا لتلبية المتطلبات الفريدة لمؤسستك، مما يضمن قابلية التوسع والأمان والأداء السلس. نحن نستفيد من التقنيات الحديثة مثل .NET Core وJava وPython وNode.js لتطوير الواجهة الخلفية، جنبًا إلى جنب مع React وAngular وVue.js للحصول على تجارب واجهة أمامية بديهية. من خلال التكامل القوي لواجهة برمجة التطبيقات (API)، والنشر السحابي (AWS، وAzure، وGCP)، وقواعد البيانات المحسنة (SQL Server، وPostgreSQL، وMongoDB)، فإننا نبني أنظمة قوية وجاهزة للمستقبل. تم تصميم كل مشروع وفقًا لمعايير أمان المؤسسة وأطر الاختبار الآلية وخطوط أنابيب CI/CD لضمان الموثوقية والسرعة والتحسين المستمر. من خلال الجمع بين التصميم المستقبلي، نقدم برامج مخصصة تمكن الشركات من الابتكار والأداء والقيادة بثقة في العصر الرقمي.</value>
+  </data>
+  <data name="DeskTopDevText" xml:space="preserve">
+    <value>توفر خدمات تطوير تطبيقات سطح المكتب لدينا حلولاً قوية وآمنة وسهلة الاستخدام ومصممة خصيصًا لتلبية الاحتياجات التشغيلية لمؤسستك. نحن متخصصون في إنشاء التطبيقات باستخدام .NET (WPF وWinForms) وJavaFX وElectron وQt، مما يضمن التوافق عبر الأنظمة الأساسية عبر Windows وmacOS وLinux. من خلال التكامل الأمثل لقاعدة البيانات (SQL Server، وPostgreSQL، وSQLite، وMongoDB) والاتصال السلس بواجهة برمجة التطبيقات (API)، تم تصميم حلول سطح المكتب لدينا لتحقيق الأداء وقابلية التوسع. نحن نطبق بروتوكولات الأمان على مستوى المؤسسات، وأطر الاختبار الآلية، وخطوط أنابيب CI/CD لضمان الموثوقية والسرعة والتحسين المستمر. من خلال الجمع بين التصميم المستقبلي، نقوم بإنشاء تطبيقات سطح المكتب التي تمكن الشركات من تبسيط العمليات وتعزيز الإنتاجية والقيادة بثقة في العصر الرقمي.</value>
+  </data>
+  <data name="MobileDevText" xml:space="preserve">
+    <value>تعمل خدمات تطوير تطبيقات الهاتف المحمول لدينا على تمكين الشركات من التواصل مع المستخدمين في أي وقت وفي أي مكان من خلال تطبيقات آمنة وقابلة للتطوير وعالية الأداء. نحن متخصصون في إنشاء تطبيقات أصلية باستخدام Swift (iOS) وKotlin/Java (Android)، بالإضافة إلى حلول عبر الأنظمة الأساسية باستخدام Flutter وReact Native من أجل تسليم أسرع وتجارب موحدة. يتم تشغيل الأنظمة الخلفية بواسطة Node.js و.NET Core وFirebase، مع تكامل سلس لواجهة برمجة التطبيقات (API) ونشر سحابي (AWS وAzure وGCP) لضمان الموثوقية وقابلية التوسع. نحن نطبق معايير أمان المؤسسة وأطر الاختبار الآلية وخطوط أنابيب CI/CD لضمان السرعة والمرونة والتحسين المستمر. من خلال الجمع بين التصميم المستقبلي والطباعة العربية الأصيلة والتميز السعودي، فإننا نقدم تطبيقات الهاتف المحمول التي لا تلبي المتطلبات التقنية فحسب، بل تلهم أيضًا الثقة والمشاركة عبر جماهير متنوعة.</value>
+  </data>
+  <data name="ResidentServiceText" xml:space="preserve">
+    <value>ينصب تركيز المهندس المقيم لدينا بشكل أساسي على ضمان استقرار وتحسين حلول الأجهزة أو البرامج المحددة، والتعامل مع كل شيء بدءًا من الصيانة التشغيلية اليومية واستكشاف الأخطاء وإصلاحها وحتى الترقيات المعقدة وتخطيط بنية الشبكة.</value>
+  </data>
+  <data name="ServiceContactCallUs" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+  <data name="ServiceContactComment" xml:space="preserve">
+    <value>الرسالة</value>
+  </data>
+  <data name="ServiceContactEmail" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="ServiceContactName" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="ServiceContactOfficeHours" xml:space="preserve">
+    <value>ساعات العمل</value>
+  </data>
+  <data name="ServiceContactPhone" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+  <data name="ServiceContactSendMessage" xml:space="preserve">
+    <value>أرسل الرسالة</value>
+  </data>
+  <data name="ServiceContactServiceRequired" xml:space="preserve">
+    <value>الخدمة المطلوبة</value>
+  </data>
+  <data name="ServiceContactSubTitle" xml:space="preserve">
+    <value>لا تتردد في الاتصال بنا</value>
+  </data>
+  <data name="ServiceContactSunTillTh" xml:space="preserve">
+    <value>الأحد إلى الخميس</value>
+  </data>
+  <data name="ServiceContactTitle" xml:space="preserve">
+    <value>تواصل معنا</value>
+  </data>
+  <data name="ServiceContactWriteToUs" xml:space="preserve">
+    <value>راسلنا</value>
+  </data>
+  <data name="ServiceSubTitle" xml:space="preserve">
+    <value>الخدمات الاستراتيجية للنمو المستدام</value>
+  </data>
+  <data name="ServiceTitle" xml:space="preserve">
+    <value>تحقيق التميز من خلال الابتكار</value>
+  </data>
+  <data name="WebDevText" xml:space="preserve">
+    <value>تقدم خدمات تطوير الويب لدينا حلولاً آمنة وقابلة للتطوير وعالية الأداء ومصممة خصيصًا لتلبية احتياجات مؤسستك. نحن متخصصون في إنشاء مواقع ويب سريعة الاستجابة وتطبيقات ويب على مستوى المؤسسات باستخدام أطر عمل حديثة مثل React وAngular وVue.js لتطوير الواجهة الأمامية، وNode.js و.NET Core وDjango للأنظمة الخلفية. من خلال التكامل القوي لواجهة برمجة التطبيقات (API)، والنشر السحابي (AWS، وAzure، وGCP)، وتحسين قاعدة البيانات (SQL، وNoSQL)، فإننا نضمن الأداء السلس والموثوقية. تم تصميم كل مشروع وفقًا لمعايير أمان المؤسسة والاختبار الآلي وخطوط CI/CD لضمان السرعة والمرونة والتحسين المستمر. من خلال الجمع بين التصميم المستقبلي، نقوم بإنشاء منصات ويب تمكن الشركات من الابتكار والتوسع والقيادة بثقة في العصر الرقمي</value>
+  </data>
+  <data name="GRCParagraf" xml:space="preserve">
+    <value>تحويل الحوكمة والمخاطر والامتثال إلى ميزة استراتيجية</value>
+  </data>
+  <data name="GRCText" xml:space="preserve">
+    <value>عزز مؤسستك من خلال إطار عمل موحد للحوكمة والمخاطر والامتثال (GRC) مصمم للمؤسسات الحديثة. في شركة ليدرز سولوشنز، نساعدك على بناء بيئة مرنة وآمنة ومتوافقة تتوافق مع اللوائح الوطنية والمعايير العالمية وأهدافك الإستراتيجية.</value>
+  </data>
+  <data name="GRCTitle" xml:space="preserve">
+    <value>الحوكمة والمخاطر والامتثال</value>
+  </data>
+</root>

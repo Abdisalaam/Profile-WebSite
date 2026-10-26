@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PageHeaderTitle" xml:space="preserve">
+    <value>حلول وخدمات الأمن السيبراني </value>
+  </data>
+  <data name="SystemIntegration" xml:space="preserve">
+    <value>تكامل الأنظمة</value>
+  </data>
+  <data name="SystemIntegrationText" xml:space="preserve">
+    <value>نقوم بدمج منصّات الأمن السيبراني متعددة المورّدين لإنشاء منظومة أمنية موحّدة وفعّالة وقابلة للتوسع، مع توفير رؤية شاملة وتحكّم كامل عبر جميع المكوّنات.</value>
+  </data>
+  <data name="PageSubHeaderTitle" xml:space="preserve">
+    <value>في حلول القادة نمكّن المؤسسات من بناء قدرات متكاملة في الأمن السيبراني والحوكمة والتحول الرقمي. تم تصميم خدماتنا وحلولنا لحماية بيئتكم التقنية، وتعزيز قدرتكم على الصمود، وتسريع نموكم الاستراتيجي — وكل ذلك بما يتوافق مع الأطر الوطنية السعودية وأفضل الممارسات العالمية.</value>
+  </data>
+  <data name="SolutionsHeaderTitle" xml:space="preserve">
+    <value>خدمات وحلول الأمن السيبراني الشاملة</value>
+  </data>
+  <data name="SolutionsHeaderText" xml:space="preserve">
+    <value>نُمكّن المؤسسات من تحقيق حماية متقدمة، وبُنى رقمية مرنة، وتحول رقمي آمن. في حلول القادة  نقدم قدرات متكاملة في الأمن السيبراني من البداية إلى النهاية، مصممة لحماية بيئتكم التقنية، وتعزيز مرونتكم التشغيلية، ودعم نموكم المستدام — وكل ذلك بما يتوافق مع الأطر الوطنية السعودية وأفضل الممارسات العالمية.</value>
+  </data>
+  <data name="SolutionsasService" xml:space="preserve">
+    <value>الحلول كخدمة</value>
+  </data>
+  <data name="SolutionsasServiceText" xml:space="preserve">
+    <value>نقدّم قدرات أمن سيبراني متقدمة من خلال نماذج خدمات مرنة وقابلة للتوسع تعتمد على الاشتراك، ومصممة بما يتناسب مع احتياجات منظمتكم التشغيلية.</value>
+  </data>
+  <data name="EndpointSecurity" xml:space="preserve">
+    <value>أمن نقاط النهاية</value>
+  </data>
+  <data name="NetworkSecurity" xml:space="preserve">
+    <value>أمن الشبكات</value>
+  </data>
+  <data name="DataSecurity" xml:space="preserve">
+    <value>أمن البيانات</value>
+  </data>
+  <data name="EventsAndCompetitions" xml:space="preserve">
+    <value>الفعاليات والمسابقات</value>
+  </data>
+  <data name="EventsAndCompetitionsText" xml:space="preserve">
+    <value>نقوم بتنظيم فعاليات التي تختبر مهارات المشاركين في تحليل الثغرات، والهندسة العكسية، والتشفير، والاستجابة للحوادث، بهدف تطوير القدرات التقنية وتعزيز ثقافة الأمن السيبراني.</value>
+  </data>
+  <data name="ManagementConsulting" xml:space="preserve">
+    <value>الاستشارات الإدارية</value>
+  </data>
+  <data name="IncidentResponseAndForensics" xml:space="preserve">
+    <value>الاستجابة للحوادث والتحقيقات الجنائية الرقمية</value>
+  </data>
+  <data name="BugBountyPrograms" xml:space="preserve">
+    <value>برامج مكافآت الثغرات</value>
+  </data>
+  <data name="BugBountyProgramsText" xml:space="preserve">
+    <value>نقدّم برامج اختراق أخلاقي تستفيد من خبراء الأمن السيبراني حول العالم لاكتشاف الثغرات ومعالجتها قبل أن يتم استغلالها.</value>
+  </data>
+  <data name="IncidentResponseAndForensicsText" xml:space="preserve">
+    <value>نقدّم استجابة سريعة للحوادث، واحتواء التهديدات، وإجراء التحقيقات الجنائية الرقمية بهدف تقليل الأثر واستعادة العمليات الآمنة بأسرع وقت ممكن.</value>
+  </data>
+  <data name="TechnicalAssessment" xml:space="preserve">
+    <value>التقييمات التقنية</value>
+  </data>
+  <data name="TechnicalConsulting" xml:space="preserve">
+    <value>الاستشارات التقنية</value>
+  </data>
+  <data name="TechnicalConsultingText" xml:space="preserve">
+    <value>نقدّم إرشادًا متخصصًا في تصميم وتنفيذ وتحسين بنى الأمن السيبراني والحلول التقنية، بما يتوافق مع احتياجات أعمالكم ويعزّز مستوى الحماية والجاهزية لديكم.</value>
+  </data>
+  <data name="TechnicalAssessmentText" xml:space="preserve">
+    <value>نقوم بتنفيذ اختبارات الاختراق، وتقييمات الثغرات، وتمارين الفريق الأحمر للتحقق من مرونة أنظمتكم وتطبيقاتكم وقدرتها على مواجهة الهجمات.</value>
+  </data>
+  <data name="RiskAssessment" xml:space="preserve">
+    <value>تقييم المخاطر</value>
+  </data>
+  <data name="CybersecurityTraining" xml:space="preserve">
+    <value>التدريب في الأمن السيبراني</value>
+  </data>
+  <data name="CybersecurityAwareness" xml:space="preserve">
+    <value>التوعية بالأمن السيبراني</value>
+  </data>
+  <data name="CybersecurityAwarenessText" xml:space="preserve">
+    <value>نقدّم برامج توعية شاملة على مستوى المنظمة، تشمل محاكاة هجمات التصيّد والتدريب السلوكي، بهدف تعزيز الوعي الأمني وتقوية خط الدفاع البشري.</value>
+  </data>
+  <data name="CybersecurityTrainingText" xml:space="preserve">
+    <value>نقدّم برامج تدريبية منهجية للكوادر الفنية وغير الفنية بهدف بناء المعرفة وتعزيز المهارات العملية في مجال الأمن السيبراني.</value>
+  </data>
+  <data name="RiskAssessmentText" xml:space="preserve">
+    <value>نقوم بتحديد المخاطر السيبرانية وتحليلها وترتيب أولوياتها عبر بيئات تقنية المعلومات والبيئات التشغيلية، بهدف تعزيز مستوى الحماية الشامل لمنظمتكم.</value>
+  </data>
+  <data name="ComplianceAssessment" xml:space="preserve">
+    <value>تقييم الامتثال</value>
+  </data>
+  <data name="ComplianceAssessmentText" xml:space="preserve">
+    <value>نقوم بتقييم مدى التزامكم بالمعايير الوطنية والدولية للأمن السيبراني، وتحديد الفجوات، وتقديم توصيات عملية تساعدكم على تحقيق الامتثال الكامل.</value>
+  </data>
+  <data name="ManagementConsultingText" xml:space="preserve">
+    <value>نقدّم خدمات استشارية استراتيجية في حوكمة الأمن السيبراني، والتحول الرقمي، وإدارة مخاطر المؤسسات — مما يساعد المنظمات على بناء مرونة طويلة المدى.</value>
+  </data>
+  <data name="ManagedSOC" xml:space="preserve">
+    <value>مركز العمليات الأمنية المُدار</value>
+  </data>
+  <data name="ManpowerOutsourcing" xml:space="preserve">
+    <value>توفير الكفاءات</value>
+  </data>
+  <data name="ManpowerOutsourcingText" xml:space="preserve">
+    <value>نوفّر متخصصين معتمدين في الأمن السيبراني للعمل في مواقعكم أو عن بُعد، لدعم مشاريعكم وعملياتكم اليومية وضمان استمرارية الأداء بجودة عالية.</value>
+  </data>
+  <data name="ManagedSOCText" xml:space="preserve">
+    <value>نوفّر خدمات  مُدارة بالكامل تشمل المراقبة على مدار الساعة، واكتشاف التهديدات، والاستجابة للحوادث لضمان حماية مستمرة ودائمة لمنظمتكم.</value>
+  </data>
+  <data name="IoTSecurity" xml:space="preserve">
+    <value>أمن أنظمة التشغيل الصناعية وإنترنت الأشياء</value>
+  </data>
+  <data name="IoTSecurityText" xml:space="preserve">
+    <value>نقوم بحماية أنظمة التحكم الصناعية والأجهزة المتصلة من الاضطرابات التشغيلية والهجمات السيبرانية، مما يضمن السلامة واستمرارية العمل في البيئات الحيوية.</value>
+  </data>
+  <data name="CloudSecurity" xml:space="preserve">
+    <value>أمن السحابة</value>
+  </data>
+  <data name="CloudSecurityText" xml:space="preserve">
+    <value>نقوم بتأمين أحمال العمل والهويات والإعدادات في البيئات السحابية العامة والخاصة والهجينة، وإدارة وضع الأمان السحابي، وضوابط تعتمد على الهوية لضمان حماية شاملة ومتواصلة.</value>
+  </data>
+  <data name="CybersecurityOperations" xml:space="preserve">
+    <value>عمليات الأمن السيبراني</value>
+  </data>
+  <data name="CybersecurityOperationsText" xml:space="preserve">
+    <value>نوفّر مراقبة مركزية، واكتشافًا للتهديدات، واستجابة للحوادث عبر منصات المتقدمة مما يضمن رؤية سريعة واتخاذ إجراءات فورية عبر بيئتكم التقنية.</value>
+  </data>
+  <data name="IdentitySecurity" xml:space="preserve">
+    <value>أمن الهوية وإدارة الهوية والصلاحيات</value>
+  </data>
+  <data name="IdentitySecurityText" xml:space="preserve">
+    <value>نساعد المؤسسات على إدارة وحماية الهويات الرقمية من خلال حلول وأنظمة إدارة الصلاحيات. تضمن حلولنا أن يصل المستخدمون المصرح لهم فقط إلى أنظمتكم الحيوية.</value>
+  </data>
+  <data name="ApplicationSecurity" xml:space="preserve">
+    <value>أمن التطبيقات</value>
+  </data>
+  <data name="ProductAndSolutionDevelopment" xml:space="preserve">
+    <value>تطوير المنتجات والحلول</value>
+  </data>
+  <data name="ProductAndSolutionDevelopmentText" xml:space="preserve">
+    <value>نقوم بتطوير أدوات أمن سيبراني مخصّصة، وعمليات تكامل، وحلول أتمتة مصممة لتلبية متطلباتكم التشغيلية والتنظيمية، بما يعزّز الكفاءة ويقوّي قدراتكم الدفاعية.</value>
+  </data>
+  <data name="ApplicationSecurityText" xml:space="preserve">
+    <value>نقوم بتأمين التطبيقات من مرحلة التطوير وحتى مرحلة الإطلاق من خلال تحديد الثغرات، وإجراء تحليل الشيفرة البرمجية، وتنفيذ اختبارات الاختراق لمنع أي محاولات استغلال.</value>
+  </data>
+  <data name="DataSecurityText" xml:space="preserve">
+    <value>نقوم بحماية بياناتكم الحساسة من خلال التشفير، والتصنيف، وحلول منع تسرب البيانات المخصصة للمؤسسات. يضمن نهجنا الحفاظ على سرية البيانات وسلامتها والامتثال للمعايير عبر كامل دورة حياة البيانات.</value>
+  </data>
+  <data name="NetworkSecurityText" xml:space="preserve">
+    <value>نقوم بحماية البنية التحتية لشبكتكم باستخدام الجيل الجديد من الجدران النارية، وتقنيات التقسيم الشبكي، وأنظمة منع التسلل. تضمن حلولنا حركة مرور آمنة ومراقبة ومتحكمًا بها عبر جميع طبقات الشبكة.</value>
+  </data>
+  <data name="EndpointSecurityText" xml:space="preserve">
+    <value>نقوم بتأمين جميع أجهزة نقاط النهاية بما في ذلك أجهزة الحاسب المحمولة والخوادم والأجهزة المحمولة ضد البرمجيات الخبيثة وبرمجيات الفدية ومحاولات الوصول غير المصرح به. ومن خلال استخدام منصات الكشف والاستجابة لنقاط النهاية المتقدمة والمراقبة المستمرة للتهديدات، نضمن بقاء نقاط النهاية لديكم محمية في جميع الأوقات.
+</value>
+  </data>
+</root>

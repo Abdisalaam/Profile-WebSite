@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PageTitle" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="PageSubTitle" xml:space="preserve">
+    <value>Our roots are in Saudi Arabia, and our impact is global.</value>
+  </data>
+  <data name="HeadTitle" xml:space="preserve">
+    <value>About Leaders Solutions</value>
+  </data>
+  <data name="HeadSubtitle" xml:space="preserve">
+    <value>Established in Saudi,</value>
+  </data>
+  <data name="HeadSubtitle1" xml:space="preserve">
+    <value>For a global future, we innovated.</value>
+  </data>
+  <data name="HeadTitleText" xml:space="preserve">
+    <value>A Saudi-born, innovation-driven technology company specializing in digital transformation, enterprise governance, cyber-security, cloud modernization, Automation &amp; Process Optimization and advanced AI solutions. Founded in 2009 and headquartered in Riyadh, LS has grown into a trusted partner for government entities, financial institutions, and large enterprises seeking to elevate their operational performance and align with Saudi Arabia’s Vision 2030 digital ambitions</value>
+  </data>
+  <data name="CompanySnapshot" xml:space="preserve">
+    <value>Company snapshot</value>
+  </data>
+  <data name="CompanySnapshotTitle" xml:space="preserve">
+    <value>Saudi‑founded. Globally minded</value>
+  </data>
+  <data name="Slogan" xml:space="preserve">
+    <value>Slogan</value>
+  </data>
+  <data name="SloganText" xml:space="preserve">
+    <value>Born in Saudi. Built for the world</value>
+  </data>
+  <data name="HeadQuarter" xml:space="preserve">
+    <value>Headquartered in Saudi Arabia</value>
+  </data>
+  <data name="ServingClient" xml:space="preserve">
+    <value>Serving clients across the GCC and beyond</value>
+  </data>
+  <data name="FoucusOn" xml:space="preserve">
+    <value>Focused on digital products, platforms, and transformation</value>
+  </data>
+  <data name="LSProfile" xml:space="preserve">
+    <value>Company Profile</value>
+  </data>
+  <data name="DownloadProfile" xml:space="preserve">
+    <value>Download Our Company Profile.</value>
+  </data>
+  <data name="CompanySnapshotSubTitle" xml:space="preserve">
+    <value>Leaders Solutions at a glance</value>
+  </data>
+  <data name="Founded" xml:space="preserve">
+    <value>Founded</value>
+  </data>
+  <data name="Focus" xml:space="preserve">
+    <value>Focus</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Saudi Arabia</value>
+  </data>
+  <data name="FoucusText" xml:space="preserve">
+    <value>Advanced digital solutions and technology consulting, including cybersecurity, cloud, and data services</value>
+  </data>
+  <data name="Approach" xml:space="preserve">
+    <value>Insight paired with global standards to deliver clear, scalable, and impact‑driven solutions</value>
+  </data>
+  <data name="ApproachText" xml:space="preserve">
+    <value>Approach</value>
+  </data>
+  <data name="Mindset" xml:space="preserve">
+    <value>Mindset</value>
+  </data>
+  <data name="MindsetText" xml:space="preserve">
+    <value>We embrace a growth‑driven mindset that focuses on clarity, innovation, and delivering meaningful impact.</value>
+  </data>
+  <data name="TrustedByPartners" xml:space="preserve">
+    <value>Trusted by partners</value>
+  </data>
+  <data name="SaudiSpirit" xml:space="preserve">
+    <value>Built with a Saudi innovation spirit</value>
+  </data>
+  <data name="OurStory" xml:space="preserve">
+    <value>Our story</value>
+  </data>
+  <data name="OurStoryHead" xml:space="preserve">
+    <value>From local roots to global impact</value>
+  </data>
+  <data name="OurStoryHeadText" xml:space="preserve">
+    <value>Leaders Solutions was founded in Saudi Arabia with a simple belief: Technology should feel native to the people who use it , while still meeting the highest global standards. We sit at the intersection of local understanding and international best practice, helping organizations move with confidence into what’s next.
+
+We partner with businesses, institutions, and innovators to design and deliver solutions that are not only technically sound, but strategically aligned with their vision—whether they’re serving a neighborhood, a region, or the entire world.</value>
+  </data>
+  <data name="StoryHeadTextTwo" xml:space="preserve">
+    <value>We partner with businesses, institutions, and innovators to design and deliver solutions that are not only technically sound, but strategically aligned with their vision—whether they’re serving a neighborhood, a region, or the entire world.</value>
+  </data>
+  <data name="WhatWeDoTitle" xml:space="preserve">
+    <value>What we do</value>
+  </data>
+  <data name="WhatWeDoTextTitle" xml:space="preserve">
+    <value>Turning Ideas Into Scalable Digital Products</value>
+  </data>
+  <data name="WhatWeDoText" xml:space="preserve">
+    <value>Our work spans strategy, design, and implementation, with a focus on building digital products and platforms that are scalable, secure, and delightful to use.</value>
+  </data>
+  <data name="WhatWeDoOptionOne" xml:space="preserve">
+    <value>Digital strategy &amp; consulting — aligning technology with your business goals and growth roadmap</value>
+  </data>
+  <data name="WhatWeDoOptionTwo" xml:space="preserve">
+    <value>Product &amp; experience design — crafting intuitive, human‑centered interfaces and journeys.</value>
+  </data>
+  <data name="WhatWeDoOptionFour" xml:space="preserve">
+    <value>Ongoing partnership — supporting, evolving, and scaling your solutions as your needs grow</value>
+  </data>
+  <data name="WhatWeDoOptionThree" xml:space="preserve">
+    <value>Custom development &amp; integration — building robust, future‑ready systems and platforms.</value>
+  </data>
+  <data name="OurPhilosophy" xml:space="preserve">
+    <value>Our philosophy</value>
+  </data>
+  <data name="OurPhilosophyTitle" xml:space="preserve">
+    <value>Saudi‑inspired. Built for global scalability.</value>
+  </data>
+  <data name="OurPhilosophyText" xml:space="preserve">
+    <value>We are proud of where we started and intentional about where we’re going. Every solution we design is rooted in Saudi insight, yet architected to perform on a global stage</value>
+  </data>
+  <data name="SaudiFounded" xml:space="preserve">
+    <value>Saudi‑founded</value>
+  </data>
+  <data name="GlobalStandards" xml:space="preserve">
+    <value>Global standards</value>
+  </data>
+  <data name="HumanCentered" xml:space="preserve">
+    <value>Human‑centered</value>
+  </data>
+  <data name="FutureFocused" xml:space="preserve">
+    <value>Future‑focused</value>
+  </data>
+  <data name="PageHeader" xml:space="preserve">
+    <value>Where digital transformation meets secure, scalable enterprise innovation.</value>
+  </data>
+  <data name="OurPhilosophyTextTwo" xml:space="preserve">
+    <value>From idea to impact, we guide your journey with unmatched clarity, unwavering confidence, and refined craftsmanship.</value>
+  </data>
+  <data name="PhilosophyVision" xml:space="preserve">
+    <value>Our Philosophy in Building Value</value>
+  </data>
+  <data name="PhilosophyClientServing" xml:space="preserve">
+    <value>Serving clients worldwide</value>
+  </data>
+  <data name="LSAndGlopalPartners" xml:space="preserve">
+    <value>Leaders Solutions &amp; Global Partnerships</value>
+  </data>
+  <data name="LSAndGlopalPartnersText" xml:space="preserve">
+    <value>By partnering with global technology innovators, leading consultancies, and specialized solution providers, we bring advanced capabilities straight to our clients across Saudi Arabia and the region. Our international partners share our dedication to excellence, security, and future‑driven transformation. Together, we merge global expertise with local understanding—delivering solutions that are globally competitive, regionally relevant, and designed to drive meaningful impact.</value>
+  </data>
+  <data name="LSANDGlopalPartnerOptionOne" xml:space="preserve">
+    <value>Co‑developing advanced digital platforms with international tech innovators</value>
+  </data>
+  <data name="LSANDGlopalPartnerOptionTwo" xml:space="preserve">
+    <value>Integrating enterprise‑grade systems trusted by organizations worldwide</value>
+  </data>
+  <data name="LSANDGlopalPartnerOptionThree" xml:space="preserve">
+    <value>Leveraging global research and expertise to elevate strategy, design, and engineering</value>
+  </data>
+  <data name="LSANDGlopalPartnerOptionFour" xml:space="preserve">
+    <value>Ensuring compliance with international standards in security, performance, and scalability</value>
+  </data>
+  <data name="ITSupport" xml:space="preserve">
+    <value>It Support For Business</value>
+  </data>
+  <data name="ITSupportText" xml:space="preserve">
+    <value>Preparing for your success
+trusted source in IT services.</value>
+  </data>
+  <data name="YearsExperince" xml:space="preserve">
+    <value>Years Experience</value>
+  </data>
+  <data name="HappyClients" xml:space="preserve">
+    <value>Happy Clients</value>
+  </data>
+  <data name="CompanySnapshotSubTitleText" xml:space="preserve">
+    <value>We combine local insight with global standards to deliver technology solutions that feel tailored, modern, and
+scalable from day one.</value>
+  </data>
+  <data name="ElmCompany" xml:space="preserve">
+    <value>Elm</value>
+  </data>
+  <data name="ElmCompanyEmployee" xml:space="preserve">
+    <value>Abdulrahman Alhazmy</value>
+  </data>
+  <data name="ElmCompanyEmployeeFunction" xml:space="preserve">
+    <value>Technology Manager</value>
+  </data>
+  <data name="ElmCompanyEmployeeTestmony" xml:space="preserve">
+    <value>Leaders Solutions delivered a technical experience that reflects the highest levels of professionalism, combining deep expertise with refined execution that created a clear impact on system efficiency and operational stability. The level of care, precision, and excellence in results makes Leaders Solutions an exceptional partner capable of transforming ambition into tangible achievement</value>
+  </data>
+  <data name="HRSDCompany" xml:space="preserve">
+    <value>HRSD</value>
+  </data>
+  <data name="HRSDCompanyEmployee" xml:space="preserve">
+    <value>Fahad AlHammadi</value>
+  </data>
+  <data name="HRSDCompanyEmployeeFunction" xml:space="preserve">
+    <value>Digital Transformation Development and Support Director</value>
+  </data>
+  <data name="HRSDCompanyEmployeeTestmony" xml:space="preserve">
+    <value>Leaders Solutions demonstrated exceptional capability in elevating our performance strategy through precise methodologies that enhanced operational efficiency and strengthened organizational productivity. Their ability to analyze challenges, design practical solutions, and deliver measurable outcomes reflects a deep commitment to excellence. Leaders Solutions has proven to be a reliable partner in building a sustainable, balanced, and high‑performing strategic ecosystem capable of supporting long‑term growth and ambition</value>
+  </data>
+  <data name="GSTCCompany" xml:space="preserve">
+    <value>GSTC</value>
+  </data>
+  <data name="GSTCCompanyEmployee" xml:space="preserve">
+    <value>Haifa Althunayyan</value>
+  </data>
+  <data name="GSTCCompanyEmployeeFunction" xml:space="preserve">
+    <value>Performance Strategy Manager</value>
+  </data>
+  <data name="GSTCCompanyEmployeeTestemony" xml:space="preserve">
+    <value>Leaders Solutions played a key role in reshaping our performance strategy by introducing practical, results‑driven frameworks that strengthened operational clarity and improved overall execution. Their team provided sharp insights that helped us identify strengths, address gaps, and make more confident strategic decisions. The impact was evident in the improved alignment between our long‑term goals and daily operations, positioning Leaders Solutions as a dependable partner in building a more mature and sustainable performance ecosystem</value>
+  </data>
+  <data name="MisaCompany" xml:space="preserve">
+    <value>Ministry of Investment</value>
+  </data>
+  <data name="MisaCompanyEmployee" xml:space="preserve">
+    <value>Abdallah Ali Al Qahtany</value>
+  </data>
+  <data name="MisaCompanyEmployeeFunction" xml:space="preserve">
+    <value>Director of Product Management and Technical Development</value>
+  </data>
+  <data name="MisaCompanyEmployeeTestemony" xml:space="preserve">
+    <value>The Ministry of Investment extends its appreciation to Leaders Solutions for their distinguished contribution to advancing digital enablement and operational excellence within the Kingdom’s investment ecosystem. LS has consistently demonstrated a high level of technical capability, disciplined project delivery, and a strong commitment to quality and compliance. Their ability to integrate modern technologies, streamline processes, and support strategic initiatives reflects a deep understanding of national priorities and investor needs. MISA values LS as a trusted technology partner and acknowledges their role in enhancing the efficiency, transparency, and competitiveness of digital services that support the Kingdom’s investment landscape.</value>
+  </data>
+  <data name="GetInTouch" xml:space="preserve">
+    <value>Get In Touch</value>
+  </data>
+  <data name="YourName" xml:space="preserve">
+    <value>Your name</value>
+  </data>
+  <data name="YourEmail" xml:space="preserve">
+    <value>Your email address</value>
+  </data>
+  <data name="YourPhone" xml:space="preserve">
+    <value>Your mobile number</value>
+  </data>
+  <data name="ServiceRequired" xml:space="preserve">
+    <value>Service Required</value>
+  </data>
+  <data name="ServiceOptionOne" xml:space="preserve">
+    <value>IT Service</value>
+  </data>
+  <data name="ServiceOptionTwo" xml:space="preserve">
+    <value>IT Solution</value>
+  </data>
+  <data name="ServiceOptionThree" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="ServiceOptionFour" xml:space="preserve">
+    <value>Partnership</value>
+  </data>
+  <data name="ServiceComment" xml:space="preserve">
+    <value>Let us know what you need</value>
+  </data>
+  <data name="SendMessage" xml:space="preserve">
+    <value>Send Message</value>
+  </data>
+  <data name="DontHesitateToContactUs" xml:space="preserve">
+    <value>Don't hesitate to contact us</value>
+  </data>
+  <data name="CallUs" xml:space="preserve">
+    <value>Call Us</value>
+  </data>
+  <data name="WriteToUs" xml:space="preserve">
+    <value>Write to Us</value>
+  </data>
+  <data name="OfficeHours" xml:space="preserve">
+    <value>Office hours</value>
+  </data>
+  <data name="RobotValidateMessag" xml:space="preserve">
+    <value>Please verify you are not a robot</value>
+  </data>
+  <data name="ThanksAndProcesContactMessage" xml:space="preserve">
+    <value>Thank you for contacting us. Your message has been received, and our team will get back to you shortly</value>
+  </data>
+  <data name="FillAllRequiredFields" xml:space="preserve">
+    <value>Please fill out required fields</value>
+  </data>
+  <data name="EnterValidEmail" xml:space="preserve">
+    <value>Enter a valid email</value>
+  </data>
+  <data name="RateLimitMessag" xml:space="preserve">
+    <value>Please wait 5 minutes before trying again</value>
+  </data>
+</root>

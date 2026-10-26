@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="HeaderText" xml:space="preserve">
+    <value>Transformative Solutions That Drive Results Focuses on measurable impact and strategic value.</value>
+  </data>
+  <data name="HeaderTitle" xml:space="preserve">
+    <value>Our IT Solutions</value>
+  </data>
+  <data name="HowWeDeliver" xml:space="preserve">
+    <value>How We Deliver</value>
+  </data>
+  <data name="PageSubTitle" xml:space="preserve">
+    <value>Innovative, Secure, and Built for Sustainable Growth</value>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>IT Solutions</value>
+  </data>
+  <data name="PageTitleText" xml:space="preserve">
+    <value>Designed to empower organizations with the technology</value>
+  </data>
+  <data name="Point1Title" xml:space="preserve">
+    <value>Understanding Your Needs</value>
+  </data>
+  <data name="Point1TitleText" xml:space="preserve">
+    <value>We begin by deeply analyzing your business goals, operational challenges, and technology landscape. This allows us to design solutions that are aligned with your strategy, not generic templates</value>
+  </data>
+  <data name="Point2Title" xml:space="preserve">
+    <value>Designing Smart, Scalable Solutions</value>
+  </data>
+  <data name="Point2TitleText" xml:space="preserve">
+    <value>Our experts translate requirements into practical, future‑ready designs. Whether it’s cybersecurity, integration, cloud, or business optimization, we build solutions that are secure, scalable, and tailored to your environment</value>
+  </data>
+  <data name="Point3Title" xml:space="preserve">
+    <value>Implementing with Precision</value>
+  </data>
+  <data name="Point3TitleText" xml:space="preserve">
+    <value>Execution is where our expertise shines. We follow structured project management practices, clear documentation, and strict compliance standards to ensure every solution is delivered smoothly and efficiently</value>
+  </data>
+  <data name="Point4Title" xml:space="preserve">
+    <value>Ensuring Security and Compliance</value>
+  </data>
+  <data name="Point4TitleText" xml:space="preserve">
+    <value>Security is embedded into every step. Our solutions follow global best practices and align with Saudi regulatory frameworks, ensuring your organization operates with confidence and resilience</value>
+  </data>
+  <data name="Point5Title" xml:space="preserve">
+    <value>Measuring Impact and Continuous Improvement</value>
+  </data>
+  <data name="Point5TitleText" xml:space="preserve">
+    <value>We validate results through KPIs, performance metrics, and stakeholder feedback. Our commitment doesn’t end at delivery — we continuously refine and enhance to ensure sustained value</value>
+  </data>
+  <data name="Point6Title" xml:space="preserve">
+    <value>Supporting You Beyond Delivery</value>
+  </data>
+  <data name="Point6TitleText" xml:space="preserve">
+    <value>Our partnership doesn’t end once the solution is deployed. We provide continuous support, knowledge transfer, and proactive guidance to ensure your teams are fully empowered. Through ongoing optimization and responsive assistance, we help you maintain peak performance and adapt to evolving business and technology needs</value>
+  </data>
+  <data name="Solution1" xml:space="preserve">
+    <value>Cybersecurity</value>
+  </data>
+  <data name="Solution1Text" xml:space="preserve">
+    <value>Advanced Cybersecurity to create a secure, transparent, and resilient digital core for your enterprise.</value>
+  </data>
+  <data name="Solution2" xml:space="preserve">
+    <value>Process Mining</value>
+  </data>
+  <data name="Solution2Text" xml:space="preserve">
+    <value>With our Process Mining solutions, every process becomes visible, measurable, and ready for transformation.</value>
+  </data>
+  <data name="Solution3" xml:space="preserve">
+    <value>Business Intelligence</value>
+  </data>
+  <data name="Solution3Text" xml:space="preserve">
+    <value>Our BI solutions are built with a deep understanding of Saudi business culture, regulatory requirements, and Vision 2030 priorities.</value>
+  </data>
+  <data name="Solution4" xml:space="preserve">
+    <value>Data Right &amp; Data Cloud Management</value>
+  </data>
+  <data name="Solution4Text" xml:space="preserve">
+    <value>Robust data management ensures your process insights are based on a "single source of truth,"</value>
+  </data>
+  <data name="Solution5" xml:space="preserve">
+    <value>Strategy &amp; Performance Management Automation</value>
+  </data>
+  <data name="Solution5Text" xml:space="preserve">
+    <value>We automate the bridge between your high-level vision and your frontline operations.</value>
+  </data>
+  <data name="Solution6" xml:space="preserve">
+    <value>AI-Powered Innovation</value>
+  </data>
+  <data name="Solution6Text" xml:space="preserve">
+    <value>Unlock the future with intelligent solutions that redefine possibility. Our AI-powered approach transforms data into insight, automates complexity, and accelerates decision-making across every domain.</value>
+  </data>
+  <data name="SolutionRequired" xml:space="preserve">
+    <value>Solution Required</value>
+  </data>
+</root>

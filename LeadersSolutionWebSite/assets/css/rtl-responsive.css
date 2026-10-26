@@ -1,0 +1,96 @@
+@media only screen and (min-width: 1501px){
+    .gallery-three-wrap {
+        left:auto;
+        right: 20%;
+    }
+    .hero-six-images {
+        margin-right: 0;
+        margin-left: -175px;
+    }
+    .header-five .header-top-wrap {
+        margin-right: 0px;
+        margin-left: 40px;
+    }
+    .header-five .header-top {
+        margin-right: 0;
+        margin-left: -20px;
+        padding-left: 0;
+        padding-right: 20px;
+    }
+}
+@media only screen and (max-width: 1500px){
+    .top-right .office-time {
+        margin-right: 0;
+        margin-left: 15px;
+    }
+    .top-left ul li{
+        margin-left: 15px;
+    }
+    .header-one .header-inner, .header-one .header-top{
+        padding-left: 85px;
+    }
+    .header-two .header-inner {
+        padding: 0 15px 0 30px;
+    }
+    .header-two .header-top{
+        padding-left: 30px;
+    }
+    .why-choose-inner {
+        padding-right: 50px;
+    }
+}
+@media only screen and (max-width: 1199px){
+    .header-one .header-inner, .header-one .header-top {
+        padding-right: 0;
+        padding-left: 25px;
+    }
+    .header-seven .main-menu {
+        margin-right: 0px;
+    }
+    .hero-eight-image{
+        margin-left: 0;
+    }
+    .hero-ten-images {
+        margin-left: 0;
+    }
+}
+@media (min-width: 992px){
+    .text-lg-right {
+        text-align: left!important;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .main-menu .navbar-collapse li{
+        float: none;
+    }
+    .newsletter-content {
+        padding-left: 0;
+        padding-right: 90px;
+    }
+
+}
+
+@media only screen and (max-width: 767px){
+    .header-three .top-right{
+        margin-left: auto;
+    }
+    .newsletter-content {
+        padding-right: 25px;
+    }
+    .newsletter-inner {
+        padding-left: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+    .newsletter-content form .form-group button {
+        padding-left: 25px;
+        padding-right: 13px;
+    }
+    .why-choose-inner {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}

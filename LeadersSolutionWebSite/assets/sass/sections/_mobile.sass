@@ -1,0 +1,36 @@
+/*******************************************************/
+/***************** 31. Mobile Screens ******************/
+/*******************************************************/
+.mobile-screens
+    background-repeat: no-repeat
+    background-position: 0 0
+    
+.mobile-screens-active
+    +gapboth(margin, -15px)
+    .mobile-screen-item
+        +gapboth(margin, 15px)
+        img
+            width: 100%
+    .slick-dots
+        display: flex
+        margin-top: 60px
+        +gapboth(margin, -5px)
+        justify-content: center
+        li
+            cursor: pointer
+            +size(17px, 7px)
+            overflow: hidden
+            transition: 0.5s
+            background: white
+            border-radius: 3.5px
+            +gapboth(margin, 5px)
+            +sm-d()
+                width: 10px
+            button
+                text-indent: -200px
+                background: transparent
+            &.slick-active
+                width: 45px
+                background: $primary-color
+                +sm-d()
+                    width: 25px

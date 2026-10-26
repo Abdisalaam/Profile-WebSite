@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AllServiceViewBtn" xml:space="preserve">
+    <value>عرض جميع الخدمات</value>
+  </data>
+  <data name="ClientTestimonialsJobTitle" xml:space="preserve">
+    <value>المدير التنفيذي</value>
+  </data>
+  <data name="ClientTestimonialsJobTitle1" xml:space="preserve">
+    <value>مدير المشروع</value>
+  </data>
+  <data name="ClientTestimonialsJobTitle2" xml:space="preserve">
+    <value>مدير البرنامج</value>
+  </data>
+  <data name="ClientTestimonialsJobTitle3" xml:space="preserve">
+    <value>المدير التنفيذي</value>
+  </data>
+  <data name="ClientTestimonialsJobTitle4" xml:space="preserve">
+    <value>مدير المشروع</value>
+  </data>
+  <data name="ClientTestimonialsName" xml:space="preserve">
+    <value>محمد علي</value>
+  </data>
+  <data name="ClientTestimonialsName1" xml:space="preserve">
+    <value>عبدالله منصور</value>
+  </data>
+  <data name="ClientTestimonialsName2" xml:space="preserve">
+    <value>فاطمة محمود</value>
+  </data>
+  <data name="ClientTestimonialsName3" xml:space="preserve">
+    <value>حسين محمد</value>
+  </data>
+  <data name="ClientTestimonialsName4" xml:space="preserve">
+    <value>عبدالرحمن سعد</value>
+  </data>
+  <data name="ClientTestimonialsParagraf" xml:space="preserve">
+    <value>قدمت شركة حلول القادة منصة آمنة وقابلة للتطوير أدت إلى تحويل خدمات المواطنين لدينا. لقد فهم فريقهم أهدافنا الإستراتيجية وقام بتنفيذها بدقة. نحن نعمل الآن بشكل أسرع وأكثر ذكاءً وبشفافية أكبر</value>
+  </data>
+  <data name="ClientTestimonialsParagraf1" xml:space="preserve">
+    <value>قدمت شركة حلول القادة منصة آمنة وقابلة للتطوير أدت إلى تحويل خدمات المواطنين لدينا. لقد فهم فريقهم أهدافنا الإستراتيجية وقام بتنفيذها بدقة. نحن نعمل الآن بشكل أسرع وأكثر ذكاءً وبشفافية أكبر</value>
+  </data>
+  <data name="ClientTestimonialsParagraf2" xml:space="preserve">
+    <value>قدمت شركة حلول القادة منصة آمنة وقابلة للتطوير أدت إلى تحويل خدمات المواطنين لدينا. لقد فهم فريقهم أهدافنا الإستراتيجية وقام بتنفيذها بدقة. نحن نعمل الآن بشكل أسرع وأكثر ذكاءً وبشفافية أكبر</value>
+  </data>
+  <data name="ClientTestimonialsParagraf3" xml:space="preserve">
+    <value>قدمت شركة حلول القادة منصة آمنة وقابلة للتطوير أدت إلى تحويل خدمات المواطنين لدينا. لقد فهم فريقهم أهدافنا الإستراتيجية وقام بتنفيذها بدقة. نحن نعمل الآن بشكل أسرع وأكثر ذكاءً وبشفافية أكبر</value>
+  </data>
+  <data name="ClientTestimonialsParagraf4" xml:space="preserve">
+    <value>قدمت شركة حلول القادة منصة آمنة وقابلة للتطوير أدت إلى تحويل خدمات المواطنين لدينا. لقد فهم فريقهم أهدافنا الإستراتيجية وقام بتنفيذها بدقة. نحن نعمل الآن بشكل أسرع وأكثر ذكاءً وبشفافية أكبر</value>
+  </data>
+  <data name="ConsultancyServices" xml:space="preserve">
+    <value>الخدمات الاستشارية</value>
+  </data>
+  <data name="ConsultancyServicesParagraf" xml:space="preserve">
+    <value>خدماتنا الاستشارية تمكن المؤسسات من اتخاذ قرارات مستنيرة</value>
+  </data>
+  <data name="CustomSoftwareDevelopment" xml:space="preserve">
+    <value>تطوير البرمجيات المخصصة</value>
+  </data>
+  <data name="CustomSoftwareDevelopmentParagraf" xml:space="preserve">
+    <value>نحن نبني برامج تعكس رؤيتك، وليس القيود</value>
+  </data>
+  <data name="DeskTopAppDevelopment" xml:space="preserve">
+    <value>تطوير تطبيقات سطح المكتب</value>
+  </data>
+  <data name="DeskTopDevelopmentParagraf" xml:space="preserve">
+    <value>تم تصميم خدمات تطوير تطبيقات سطح المكتب الخاصة بنا لتقديم حلول قوية تعمل على تمكين عملياتك الانسيابية</value>
+  </data>
+  <data name="LineOfBusinessFirstColH" xml:space="preserve">
+    <value>تكنولوجيا المعلومات القوية</value>
+  </data>
+  <data name="LineOfBusinessFirstColP" xml:space="preserve">
+    <value>في قلب التحول الرقمي يكمن التكامل السلس بين حلول المؤسسات والحلول السحابية وحلول مراكز البيانات، وهو نظام بيئي موحد مصمم لتمكين المؤسسات من خلال المرونة وقابلية التوسع والمرونة.</value>
+  </data>
+  <data name="LineOfBusinessFourthColH" xml:space="preserve">
+    <value>ابتكار الذكاءالإصطناعي</value>
+  </data>
+  <data name="LineOfBusinessFourthColP" xml:space="preserve">
+    <value>مستقبل الأعمال، المدعوم بالذكاء الاصطناعي في جوهر التميز الرقمي حيث تولد الأنظمة الذكية نتائج أكثر ذكاءً</value>
+  </data>
+  <data name="LineOfBusinessSecondColH" xml:space="preserve">
+    <value>ما وراء الحماية</value>
+  </data>
+  <data name="LineOfBusinessSecondColP" xml:space="preserve">
+    <value>لم يعد الأمن يقتصر على الدفاع فحسب، بل يتعلق بتمكين الثقة والاستمرارية والابتكار. يمثل ما بعد الحماية حقبة جديدة من حماية الأصول الرقمية، حيث يتم دمج المرونة والثقة في كل طبقة من طبقات التكنولوجيا.</value>
+  </data>
+  <data name="LineOfBusinessThirdColH" xml:space="preserve">
+    <value>تمكين العقول</value>
+  </data>
+  <data name="LineOfBusinessThirdColP" xml:space="preserve">
+    <value>أساس التقدم الوطني والتميز المؤسسي نحن نزود الأفراد والمنظمات بالمهارات والرؤى والثقة اللازمة للقيادة في عالم سريع التطور</value>
+  </data>
+  <data name="LineOfBusinessTitle" xml:space="preserve">
+    <value>الخطوط الأساسية للأعمال</value>
+  </data>
+  <data name="MobileAppDevelopment" xml:space="preserve">
+    <value>تطوير تطبيقات الجوال</value>
+  </data>
+  <data name="MobileDevelopmentParagraf" xml:space="preserve">
+    <value>تقدم خدمات تطوير تطبيقات الهاتف المحمول لدينا تجارب بديهية وآمنة وثقافية أصيلة تعكس التميز السعودي مع دفع النمو والمشاركة</value>
+  </data>
+  <data name="NewsSectionH" xml:space="preserve">
+    <value>لحظة قوية من التعاون تم التقاطها في 
+حدث استثماري احترافي، حيث يتبادل اثنان من المهنيين السعوديين المصافحة أمام جناح استثمر في السعودية</value>
+  </data>
+  <data name="NewsSectionH1" xml:space="preserve">
+    <value>في طليعة التحول الرقمي، يعلن حدث بلاك هات في الشرق الأوسط وأفريقيا عن شراكات حصرية مدعومة باستثمارات تتجاوز 78 مليون دولار</value>
+  </data>
+  <data name="NewsSectionH2" xml:space="preserve">
+    <value>ويُظهر الحفل، الذي استضافته وزارة الاستثمار وبدعم من شركة حلول القيادة، التقدم القوي الذي تم تحقيقه الحاصلون على الجوائز</value>
+  </data>
+  <data name="NewsSectionTitle" xml:space="preserve">
+    <value>آخر أخبارنا</value>
+  </data>
+  <data name="OurAchievementsAward" xml:space="preserve">
+    <value>الجوائز التي فزنا بها</value>
+  </data>
+  <data name="OurAchievementsHappyClients" xml:space="preserve">
+    <value>عملاء سعداء</value>
+  </data>
+  <data name="OurAchievementsTitle" xml:space="preserve">
+    <value>إنجازاتنا</value>
+  </data>
+  <data name="OurAchievementsYears" xml:space="preserve">
+    <value>سنوات خبرتنا</value>
+  </data>
+  <data name="OurClientTitle" xml:space="preserve">
+    <value>الأسماء الرائدة التي نخدمها</value>
+  </data>
+  <data name="OurSolutionSectionTitle" xml:space="preserve">
+    <value>أفضل الحلول</value>
+  </data>
+  <data name="ResidentEngineer" xml:space="preserve">
+    <value>مهندس مقيم</value>
+  </data>
+  <data name="ResidentEngServicesParagraf" xml:space="preserve">
+    <value>توفر لك خدمات المهندس المقيم لدينا متخصصين من ذوي المهارات العالية الذين يندمجون بسلاسة في فريقك، مما يضمن سلاسة العمليات وحل المشكلات بشكل استباقي</value>
+  </data>
+  <data name="SectionIntroDigitalH" xml:space="preserve">
+    <value>التحول الرقمي</value>
+  </data>
+  <data name="SectionIntroDigitalSpan" xml:space="preserve">
+    <value>بدءًا من استراتيجيات تكنولوجيا المعلومات الحكيمة ووصولاً إلى التنفيذ السلس، فإننا نساعد المؤسسات على القيادة بثقة وابتكار</value>
+  </data>
+  <data name="SectionIntroH2" xml:space="preserve">
+    <value>الاستعداد لنجاحك مصدر موثوق في خدمات تكنولوجيا المعلومات</value>
+  </data>
+  <data name="SectionIntroH4" xml:space="preserve">
+    <value>دعم تكنولوجيا المعلومات للشركات</value>
+  </data>
+  <data name="SectionIntroH4Paragraf" xml:space="preserve">
+    <value>في شركة حلول القادة، نقوم بتمكين المؤسسات الكبيرة ومؤسسات القطاع العام في جميع أنحاء المملكة من إطلاق العنان لإمكاناتها الكاملة. ومن خلال تسخير أنظمة تكنولوجيا المعلومات المتقدمة والتعاون مع شركاء التكنولوجيا العالميين، نقوم بتوجيه عملائنا من الرؤية الإستراتيجية إلى النجاح الملموس الذي يقود الربحية والأداء والنمو المستدام.
+ اكتشف ما هو ممكن مع حلول القادة - واعثر على المسار المثالي للمضي قدماً في عملك اليوم</value>
+  </data>
+  <data name="SectionIntroStrategiclH" xml:space="preserve">
+    <value>الحلول الاستراتيجية</value>
+  </data>
+  <data name="SectionIntroStrategiclSpan" xml:space="preserve">
+    <value>نحن نقدم تقنيات تعتمد على الأداء والتي تعمل على رفع مستوى العمليات وتعزيز عملية صنع القرار وتسريع النمو</value>
+  </data>
+  <data name="SectionIntroTechH" xml:space="preserve">
+    <value>القيادة التكنولوجية</value>
+  </data>
+  <data name="SectionIntroTechSpan" xml:space="preserve">
+    <value>تعكس خدماتنا روح القيادة السعودية - الاستراتيجية والمرنة والمرتبطة بعمق بقيمنا الثقافية</value>
+  </data>
+  <data name="SectorEnergyH" xml:space="preserve">
+    <value>الطاقة والمرافق</value>
+  </data>
+  <data name="SectorEnergyP" xml:space="preserve">
+    <value>نحن ندعم مزودي الطاقة وشركات المرافق والجهات التنظيمية في تحديث البنية التحتية وتحسين العمليات وتعزيز أهداف الاستدامة</value>
+  </data>
+  <data name="SectorFinanceH" xml:space="preserve">
+    <value>الخدمات المصرفية والمالية</value>
+  </data>
+  <data name="SectorFinanceP" xml:space="preserve">
+    <value>نحن نعمل على تمكين المؤسسات المالية بحلول رقمية آمنة وقابلة للتطوير وذكية تعزز الثقة والأداء والابتكار</value>
+  </data>
+  <data name="SectorGovermentH" xml:space="preserve">
+    <value>الحكومة والقطاع العام</value>
+  </data>
+  <data name="SectorGovermentP" xml:space="preserve">
+    <value>نحن ندعم الوزارات والبلديات والمؤسسات العامة في تقديم خدمات آمنة وفعالة ورقمية</value>
+  </data>
+  <data name="SectorHealthcareH" xml:space="preserve">
+    <value>الرعاية الصحية</value>
+  </data>
+  <data name="SectorHealthcareP" xml:space="preserve">
+    <value>نحن نتشارك مع مقدمي الرعاية الصحية والمستشفيات والسلطات الصحية لتسريع التحول الرقمي وتحسين نتائج المرضى</value>
+  </data>
+  <data name="SectorManufacturingH" xml:space="preserve">
+    <value>التصنيع والتجزئة</value>
+  </data>
+  <data name="SectorManufacturingP" xml:space="preserve">
+    <value>نحن نمكّن المصنعين وتجار التجزئة من خلال التقنيات الذكية التي تعمل على تبسيط العمليات وتعزيز مشاركة العملاء ودفع النمو</value>
+  </data>
+  <data name="SectorSmartCitiesH" xml:space="preserve">
+    <value>المدن الذكية</value>
+  </data>
+  <data name="SectorSmartCitiesP" xml:space="preserve">
+    <value>نحن نعمل على تمكين النظم البيئية الحضرية من خلال التقنيات الذكية التي تعزز قابلية العيش والاستدامة والكفاءة التشغيلية</value>
+  </data>
+  <data name="SectorTelecommunicationH" xml:space="preserve">
+    <value>الاتصالات</value>
+  </data>
+  <data name="SectorTelecommunicationP" xml:space="preserve">
+    <value>نحن نمكّن مشغلي الاتصالات ومقدمي البنية التحتية من خلال حلول قابلة للتطوير وآمنة وذكية تعمل على تعزيز الاتصال والأداء والابتكار.</value>
+  </data>
+  <data name="SectorTranspotH" xml:space="preserve">
+    <value>النقل والخدمات اللوجستية</value>
+  </data>
+  <data name="SectorTranspotP" xml:space="preserve">
+    <value>نحن نمكّن مقدمي الخدمات اللوجستية ومشغلي الأساطيل وسلطات النقل من تحسين الحركة والرؤية والأداء عبر كل رابط من سلسلة التوريد</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>خدماتنا</value>
+  </data>
+  <data name="SlidersBTNOne" xml:space="preserve">
+    <value>اكتشف المزيد</value>
+  </data>
+  <data name="SlidersBTNOne1" xml:space="preserve">
+    <value>اكتشف المزيد</value>
+  </data>
+  <data name="SlidersBTNOne2" xml:space="preserve">
+    <value>اكتشف المزيد</value>
+  </data>
+  <data name="SlidersBTNOne3" xml:space="preserve">
+    <value>اكتشف المزيد</value>
+  </data>
+  <data name="SlidersBTNOne4" xml:space="preserve">
+    <value>اكتشف المزيد</value>
+  </data>
+  <data name="SlidersBTNOne5" xml:space="preserve">
+    <value>اكتشف المزيد</value>
+  </data>
+  <data name="SlidersBTNOne6" xml:space="preserve">
+    <value>اكتشف المزيد</value>
+  </data>
+  <data name="SlidersBTNTwo" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+  <data name="SlidersBTNTwo1" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+  <data name="SlidersBTNTwo2" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+  <data name="SlidersBTNTwo3" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+  <data name="SlidersBTNTwo4" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+  <data name="SlidersBTNTwo5" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+  <data name="SlidersBTNTwo6" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+  <data name="SlidersSpan" xml:space="preserve">
+    <value>الخدمات السحابية</value>
+  </data>
+  <data name="SlidersSpan1" xml:space="preserve">
+    <value>مستودع البيانات</value>
+  </data>
+  <data name="SlidersSpan2" xml:space="preserve">
+    <value>الذكاء الاصطناعي</value>
+  </data>
+  <data name="SlidersSpan3" xml:space="preserve">
+    <value>إدارة خدمات تكنولوجيا المعلومات</value>
+  </data>
+  <data name="SlidersSpan4" xml:space="preserve">
+    <value>الأمن السيبراني</value>
+  </data>
+  <data name="SlidersSpan5" xml:space="preserve">
+    <value>إدارة العمليات والبيانات</value>
+  </data>
+  <data name="SlidersSpan6" xml:space="preserve">
+    <value>إدارة البيانات</value>
+  </data>
+  <data name="SlidersSpanH" xml:space="preserve">
+    <value>إطلاق العنان للإمكانات الرقمية</value>
+  </data>
+  <data name="SlidersSpanH1" xml:space="preserve">
+    <value>التنفيذ السلس</value>
+  </data>
+  <data name="SlidersSpanH2" xml:space="preserve">
+    <value>القدرات المتقدمة والمستقبل</value>
+  </data>
+  <data name="SlidersSpanH3" xml:space="preserve">
+    <value>التركيز على الإدارة والتسليم</value>
+  </data>
+  <data name="SlidersSpanH4" xml:space="preserve">
+    <value>الأمن الاستراتيجي والموجه نحو النتائج</value>
+  </data>
+  <data name="SlidersSpanH5" xml:space="preserve">
+    <value>تحويل العملية إلى أداء</value>
+  </data>
+  <data name="SlidersSpanH6" xml:space="preserve">
+    <value>إعادة تعريف إدارة البيانات</value>
+  </data>
+  <data name="SlidersSpanP" xml:space="preserve">
+    <value>نطاق لا نهائي، موثوقية مطلقة: تعزيز الابتكار بلا حدود</value>
+  </data>
+  <data name="SlidersSpanP1" xml:space="preserve">
+    <value>ربط كل شيء: مخططك لنظام بيئي رقمي موحد</value>
+  </data>
+  <data name="SlidersSpanP2" xml:space="preserve">
+    <value>ما بعد الأتمتة: أطلق العنان للذكاء الحقيقي لهندسة مستقبلك</value>
+  </data>
+  <data name="SlidersSpanP3" xml:space="preserve">
+    <value>الاستراتيجية التي تدفع النتائج الرقمية</value>
+  </data>
+  <data name="SlidersSpanP4" xml:space="preserve">
+    <value>الأمن كاستراتيجية: تحويل الامتثال إلى ميزة تنافسية</value>
+  </data>
+  <data name="SlidersSpanP5" xml:space="preserve">
+    <value>ضمان عمليات موثوقة وقابلة للتطوير لكل خدمة</value>
+  </data>
+  <data name="SlidersSpanP6" xml:space="preserve">
+    <value>من التخزين إلى الإستراتيجية لتمكين المستقبل من خلال إدارة البيانات الذكية</value>
+  </data>
+  <data name="Solution" xml:space="preserve">
+    <value>الأمن السيبراني</value>
+  </data>
+  <data name="Solution1" xml:space="preserve">
+    <value>ذكاء الأعمال</value>
+  </data>
+  <data name="Solution2" xml:space="preserve">
+    <value>حقوق البيانات وإدارة سحابة البيانات</value>
+  </data>
+  <data name="Solution3" xml:space="preserve">
+    <value>أتمتة إدارة الإستراتيجية والأداء</value>
+  </data>
+  <data name="Solution4" xml:space="preserve">
+    <value>نمذجة العمليات والأتمتة</value>
+  </data>
+  <data name="Solution5" xml:space="preserve">
+    <value>الابتكار المدعوم بالذكاء الاصطناعي</value>
+  </data>
+  <data name="StrategicSectorSolutionsP" xml:space="preserve">
+    <value>في شركة حلول القادة، نقدم خدمات تكنولوجيا المعلومات التحويلية والاستشارات الاستراتيجية عبر القطاعات التي تشكل مستقبل المملكة. من الحكومة والتعليم إلى الطاقة والرعاية الصحية،
+والتمويل، فإن حلولنا المصممة خصيصًا تمكن المؤسسات من القيادة بثقة،
+الابتكار بهدف، والأداء بدقة. نحن لا نخدم الصناعات فحسب، بل نعمل على الارتقاء بها، ومواءمة كل مشاركة مع الأولويات الوطنية والمعايير العالمية</value>
+  </data>
+  <data name="StrategicSectorSolutionsTitle" xml:space="preserve">
+    <value>الحلول الاستراتيجية لكل قطاع</value>
+  </data>
+  <data name="TestimonialsHeader" xml:space="preserve">
+    <value>ماذا يقول عملائنا عنا</value>
+  </data>
+  <data name="TestimonialsSpan" xml:space="preserve">
+    <value>شهادات حلول القادة</value>
+  </data>
+  <data name="WebDevelopment" xml:space="preserve">
+    <value>تطوير الموقع</value>
+  </data>
+  <data name="WebDevelopmentParagraf" xml:space="preserve">
+    <value>تقدم خدمات تطوير تطبيقات الويب لدينا حلولاً قابلة للتطوير وآمنة وحقيقية ثقافيًا تعمل على تمكين المؤسسات</value>
+  </data>
+  <data name="GRCParagraph" xml:space="preserve">
+    <value>احمِ أعمالك وارتقِ بثقة المستقبل عبر برامج الحوكمة وإدارة المخاطر والامتثال الشاملة، لتقليل مخاطر تقنية المعلومات والأمن السيبراني</value>
+  </data>
+  <data name="GRCTitle" xml:space="preserve">
+    <value>الحوكمة وإدارة المخاطر والامتثال</value>
+  </data>
+  <data name="QprSigningText1" xml:space="preserve">
+    <value>بعد 10 أعوام  من التعاون الموثوق مع شركة كيو بي آر "QPR Software "، بفضل الله تعالى توجت حلول القادة مسيرتها بالتوقيع على استحواذ حقوق الملكية الفكرية الإقليمية  في منطقة الشرق الأوسط وأفريقيا لنظام "QPR Metrics" المعني بأتمتة إدارة الإسترتاتيحبة و الأداء، كما وقعت اتفاقية شراكة حصرية لمنتج QPR Process Mining (تنقيب العمليات) في المنطقة ذاتها.</value>
+  </data>
+  <data name="QprSigningText2" xml:space="preserve">
+    <value>وقد وقع هاتين الإتفاقيتين سعادة المؤسس والرئيس التنفيذي لشركة حلول القادة لتقنية المعلومات الشيخ/  بدر بن ماجد الدويش و سعادة الرئيس التنفيذي لشركة كيو بي آر السيد هيكي فيولا. </value>
+  </data>
+  <data name="QprSigningText3" xml:space="preserve">
+    <value>هذه الخطوة تتجاوز مجرد نمو الأعمال؛ فهي تجسيد لسنوات من النجاح المشترك، والثقة المتبادلة، والرؤية الإقليمية الطموحة. تهدف هذه الخطوة إلى تقريب الخبرات العالمية لشركة "QPR"من عملائنا عبر تواجدنا المحلي وفهمنا العميق للسوق، كما تأتي دعماً لـ رؤية السعودية 2030 من خلال تعزيز المحتوى المحلي والتوطين، وتمكين نقل التكنولوجيا، وتطوير المهارات، وخلق فرص عمل جديدة.</value>
+  </data>
+  <data name="QprSigningText4" xml:space="preserve">
+    <value>ماذا يعني ذلك لعملائنا؟
+يعني تنفيذ أسرع وحلول مدعومة محلياً في مجالات "ذكاء العمليات" وإدارة الأداء، مع خبرة إقليمية أعمق ودعم متكامل لتحقيق تحسينات تشغيلية ملموسة.</value>
+  </data>
+  <data name="QprSigningText5" xml:space="preserve">
+    <value>الجدير بالذكر ، فإن شركة كيو بي آر هي شركة فيلندية و تأسست في عام ١٩٩١ م و  تعتبر القائدة و الرائدة عالمياً في منتج أتمتة إدارة الإستراتيجية و الأداء و لديها ما يتجاوز  ألفين عميل في أكثر من ٥٠ دولة في العالم.</value>
+  </data>
+  <data name="QprSigningTitle" xml:space="preserve">
+    <value>أخبار كبرى من حلول القادة</value>
+  </data>
+  <data name="ServicesHead" xml:space="preserve">
+    <value>نقدّم خدمات شاملة تُعنى بجميع جوانب خدمات تقنية المعلومات الاحترافية</value>
+  </data>
+</root>

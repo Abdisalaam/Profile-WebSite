@@ -1,0 +1,1305 @@
+﻿
+
+@{
+    ViewBag.Title = LeadersSolutionWebSite.Resources.ABoutUSPage.PageTitle;
+    HttpCookie cookie = Request.Cookies["Language"];
+    Layout = "~/Views/Shared/_LayoutNine.cshtml";
+
+}
+
+<head>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LesxrwtAAAAAPO9ffrHiNJ0YCEmeswVdsqDu8Ab"></script>    
+</head>
+
+@{
+
+    if (cookie != null && cookie.Value != null)
+    {
+        if (cookie.Value == "en")
+        {
+            <!-- Page Banner Start -->
+            <section class="page-banner bgs-cover overlay rpt-100 pt-20" style="background-image: url('@Url.Content("~/assets/images/customImages/AboutUS.png")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                <div class="container">
+                    <div class="banner-inner">
+                        <h1 class="text-center lsTextColor-terqui">@LeadersSolutionWebSite.Resources.LayoutPage.CompanyName</h1>
+                        <h2 class="text-center">@LeadersSolutionWebSite.Resources.ABoutUSPage.PageHeader</h2>
+                        <h2 class="text-center">
+                            @LeadersSolutionWebSite.Resources.ABoutUSPage.PageSubTitle
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            <!-- Page Banner End -->
+            <section class="hero">
+                <div>
+                    <div class="eyebrow">
+                        <div class="eyebrow-dot">★</div>
+                        @LeadersSolutionWebSite.Resources.ABoutUSPage.HeadTitle
+                    </div>
+                    <h1 class="hero-title">
+                        @LeadersSolutionWebSite.Resources.ABoutUSPage.HeadSubtitle<br />
+                        <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.HeadSubtitle1</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        @LeadersSolutionWebSite.Resources.ABoutUSPage.HeadTitleText
+
+                    </p>
+                    <div class="hero-slogan">
+                        <span class="hero-slogan-pill">@LeadersSolutionWebSite.Resources.ABoutUSPage.Slogan</span>
+                        <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.SloganText</span>
+                    </div>
+
+                    <div class="hero-meta">
+                        <div class="hero-meta-item">
+                            <div class="hero-meta-dot"></div>
+                            <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.HeadQuarter</span>
+                        </div>
+                        <div class="hero-meta-item">
+                            <div class="hero-meta-dot"></div>
+                            <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.ServingClient</span>
+                        </div>
+                        <div class="hero-meta-item">
+                            <div class="hero-meta-dot"></div>
+                            <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.FoucusOn</span>
+                        </div>
+                    </div>
+                    <a href="@Url.Action("DownloadCompanyProfile", "Home")">
+                        <div class="hero-slogan">
+                            <span class="hero-slogan-pill" style="background-color: #17a2b8; color:white">@LeadersSolutionWebSite.Resources.ABoutUSPage.LSProfile</span>
+                            <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.DownloadProfile</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Right card -->
+                <aside class="hero-card">
+                    <div class="hero-card-inner">
+                        <div class="hero-card-header">
+                            <div class="hero-card-label">@LeadersSolutionWebSite.Resources.ABoutUSPage.CompanySnapshot</div>
+                            <div class="hero-card-badge">
+                                <span class="hero-card-badge-dot"></span>
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.CompanySnapshotTitle
+                            </div>
+                        </div>
+                        <div class="hero-card-title">@LeadersSolutionWebSite.Resources.ABoutUSPage.CompanySnapshotSubTitle</div>
+                        <div class="hero-card-text">
+                            @LeadersSolutionWebSite.Resources.ABoutUSPage.CompanySnapshotSubTitleText
+                        </div>
+                        <div class="hero-card-grid">
+                            <div class="hero-card-pill">
+                                <div class="hero-card-pill-label"> @LeadersSolutionWebSite.Resources.ABoutUSPage.Founded</div>
+                                <div class="hero-card-pill-value">@LeadersSolutionWebSite.Resources.ABoutUSPage.Country</div>
+                            </div>
+                            <div class="hero-card-pill">
+                                <div class="hero-card-pill-label"> @LeadersSolutionWebSite.Resources.ABoutUSPage.Focus</div>
+                                <div class="hero-card-pill-value">@LeadersSolutionWebSite.Resources.ABoutUSPage.FoucusText</div>
+                            </div>
+                            <div class="hero-card-pill">
+                                <div class="hero-card-pill-label">@LeadersSolutionWebSite.Resources.ABoutUSPage.Approach</div>
+                                <div class="hero-card-pill-value">@LeadersSolutionWebSite.Resources.ABoutUSPage.ApproachText</div>
+                            </div>
+                            <div class="hero-card-pill">
+                                <div class="hero-card-pill-label">@LeadersSolutionWebSite.Resources.ABoutUSPage.Mindset</div>
+                                <div class="hero-card-pill-value">@LeadersSolutionWebSite.Resources.ABoutUSPage.MindsetText</div>
+                            </div>
+                        </div>
+                        <div class="hero-card-footer">
+                            <span>
+                                <span class="hero-card-footer-dot"></span>
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.TrustedByPartners
+                            </span>
+                            <span>
+                                <span class="hero-card-footer-dot"></span>
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.SaudiSpirit
+
+                            </span>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+            <!-- About content -->
+            <section class="about-section1" style="padding-left: 15px; padding-right: 15px;">
+                <div class="container">
+                    <div class="about-block-title">@LeadersSolutionWebSite.Resources.ABoutUSPage.OurStory</div>
+                    <h3 class="about-block-heading">@LeadersSolutionWebSite.Resources.ABoutUSPage.OurStoryHead</h3>
+                    <p class="about-block-text">
+                        @LeadersSolutionWebSite.Resources.ABoutUSPage.OurStoryHeadText
+                    </p>
+                    <p class="about-block-text">
+                        @LeadersSolutionWebSite.Resources.ABoutUSPage.StoryHeadTextTwo
+                    </p>
+                    <div class="about-block-title" style="margin-top: 24px;"> @LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoTitle</div>
+                    <h3 class="about-block-heading"> @LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoTextTitle</h3>
+                    <p class="about-block-text">
+                        @LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoText
+                    </p>
+                    <ul class="about-list">
+                        <li>
+                            <span class="about-list-bullet"></span>
+                            <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoOptionOne</span>
+                        </li>
+                        <li>
+                            <span class="about-list-bullet"></span>
+                            <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoOptionTwo</span>
+                        </li>
+                        <li>
+                            <span class="about-list-bullet"></span>
+                            <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoOptionThree</span>
+                        </li>
+                        <li>
+                            <span class="about-list-bullet"></span>
+                            <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoOptionFour</span>
+                        </li>
+                    </ul>
+                </div>
+                                   
+                <aside class="about-side-card">
+                        <h3 class="about-side-label">@LeadersSolutionWebSite.Resources.ABoutUSPage.OurPhilosophy</h3>
+                        <h1 class="about-side-heading">@LeadersSolutionWebSite.Resources.ABoutUSPage.OurPhilosophyTitle</h1>
+                        <p class="about-side-text">
+                            @LeadersSolutionWebSite.Resources.ABoutUSPage.OurPhilosophyText
+                        </p>
+                        <div class="about-side-tags">
+                            <span class="about-side-tag">@LeadersSolutionWebSite.Resources.ABoutUSPage.SaudiFounded</span>
+                            <span class="about-side-tag">@LeadersSolutionWebSite.Resources.ABoutUSPage.GlobalStandards</span>
+                            <span class="about-side-tag">@LeadersSolutionWebSite.Resources.ABoutUSPage.HumanCentered</span>
+                            <span class="about-side-tag">@LeadersSolutionWebSite.Resources.ABoutUSPage.FutureFocused</span>
+                        </div>
+                        <p class="about-side-text">
+                            @LeadersSolutionWebSite.Resources.ABoutUSPage.OurPhilosophyTextTwo
+                        </p>
+                        <div class="about-side-meta">
+                            <span class="text-white">
+                                <span class="about-side-meta-dot"></span>
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.PhilosophyVision
+                            </span>
+                            <span class="text-white">
+                                <span class="about-side-meta-dot"></span>
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.PhilosophyClientServing
+                            </span>
+                        </div>
+                    </aside>
+
+            </section>
+            <!-- About Section Start -->
+            <section class="about-seven rel z-1 rpt-30">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-seven-image rmb-60">
+
+                                <img src="@Url.Content("~/assets/images/customImages/CloudSecurity.jpg")" alt="About">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-seven-content">
+                                <div class="section-title mb-30">
+                                    <h2>@LeadersSolutionWebSite.Resources.ABoutUSPage.LSAndGlopalPartners</h2>
+                                </div>
+                                <p>
+                                    @LeadersSolutionWebSite.Resources.ABoutUSPage.LSAndGlopalPartnersText
+                                </p>
+                                <ul class="list-style-three mt-35 mb-50">
+                                    <li>@LeadersSolutionWebSite.Resources.ABoutUSPage.LSANDGlopalPartnerOptionOne</li>
+                                    <li>@LeadersSolutionWebSite.Resources.ABoutUSPage.LSANDGlopalPartnerOptionTwo</li>
+                                    <li>@LeadersSolutionWebSite.Resources.ABoutUSPage.LSANDGlopalPartnerOptionThree</li>
+                                    <li>@LeadersSolutionWebSite.Resources.ABoutUSPage.LSANDGlopalPartnerOptionFour</li>
+                                </ul>
+                                @*<a href="about.html" class="theme-btn style-eight">Start Free Tral <i class="fas fa-long-arrow-alt-right"></i></a>*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="circle-drop"></div>
+            </section>
+            <!-- About Section End -->
+            <section class="testimonial-section rpb-25">
+                <div class="container">
+                    <div class="section-title text-center mb-65">
+                        <span class="text-white">@LeadersSolutionWebSite.Resources.ABoutUSPage.ITSupport</span>
+                        <h2>@LeadersSolutionWebSite.Resources.ABoutUSPage.ITSupportText</h2>
+                    </div>
+                    <div class="fact-counter-color text-center mb-30">
+                        <div class="row justify-content-center">
+
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="success-item wow fadeInUp delay-0-4s">
+                                    <span class="count-text plus" data-speed="5000" data-stop="@(DateTime.Now.Year - 2009)">0</span>
+                                    <p>@LeadersSolutionWebSite.Resources.ABoutUSPage.YearsExperince</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="success-item wow fadeInUp delay-0-6s">
+                                    <span class="count-text plus" data-speed="5000" data-stop="352">0</span>
+                                    <p>@LeadersSolutionWebSite.Resources.ABoutUSPage.HappyClients</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-item wow fadeInLeft delay-0-2s">
+                            <div class="author-description">
+
+                                <img src="@Url.Content("~/assets/images/clientLogos/GSTC.png")"
+                                     loading="lazy"
+                                     alt="Author"
+                                     style=" width: 100px !important; height: 100px !important; max-width: 100px !important; max-height: 100px !important; object-fit: contain; display: block !important; flex-shrink: 0 !important;">
+
+                                <div class="designation">
+                                    <h5 style="color:black">@LeadersSolutionWebSite.Resources.ABoutUSPage.GSTCCompanyEmployee</h5>
+                                    <h5 style="color:black"><b>@LeadersSolutionWebSite.Resources.ABoutUSPage.GSTCCompanyEmployeeFunction</b></h5>
+                                    <span style="color:#0ca8e6">@LeadersSolutionWebSite.Resources.ABoutUSPage.GSTCCompany</span>
+                                </div>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <p style="color:black">
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.GSTCCompanyEmployeeTestemony
+                            </p>
+                        </div>
+                        <div class="testimonial-item wow fadeInLeft delay-0-2s">
+                            <div class="author-description">
+
+                                <img src="@Url.Content("~/assets/images/clientLogos/Misa.png")"
+                                     loading="lazy"
+                                     alt="Author"
+                                     style=" width: 100px !important; height: 100px !important; max-width: 100px !important; max-height: 100px !important; object-fit: contain; display: block !important; flex-shrink: 0 !important;">
+
+                                <div class="designation">
+                                    <h5 style="color:black">@LeadersSolutionWebSite.Resources.ABoutUSPage.MisaCompanyEmployee</h5>
+                                    <h5 style="color:black"><b>@LeadersSolutionWebSite.Resources.ABoutUSPage.MisaCompanyEmployeeFunction</b></h5>
+                                    <span style="color:#0ca8e6">@LeadersSolutionWebSite.Resources.ABoutUSPage.MisaCompany</span>
+                                </div>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <p style="color:black">
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.MisaCompanyEmployeeTestemony
+                            </p>
+                        </div>
+
+                        <div class="testimonial-item wow fadeInLeft delay-0-2s">
+                            <div class="author-description">
+
+                                <img src="@Url.Content("~/assets/images/clientLogos/Elm.png")"
+                                     loading="lazy"
+                                     alt="Author"
+                                     style="width: 100px !important; height: 100px !important; max-width: 100px !important; max-height: 100px !important; object-fit: contain; display: block !important; flex-shrink: 0 !important; ">
+                                <div class="designation">
+                                    <h5 style="color:black">@LeadersSolutionWebSite.Resources.ABoutUSPage.ElmCompanyEmployee</h5>
+                                    <h5 style="color:black"><b>@LeadersSolutionWebSite.Resources.ABoutUSPage.ElmCompanyEmployeeFunction</b></h5>
+                                    <span style="color:#0ca8e6">@LeadersSolutionWebSite.Resources.ABoutUSPage.ElmCompany</span>
+                                </div>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <p style="color:black">
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.ElmCompanyEmployeeTestmony
+                            </p>
+                        </div>
+
+
+                        <div class="testimonial-item wow fadeInLeft delay-0-2s">
+                            <div class="author-description">
+
+                                <img src="@Url.Content("~/assets/images/clientLogos/HRSD.png")"
+                                     loading="lazy"
+                                     alt="Author"
+                                     style=" width: 100px !important; height: 100px !important; max-width: 100px !important; max-height: 100px !important; object-fit: contain; display: block !important; flex-shrink: 0 !important;">
+
+                                <div class="designation">
+                                    <h5 style="color:black">@LeadersSolutionWebSite.Resources.ABoutUSPage.HRSDCompanyEmployee</h5>
+                                    <h5 style="color:black"><b>@LeadersSolutionWebSite.Resources.ABoutUSPage.HRSDCompanyEmployeeFunction</b></h5>
+                                    <span style="color:#0ca8e6">@LeadersSolutionWebSite.Resources.ABoutUSPage.HRSDCompany</span>
+                                </div>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <p style="color:black">
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.HRSDCompanyEmployeeTestmony
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Testimonial Section End -->
+            <!-- Contact Area Start -->
+            <section class="contact-four py-25 rpy-25">
+                <div class="container">
+                    <div class="contact-inner-four box-shadow p-35 rpx-25 br-5 bg-white">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="contact-section-form px-15 rpx-0 rmb-50 wow fadeInUp delay-0-2s">
+                                    <div class="section-title mb-20">
+                                        <h2 style="color:black">@LeadersSolutionWebSite.Resources.ABoutUSPage.GetInTouch</h2>
+                                    </div>
+                                    <form id="contact_form" class="contact-form" name="contact_form" action="@Url.Action("SendMessage", "Home")" method="post">
+                                        @Html.AntiForgeryToken()
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="name">@LeadersSolutionWebSite.Resources.ABoutUSPage.YourName <span style="color:red">*</span></label>
+                                                    <input type="text" id="name" name="name" maxlength="300" class="form-control" oninput="removeError(this)" placeholder="@LeadersSolutionWebSite.Resources.ABoutUSPage.YourName" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="email">@LeadersSolutionWebSite.Resources.ABoutUSPage.YourEmail <span style="color:red">*</span></label>
+                                                    <input type="email" id="email" name="email" maxlength="300" class="form-control" oninput="removeError(this)" placeholder="@LeadersSolutionWebSite.Resources.ABoutUSPage.YourEmail" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="mobile">@LeadersSolutionWebSite.Resources.ABoutUSPage.YourPhone <span style="color:red">*</span></label>
+                                                    <input type="text" id="mobile" name="mobile" maxlength="15" class="form-control" oninput="removeError(this)" placeholder="@LeadersSolutionWebSite.Resources.ABoutUSPage.YourPhone" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="service">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceRequired <span style="color:red">*</span></label>
+                                                    <select id="service" name="service">
+                                                        <option value="default" selected>@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionOne</option>
+                                                        <option value="solution">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionTwo</option>
+                                                        <option value="contact">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionThree</option>
+                                                        <option value="partnership">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionFour</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="comments">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceComment</label>
+
+                                                    <textarea name="comments" id="comments" maxlength="500" class="form-control" rows="4" placeholder="@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceComment"></textarea>
+                                                </div>
+                                            </div>
+                                            @*<div class="col-sm-12" id="sendMessagBTN">
+                <button type="submit" class="theme-btn">@LeadersSolutionWebSite.Resources.ABoutUSPage.SendMessage</button>
+            </div>*@
+                                            <div class="col-sm-12" id="recaptchaBTN">
+                                                <button class="g-recaptcha theme-btn" data-sitekey="6LesxrwtAAAAAPO9ffrHiNJ0YCEmeswVdsqDu8Ab" data-callback='onSubmit' data-action='submit'>@LeadersSolutionWebSite.Resources.ABoutUSPage.SendMessage</button>
+
+                                            </div>
+                                            <input type="hidden" id="RecaptchaToken" name="RecaptchaToken">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        <div class="col-lg-5" style="border-radius: 10px; background-image: url('@Url.Content("~/assets/images/customImages/rocks-together-1920-min.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                                <div class="contact-image-number style-two bgs-cover wow fadeInUp delay-0-4s">
+                                    <div class="contact-informations text-white">
+                                        <h3>@LeadersSolutionWebSite.Resources.ABoutUSPage.DontHesitateToContactUs</h3>
+                                        <ul class="contact-info">
+                                            <li>
+                                                <i class="fas fa-phone-alt"></i>
+                                                <div class="content">
+                                                    <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.CallUs</span>
+                                                    <h5><a href="callto:+966534684570">00966-534-684-570</a></h5>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-envelope"></i>
+                                                <div class="content">
+                                                    <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.WriteToUs</span>
+                                                    <h5><a href="mailto:info@LeadersSolutions.sa">info@LeadersSolutions.sa</a></h5>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-clock"></i>
+                                                <div class="content">
+                                                    <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.OfficeHours</span>
+                                                    <h5>Mon-Sat 9:00 - 7:00</h5>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Area End -->
+
+
+
+        }
+        else
+        {
+            <!-- Page Banner Start -->
+            <section class="page-banner bgs-cover overlay rpt-100 pt-20" style="background-image: url('@Url.Content("~/assets/images/customImages/AboutUS.png")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                <div class="container">
+                    <div class="banner-inner">
+                        <h1 class="text-center lsTextColor-terqui">@LeadersSolutionWebSite.Resources.LayoutPage.CompanyName</h1>
+                        <h2 class="text-center">@LeadersSolutionWebSite.Resources.ABoutUSPage.PageHeader</h2>
+                        <h2 class="text-center">
+                            @LeadersSolutionWebSite.Resources.ABoutUSPage.PageSubTitle
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            <!-- Page Banner End -->
+            <section class="hero" dir="rtl" style="text-align:right;">
+                <div>
+                    <div class="eyebrow">
+                        <div class="eyebrow-dot">★</div>
+                        @LeadersSolutionWebSite.Resources.ABoutUSPage.HeadTitle
+                    </div>
+                    <h1 class="hero-title">
+                        @LeadersSolutionWebSite.Resources.ABoutUSPage.HeadSubtitle<br />
+                        <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.HeadSubtitle1</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        @LeadersSolutionWebSite.Resources.ABoutUSPage.HeadTitleText
+
+                    </p>
+                    <div class="hero-slogan">
+                        <span class="hero-slogan-pill">@LeadersSolutionWebSite.Resources.ABoutUSPage.Slogan</span>
+                        <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.SloganText</span>
+                    </div>
+
+                    <div class="hero-meta">
+                        <div class="hero-meta-item">
+                            <div class="hero-meta-dot"></div>
+                            <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.HeadQuarter</span>
+                        </div>
+                        <div class="hero-meta-item">
+                            <div class="hero-meta-dot"></div>
+                            <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.ServingClient</span>
+                        </div>
+                        <div class="hero-meta-item">
+                            <div class="hero-meta-dot"></div>
+                            <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.FoucusOn</span>
+                        </div>
+                    </div>
+                    <a href="@Url.Action("DownloadCompanyProfile", "Home")">
+                        <div class="hero-slogan">
+                            <span class="hero-slogan-pill" style="background-color: #17a2b8; color:white">@LeadersSolutionWebSite.Resources.ABoutUSPage.LSProfile</span>
+                            <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.DownloadProfile</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Right card -->
+                <aside class="hero-card">
+                    <div class="hero-card-inner">
+                        <div class="hero-card-header">
+                            <div class="hero-card-label">@LeadersSolutionWebSite.Resources.ABoutUSPage.CompanySnapshot</div>
+                            <div class="hero-card-badge">
+                                <span class="hero-card-badge-dot"></span>
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.CompanySnapshotTitle
+                            </div>
+                        </div>
+                        <div class="hero-card-title">@LeadersSolutionWebSite.Resources.ABoutUSPage.CompanySnapshotSubTitle</div>
+                        <div class="hero-card-text">
+                            @LeadersSolutionWebSite.Resources.ABoutUSPage.CompanySnapshotSubTitleText
+                        </div>
+                        <div class="hero-card-grid">
+                            <div class="hero-card-pill">
+                                <div class="hero-card-pill-label"> @LeadersSolutionWebSite.Resources.ABoutUSPage.Founded</div>
+                                <div class="hero-card-pill-value">@LeadersSolutionWebSite.Resources.ABoutUSPage.Country</div>
+                            </div>
+                            <div class="hero-card-pill">
+                                <div class="hero-card-pill-label"> @LeadersSolutionWebSite.Resources.ABoutUSPage.Focus</div>
+                                <div class="hero-card-pill-value">@LeadersSolutionWebSite.Resources.ABoutUSPage.FoucusText</div>
+                            </div>
+                            <div class="hero-card-pill">
+                                <div class="hero-card-pill-label">@LeadersSolutionWebSite.Resources.ABoutUSPage.Approach</div>
+                                <div class="hero-card-pill-value">@LeadersSolutionWebSite.Resources.ABoutUSPage.ApproachText</div>
+                            </div>
+                            <div class="hero-card-pill">
+                                <div class="hero-card-pill-label">@LeadersSolutionWebSite.Resources.ABoutUSPage.Mindset</div>
+                                <div class="hero-card-pill-value">@LeadersSolutionWebSite.Resources.ABoutUSPage.MindsetText</div>
+                            </div>
+                        </div>
+                        <div class="hero-card-footer">
+                            <span>
+                                <span class="hero-card-footer-dot"></span>
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.TrustedByPartners
+                            </span>
+                            <span>
+                                <span class="hero-card-footer-dot"></span>
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.SaudiSpirit
+
+                            </span>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <!-- About content -->
+            <section class="about-section1" dir="rtl" style="text-align: right; padding-left: 15px; padding-right: 15px;">
+                <div class="container">
+                    <div class="about-block-title">@LeadersSolutionWebSite.Resources.ABoutUSPage.OurStory</div>
+                    <h3 class="about-block-heading">@LeadersSolutionWebSite.Resources.ABoutUSPage.OurStoryHead</h3>
+                    <p class="about-block-text">
+                        @LeadersSolutionWebSite.Resources.ABoutUSPage.OurStoryHeadText
+                    </p>
+                    <p class="about-block-text">
+                        @LeadersSolutionWebSite.Resources.ABoutUSPage.StoryHeadTextTwo
+                    </p>
+                    <div class="about-block-title" style="margin-top: 24px;"> @LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoTitle</div>
+                    <h3 class="about-block-heading"> @LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoTextTitle</h3>
+                    <p class="about-block-text">
+                        @LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoText
+                    </p>
+                    <ul class="about-list">
+                        <li>
+                            <span class="about-list-bullet"></span>
+                            <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoOptionOne</span>
+                        </li>
+                        <li>
+                            <span class="about-list-bullet"></span>
+                            <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoOptionTwo</span>
+                        </li>
+                        <li>
+                            <span class="about-list-bullet"></span>
+                            <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoOptionThree</span>
+                        </li>
+                        <li>
+                            <span class="about-list-bullet"></span>
+                            <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoOptionFour</span>
+                        </li>
+                    </ul>
+                </div>
+                                   
+                <aside class="about-side-card" style="padding-left: 15px; padding-right: 15px;">
+                        <h3 class="about-side-label">@LeadersSolutionWebSite.Resources.ABoutUSPage.OurPhilosophy</h3>
+                        <h1 class="about-side-heading">@LeadersSolutionWebSite.Resources.ABoutUSPage.OurPhilosophyTitle</h1>
+                        <p class="about-side-text">
+                            @LeadersSolutionWebSite.Resources.ABoutUSPage.OurPhilosophyText
+                        </p>
+                        <div class="about-side-tags">
+                            <span class="about-side-tag">@LeadersSolutionWebSite.Resources.ABoutUSPage.SaudiFounded</span>
+                            <span class="about-side-tag">@LeadersSolutionWebSite.Resources.ABoutUSPage.GlobalStandards</span>
+                            <span class="about-side-tag">@LeadersSolutionWebSite.Resources.ABoutUSPage.HumanCentered</span>
+                            <span class="about-side-tag">@LeadersSolutionWebSite.Resources.ABoutUSPage.FutureFocused</span>
+                        </div>
+                        <p class="about-side-text">
+                            @LeadersSolutionWebSite.Resources.ABoutUSPage.OurPhilosophyTextTwo
+                        </p>
+                        <div class="about-side-meta">
+                            <span class="text-white">
+                                <span class="about-side-meta-dot"></span>
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.PhilosophyVision
+                            </span>
+                            <span class="text-white">
+                                <span class="about-side-meta-dot"></span>
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.PhilosophyClientServing
+                            </span>
+                        </div>
+                    </aside>
+
+            </section>
+            <!-- About Section Start -->
+            <section class="about-seven rel z-1 rpt-30" dir="rtl" style="text-align:right;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-seven-image rmb-60">
+
+                                <img src="@Url.Content("~/assets/images/customImages/CloudSecurity.jpg")" alt="About">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-seven-content">
+                                <div class="section-title mb-30">
+                                    <h2>@LeadersSolutionWebSite.Resources.ABoutUSPage.LSAndGlopalPartners</h2>
+                                </div>
+                                <p>
+                                    @LeadersSolutionWebSite.Resources.ABoutUSPage.LSAndGlopalPartnersText
+                                </p>
+                                <ul class="list-style-three mt-35 mb-50">
+                                    <li>@LeadersSolutionWebSite.Resources.ABoutUSPage.LSANDGlopalPartnerOptionOne</li>
+                                    <li>@LeadersSolutionWebSite.Resources.ABoutUSPage.LSANDGlopalPartnerOptionTwo</li>
+                                    <li>@LeadersSolutionWebSite.Resources.ABoutUSPage.LSANDGlopalPartnerOptionThree</li>
+                                    <li>@LeadersSolutionWebSite.Resources.ABoutUSPage.LSANDGlopalPartnerOptionFour</li>
+                                </ul>
+                                @*<a href="about.html" class="theme-btn style-eight">Start Free Tral <i class="fas fa-long-arrow-alt-right"></i></a>*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="circle-drop"></div>
+            </section>
+            <!-- About Section End -->
+            <section class="testimonial-section rpb-25">
+                <div class="container">
+                    <div class="section-title text-center mb-65">
+                        <span class="text-white">@LeadersSolutionWebSite.Resources.ABoutUSPage.ITSupport</span>
+                        <h2>@LeadersSolutionWebSite.Resources.ABoutUSPage.ITSupportText</h2>
+                    </div>
+                    <div class="fact-counter-color text-center mb-30">
+                        <div class="row justify-content-center">
+
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="success-item wow fadeInUp delay-0-4s">
+                                    <span class="count-text plus" data-speed="5000" data-stop="@(DateTime.Now.Year - 2009)">0</span>
+                                    <p>@LeadersSolutionWebSite.Resources.ABoutUSPage.YearsExperince</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="success-item wow fadeInUp delay-0-6s">
+                                    <span class="count-text plus" data-speed="5000" data-stop="352">0</span>
+                                    <p>@LeadersSolutionWebSite.Resources.ABoutUSPage.HappyClients</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-item wow fadeInLeft delay-0-2s">
+                            <div class="author-description">
+
+                                <img src="@Url.Content("~/assets/images/clientLogos/GSTC.png")"
+                                     loading="lazy"
+                                     alt="Author"
+                                     style=" width: 100px !important; height: 100px !important; max-width: 100px !important; max-height: 100px !important; object-fit: contain; display: block !important; flex-shrink: 0 !important;">
+
+                                <div class="designation">
+                                    <h5 style="color:black">@LeadersSolutionWebSite.Resources.ABoutUSPage.GSTCCompanyEmployee</h5>
+                                    <h5 style="color:black"><b>@LeadersSolutionWebSite.Resources.ABoutUSPage.GSTCCompanyEmployeeFunction</b></h5>
+                                    <span style="color:#0ca8e6">@LeadersSolutionWebSite.Resources.ABoutUSPage.GSTCCompany</span>
+                                </div>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <p style="color:black">
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.GSTCCompanyEmployeeTestemony
+                            </p>
+                        </div>
+                        <div class="testimonial-item wow fadeInLeft delay-0-2s">
+                            <div class="author-description">
+
+                                <img src="@Url.Content("~/assets/images/clientLogos/Misa.png")"
+                                     loading="lazy"
+                                     alt="Author"
+                                     style=" width: 100px !important; height: 100px !important; max-width: 100px !important; max-height: 100px !important; object-fit: contain; display: block !important; flex-shrink: 0 !important;">
+
+                                <div class="designation">
+                                    <h5 style="color:black">@LeadersSolutionWebSite.Resources.ABoutUSPage.MisaCompanyEmployee</h5>
+                                    <h5 style="color:black"><b>@LeadersSolutionWebSite.Resources.ABoutUSPage.MisaCompanyEmployeeFunction</b></h5>
+                                    <span style="color:#0ca8e6">@LeadersSolutionWebSite.Resources.ABoutUSPage.MisaCompany</span>
+                                </div>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <p style="color:black">
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.MisaCompanyEmployeeTestemony
+                            </p>
+                        </div>
+
+                        <div class="testimonial-item wow fadeInLeft delay-0-2s">
+                            <div class="author-description">
+
+                                <img src="@Url.Content("~/assets/images/clientLogos/Elm.png")"
+                                     loading="lazy"
+                                     alt="Author"
+                                     style="width: 100px !important; height: 100px !important; max-width: 100px !important; max-height: 100px !important; object-fit: contain; display: block !important; flex-shrink: 0 !important; ">
+                                <div class="designation">
+                                    <h5 style="color:black">@LeadersSolutionWebSite.Resources.ABoutUSPage.ElmCompanyEmployee</h5>
+                                    <h5 style="color:black"><b>@LeadersSolutionWebSite.Resources.ABoutUSPage.ElmCompanyEmployeeFunction</b></h5>
+                                    <span style="color:#0ca8e6">@LeadersSolutionWebSite.Resources.ABoutUSPage.ElmCompany</span>
+                                </div>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <p style="color:black">
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.ElmCompanyEmployeeTestmony
+                            </p>
+                        </div>
+
+
+                        <div class="testimonial-item wow fadeInLeft delay-0-2s">
+                            <div class="author-description">
+
+                                <img src="@Url.Content("~/assets/images/clientLogos/HRSD.png")"
+                                     loading="lazy"
+                                     alt="Author"
+                                     style=" width: 100px !important; height: 100px !important; max-width: 100px !important; max-height: 100px !important; object-fit: contain; display: block !important; flex-shrink: 0 !important;">
+
+                                <div class="designation">
+                                    <h5 style="color:black">@LeadersSolutionWebSite.Resources.ABoutUSPage.HRSDCompanyEmployee</h5>
+                                    <h5 style="color:black"><b>@LeadersSolutionWebSite.Resources.ABoutUSPage.HRSDCompanyEmployeeFunction</b></h5>
+                                    <span style="color:#0ca8e6">@LeadersSolutionWebSite.Resources.ABoutUSPage.HRSDCompany</span>
+                                </div>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <p style="color:black">
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.HRSDCompanyEmployeeTestmony
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Testimonial Section End -->
+            <!-- Contact Area Start -->
+            <section class="contact-four py-25 rpy-25" dir="rtl" style="text-align: right;">
+                <div class="container">
+                    <div class="contact-inner-four box-shadow p-35 rpx-25 br-5 bg-white">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="contact-section-form px-15 rpx-0 rmb-50 wow fadeInUp delay-0-2s">
+                                    <div class="section-title mb-20">
+                                        <h2 style="color:black">@LeadersSolutionWebSite.Resources.ABoutUSPage.GetInTouch</h2>
+                                    </div>
+                                    <form id="contact_form" class="contact-form" name="contact_form" action="@Url.Action("SendMessage", "Home")" method="post">
+                                        @Html.AntiForgeryToken()
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="name">@LeadersSolutionWebSite.Resources.ABoutUSPage.YourName <span style="color:red">*</span></label>
+                                                    <input type="text" id="name" name="name" maxlength="300" class="form-control" oninput="removeError(this)" placeholder="@LeadersSolutionWebSite.Resources.ABoutUSPage.YourName" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="email">@LeadersSolutionWebSite.Resources.ABoutUSPage.YourEmail <span style="color:red">*</span></label>
+                                                    <input type="email" id="email" name="email" maxlength="300" class="form-control" oninput="removeError(this)" placeholder="@LeadersSolutionWebSite.Resources.ABoutUSPage.YourEmail" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="mobile">@LeadersSolutionWebSite.Resources.ABoutUSPage.YourPhone <span style="color:red">*</span></label>
+                                                    <input type="text" id="mobile" name="mobile" maxlength="15" class="form-control" oninput="removeError(this)" placeholder="@LeadersSolutionWebSite.Resources.ABoutUSPage.YourPhone" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="service">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceRequired <span style="color:red">*</span></label>
+                                                    <select id="service" name="service">
+                                                        <option value="default" selected>@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionOne</option>
+                                                        <option value="solution">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionTwo</option>
+                                                        <option value="contact">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionThree</option>
+                                                        <option value="partnership">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionFour</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="comments">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceComment</label>
+
+                                                    <textarea name="comments" id="comments" maxlength="500" class="form-control" rows="4" placeholder="@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceComment"></textarea>
+                                                </div>
+                                            </div>
+                                            @*<div class="col-sm-12" id="sendMessagBTN">
+
+            <button type="submit" class="theme-btn">@LeadersSolutionWebSite.Resources.ABoutUSPage.SendMessage</button>
+
+            </div>*@
+                                            <div class="col-sm-12" id="recaptchaBTN">
+                                                <button class="g-recaptcha theme-btn" data-sitekey="6LesxrwtAAAAAPO9ffrHiNJ0YCEmeswVdsqDu8Ab" data-callback='onSubmit' data-action='submit'>@LeadersSolutionWebSite.Resources.ABoutUSPage.SendMessage</button>
+
+                                            </div>
+                                            <input type="hidden" id="RecaptchaToken" name="RecaptchaToken">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-5" style="border-radius: 10px; background-image: url('@Url.Content("~/assets/images/customImages/rocks-together-1920-min.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                                <div class="contact-image-number style-two bgs-cover wow fadeInUp delay-0-4s">
+                                    <div class="contact-informations text-white">
+                                        <h3>@LeadersSolutionWebSite.Resources.ABoutUSPage.DontHesitateToContactUs</h3>
+                                        <ul class="contact-info">
+                                            <li>
+                                                <i class="fas fa-phone-alt"></i>
+                                                <div class="content">
+                                                    <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.CallUs</span>
+                                                    <h5><a href="callto:+966534684570">00966-534-684-570</a></h5>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-envelope"></i>
+                                                <div class="content">
+                                                    <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.WriteToUs</span>
+                                                    <h5><a href="mailto:info@LeadersSolutions.sa">info@LeadersSolutions.sa</a></h5>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-clock"></i>
+                                                <div class="content">
+                                                    <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.OfficeHours</span>
+                                                    <h5>Mon-Sat 9:00 - 7:00</h5>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Area End -->
+
+
+
+        }
+    }
+    else
+    {
+        <!-- Page Banner Start -->
+        <section class="page-banner bgs-cover overlay rpt-100 pt-20" style="background-image: url('@Url.Content("~/assets/images/customImages/AboutUS.png")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+            <div class="container">
+                <div class="banner-inner">
+                    <h1 class="text-center lsTextColor-terqui">@LeadersSolutionWebSite.Resources.LayoutPage.CompanyName</h1>
+                    <h2 class="text-center">@LeadersSolutionWebSite.Resources.ABoutUSPage.PageHeader</h2>
+                    <h2 class="text-center">
+                        @LeadersSolutionWebSite.Resources.ABoutUSPage.PageSubTitle
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <!-- Page Banner End -->
+        <section class="hero" dir="rtl" style="text-align:right;">
+            <div>
+                <div class="eyebrow">
+                    <div class="eyebrow-dot">★</div>
+                    @LeadersSolutionWebSite.Resources.ABoutUSPage.HeadTitle
+                </div>
+                <h1 class="hero-title">
+                    @LeadersSolutionWebSite.Resources.ABoutUSPage.HeadSubtitle<br />
+                    <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.HeadSubtitle1</span>
+                </h1>
+                <p class="hero-subtitle">
+                    @LeadersSolutionWebSite.Resources.ABoutUSPage.HeadTitleText
+
+                </p>
+                <div class="hero-slogan">
+                    <span class="hero-slogan-pill">@LeadersSolutionWebSite.Resources.ABoutUSPage.Slogan</span>
+                    <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.SloganText</span>
+                </div>
+
+                <div class="hero-meta">
+                    <div class="hero-meta-item">
+                        <div class="hero-meta-dot"></div>
+                        <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.HeadQuarter</span>
+                    </div>
+                    <div class="hero-meta-item">
+                        <div class="hero-meta-dot"></div>
+                        <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.ServingClient</span>
+                    </div>
+                    <div class="hero-meta-item">
+                        <div class="hero-meta-dot"></div>
+                        <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.FoucusOn</span>
+                    </div>
+                </div>
+                <a href="@Url.Action("DownloadCompanyProfile", "Home")">
+                    <div class="hero-slogan">
+                        <span class="hero-slogan-pill" style="background-color: #17a2b8; color:white">@LeadersSolutionWebSite.Resources.ABoutUSPage.LSProfile</span>
+                        <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.DownloadProfile</span>
+                    </div>
+                </a>
+            </div>
+            <!-- Right card -->
+            <aside class="hero-card">
+                <div class="hero-card-inner">
+                    <div class="hero-card-header">
+                        <div class="hero-card-label">@LeadersSolutionWebSite.Resources.ABoutUSPage.CompanySnapshot</div>
+                        <div class="hero-card-badge">
+                            <span class="hero-card-badge-dot"></span>
+                            @LeadersSolutionWebSite.Resources.ABoutUSPage.CompanySnapshotTitle
+                        </div>
+                    </div>
+                    <div class="hero-card-title">@LeadersSolutionWebSite.Resources.ABoutUSPage.CompanySnapshotSubTitle</div>
+                    <div class="hero-card-text">
+                        @LeadersSolutionWebSite.Resources.ABoutUSPage.CompanySnapshotSubTitleText
+                    </div>
+                    <div class="hero-card-grid">
+                        <div class="hero-card-pill">
+                            <div class="hero-card-pill-label"> @LeadersSolutionWebSite.Resources.ABoutUSPage.Founded</div>
+                            <div class="hero-card-pill-value">@LeadersSolutionWebSite.Resources.ABoutUSPage.Country</div>
+                        </div>
+                        <div class="hero-card-pill">
+                            <div class="hero-card-pill-label"> @LeadersSolutionWebSite.Resources.ABoutUSPage.Focus</div>
+                            <div class="hero-card-pill-value">@LeadersSolutionWebSite.Resources.ABoutUSPage.FoucusText</div>
+                        </div>
+                        <div class="hero-card-pill">
+                            <div class="hero-card-pill-label">@LeadersSolutionWebSite.Resources.ABoutUSPage.Approach</div>
+                            <div class="hero-card-pill-value">@LeadersSolutionWebSite.Resources.ABoutUSPage.ApproachText</div>
+                        </div>
+                        <div class="hero-card-pill">
+                            <div class="hero-card-pill-label">@LeadersSolutionWebSite.Resources.ABoutUSPage.Mindset</div>
+                            <div class="hero-card-pill-value">@LeadersSolutionWebSite.Resources.ABoutUSPage.MindsetText</div>
+                        </div>
+                    </div>
+                    <div class="hero-card-footer">
+                        <span>
+                            <span class="hero-card-footer-dot"></span>
+                            @LeadersSolutionWebSite.Resources.ABoutUSPage.TrustedByPartners
+                        </span>
+                        <span>
+                            <span class="hero-card-footer-dot"></span>
+                            @LeadersSolutionWebSite.Resources.ABoutUSPage.SaudiSpirit
+
+                        </span>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <!-- About content -->
+        <section class="about-section1" dir="rtl" style="text-align: right; padding-left: 15px; padding-right: 15px;">
+            <div class="container">
+                <div class="about-block-title">@LeadersSolutionWebSite.Resources.ABoutUSPage.OurStory</div>
+                <h3 class="about-block-heading">@LeadersSolutionWebSite.Resources.ABoutUSPage.OurStoryHead</h3>
+                <p class="about-block-text">
+                    @LeadersSolutionWebSite.Resources.ABoutUSPage.OurStoryHeadText
+                </p>
+                <p class="about-block-text">
+                    @LeadersSolutionWebSite.Resources.ABoutUSPage.StoryHeadTextTwo
+                </p>
+                <div class="about-block-title" style="margin-top: 24px;"> @LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoTitle</div>
+                <h3 class="about-block-heading"> @LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoTextTitle</h3>
+                <p class="about-block-text">
+                    @LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoText
+                </p>
+                <ul class="about-list">
+                    <li>
+                        <span class="about-list-bullet"></span>
+                        <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoOptionOne</span>
+                    </li>
+                    <li>
+                        <span class="about-list-bullet"></span>
+                        <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoOptionTwo</span>
+                    </li>
+                    <li>
+                        <span class="about-list-bullet"></span>
+                        <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoOptionThree</span>
+                    </li>
+                    <li>
+                        <span class="about-list-bullet"></span>
+                        <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.WhatWeDoOptionFour</span>
+                    </li>
+                </ul>
+            </div>
+                            
+            <aside class="about-side-card" style="padding-left: 15px; padding-right: 15px;">
+                    <h3 class="about-side-label">@LeadersSolutionWebSite.Resources.ABoutUSPage.OurPhilosophy</h3>
+                    <h1 class="about-side-heading">@LeadersSolutionWebSite.Resources.ABoutUSPage.OurPhilosophyTitle</h1>
+                    <p class="about-side-text">
+                        @LeadersSolutionWebSite.Resources.ABoutUSPage.OurPhilosophyText
+                    </p>
+                    <div class="about-side-tags">
+                        <span class="about-side-tag">@LeadersSolutionWebSite.Resources.ABoutUSPage.SaudiFounded</span>
+                        <span class="about-side-tag">@LeadersSolutionWebSite.Resources.ABoutUSPage.GlobalStandards</span>
+                        <span class="about-side-tag">@LeadersSolutionWebSite.Resources.ABoutUSPage.HumanCentered</span>
+                        <span class="about-side-tag">@LeadersSolutionWebSite.Resources.ABoutUSPage.FutureFocused</span>
+                    </div>
+                    <p class="about-side-text">
+                        @LeadersSolutionWebSite.Resources.ABoutUSPage.OurPhilosophyTextTwo
+                    </p>
+                    <div class="about-side-meta">
+                        <span class="text-white">
+                            <span class="about-side-meta-dot"></span>
+                            @LeadersSolutionWebSite.Resources.ABoutUSPage.PhilosophyVision
+                        </span>
+                        <span class="text-white">
+                            <span class="about-side-meta-dot"></span>
+                            @LeadersSolutionWebSite.Resources.ABoutUSPage.PhilosophyClientServing
+                        </span>
+                    </div>
+                </aside>
+
+        </section>
+        <!-- About Section Start -->
+        <section class="about-seven rel z-1 rpt-30" dir="rtl" style="text-align:right;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-seven-image rmb-60">
+
+                            <img src="@Url.Content("~/assets/images/customImages/CloudSecurity.jpg")" alt="About">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-seven-content">
+                            <div class="section-title mb-30">
+                                <h2>@LeadersSolutionWebSite.Resources.ABoutUSPage.LSAndGlopalPartners</h2>
+                            </div>
+                            <p>
+                                @LeadersSolutionWebSite.Resources.ABoutUSPage.LSAndGlopalPartnersText
+                            </p>
+                            <ul class="list-style-three mt-35 mb-50">
+                                <li>@LeadersSolutionWebSite.Resources.ABoutUSPage.LSANDGlopalPartnerOptionOne</li>
+                                <li>@LeadersSolutionWebSite.Resources.ABoutUSPage.LSANDGlopalPartnerOptionTwo</li>
+                                <li>@LeadersSolutionWebSite.Resources.ABoutUSPage.LSANDGlopalPartnerOptionThree</li>
+                                <li>@LeadersSolutionWebSite.Resources.ABoutUSPage.LSANDGlopalPartnerOptionFour</li>
+                            </ul>
+                            @*<a href="about.html" class="theme-btn style-eight">Start Free Tral <i class="fas fa-long-arrow-alt-right"></i></a>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="circle-drop"></div>
+        </section>
+        <!-- About Section End -->
+        <section class="testimonial-section rpb-25">
+            <div class="container">
+                <div class="section-title text-center mb-65">
+                    <span class="text-white">@LeadersSolutionWebSite.Resources.ABoutUSPage.ITSupport</span>
+                    <h2>@LeadersSolutionWebSite.Resources.ABoutUSPage.ITSupportText</h2>
+                </div>
+                <div class="fact-counter-color text-center mb-30">
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="success-item wow fadeInUp delay-0-4s">
+                                <span class="count-text plus" data-speed="5000" data-stop="@(DateTime.Now.Year - 2009)">0</span>
+                                <p>@LeadersSolutionWebSite.Resources.ABoutUSPage.YearsExperince</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="success-item wow fadeInUp delay-0-6s">
+                                <span class="count-text plus" data-speed="5000" data-stop="352">0</span>
+                                <p>@LeadersSolutionWebSite.Resources.ABoutUSPage.HappyClients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-wrap">
+                    <div class="testimonial-item wow fadeInLeft delay-0-2s">
+                        <div class="author-description">
+
+                            <img src="@Url.Content("~/assets/images/clientLogos/GSTC.png")"
+                                 loading="lazy"
+                                 alt="Author"
+                                 style=" width: 100px !important; height: 100px !important; max-width: 100px !important; max-height: 100px !important; object-fit: contain; display: block !important; flex-shrink: 0 !important;">
+
+                            <div class="designation">
+                                <h5 style="color:black">@LeadersSolutionWebSite.Resources.ABoutUSPage.GSTCCompanyEmployee</h5>
+                                <h5 style="color:black"><b>@LeadersSolutionWebSite.Resources.ABoutUSPage.GSTCCompanyEmployeeFunction</b></h5>
+                                <span style="color:#0ca8e6">@LeadersSolutionWebSite.Resources.ABoutUSPage.GSTCCompany</span>
+                            </div>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <p style="color:black">
+                            @LeadersSolutionWebSite.Resources.ABoutUSPage.GSTCCompanyEmployeeTestemony
+                        </p>
+                    </div>
+                    <div class="testimonial-item wow fadeInLeft delay-0-2s">
+                        <div class="author-description">
+
+                            <img src="@Url.Content("~/assets/images/clientLogos/Misa.png")"
+                                 loading="lazy"
+                                 alt="Author"
+                                 style=" width: 100px !important; height: 100px !important; max-width: 100px !important; max-height: 100px !important; object-fit: contain; display: block !important; flex-shrink: 0 !important;">
+
+                            <div class="designation">
+                                <h5 style="color:black">@LeadersSolutionWebSite.Resources.ABoutUSPage.MisaCompanyEmployee</h5>
+                                <h5 style="color:black"><b>@LeadersSolutionWebSite.Resources.ABoutUSPage.MisaCompanyEmployeeFunction</b></h5>
+                                <span style="color:#0ca8e6">@LeadersSolutionWebSite.Resources.ABoutUSPage.MisaCompany</span>
+                            </div>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <p style="color:black">
+                            @LeadersSolutionWebSite.Resources.ABoutUSPage.MisaCompanyEmployeeTestemony
+                        </p>
+                    </div>
+
+                    <div class="testimonial-item wow fadeInLeft delay-0-2s">
+                        <div class="author-description">
+
+                            <img src="@Url.Content("~/assets/images/clientLogos/Elm.png")"
+                                 loading="lazy"
+                                 alt="Author"
+                                 style="width: 100px !important; height: 100px !important; max-width: 100px !important; max-height: 100px !important; object-fit: contain; display: block !important; flex-shrink: 0 !important; ">
+                            <div class="designation">
+                                <h5 style="color:black">@LeadersSolutionWebSite.Resources.ABoutUSPage.ElmCompanyEmployee</h5>
+                                <h5 style="color:black"><b>@LeadersSolutionWebSite.Resources.ABoutUSPage.ElmCompanyEmployeeFunction</b></h5>
+                                <span style="color:#0ca8e6">@LeadersSolutionWebSite.Resources.ABoutUSPage.ElmCompany</span>
+                            </div>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <p style="color:black">
+                            @LeadersSolutionWebSite.Resources.ABoutUSPage.ElmCompanyEmployeeTestmony
+                        </p>
+                    </div>
+
+
+                    <div class="testimonial-item wow fadeInLeft delay-0-2s">
+                        <div class="author-description">
+
+                            <img src="@Url.Content("~/assets/images/clientLogos/HRSD.png")"
+                                 loading="lazy"
+                                 alt="Author"
+                                 style=" width: 100px !important; height: 100px !important; max-width: 100px !important; max-height: 100px !important; object-fit: contain; display: block !important; flex-shrink: 0 !important;">
+
+                            <div class="designation">
+                                <h5 style="color:black">@LeadersSolutionWebSite.Resources.ABoutUSPage.HRSDCompanyEmployee</h5>
+                                <h5 style="color:black"><b>@LeadersSolutionWebSite.Resources.ABoutUSPage.HRSDCompanyEmployeeFunction</b></h5>
+                                <span style="color:#0ca8e6">@LeadersSolutionWebSite.Resources.ABoutUSPage.HRSDCompany</span>
+                            </div>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <p style="color:black">
+                            @LeadersSolutionWebSite.Resources.ABoutUSPage.HRSDCompanyEmployeeTestmony
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial Section End -->
+        <!-- Contact Area Start -->
+        <section class="contact-four py-25 rpy-25" dir="rtl" style="text-align: right;">
+            <div class="container">
+                <div class="contact-inner-four box-shadow p-35 rpx-25 br-5 bg-white">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="contact-section-form px-15 rpx-0 rmb-50 wow fadeInUp delay-0-2s">
+                                <div class="section-title mb-20">
+                                    <h2 style="color:black">@LeadersSolutionWebSite.Resources.ABoutUSPage.GetInTouch</h2>
+                                </div>
+                                <form id="contact_form" class="contact-form" name="contact_form" action="@Url.Action("SendMessage", "Home")" method="post">
+                                    @Html.AntiForgeryToken()
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="name">@LeadersSolutionWebSite.Resources.ABoutUSPage.YourName <span style="color:red">*</span></label>
+                                                <input type="text" id="name" name="name" maxlength="300" class="form-control" oninput="removeError(this)" placeholder="@LeadersSolutionWebSite.Resources.ABoutUSPage.YourName" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="email">@LeadersSolutionWebSite.Resources.ABoutUSPage.YourEmail <span style="color:red">*</span></label>
+                                                <input type="email" id="email" name="email" maxlength="300" class="form-control" oninput="removeError(this)" placeholder="@LeadersSolutionWebSite.Resources.ABoutUSPage.YourEmail" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="mobile">@LeadersSolutionWebSite.Resources.ABoutUSPage.YourPhone <span style="color:red">*</span></label>
+                                                <input type="text" id="mobile" name="mobile" maxlength="300" class="form-control" oninput="removeError(this)" placeholder="@LeadersSolutionWebSite.Resources.ABoutUSPage.YourPhone" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="service">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceRequired <span style="color:red">*</span></label>
+                                                <select id="service" name="service">
+                                                    <option value="IT Service" selected>@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionOne</option>
+                                                    <option value="Solution">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionTwo</option>
+                                                    <option value="Contact">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionThree</option>
+                                                    <option value="Partnership">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionFour</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label for="comments">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceComment</label>
+
+                                                <textarea name="comments" id="comments" maxlength="500" class="form-control" rows="4" placeholder="@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceComment"></textarea>
+                                            </div>
+                                        </div>
+                                        @*<div class="col-sm-12" id="sendMessagBTN">
+                <button type="submit" class="theme-btn">@LeadersSolutionWebSite.Resources.ABoutUSPage.SendMessage</button>
+            </div>*@
+                                        <div class="col-sm-12" id="recaptchaBTN">
+                                            <button class="g-recaptcha theme-btn" data-sitekey="6LesxrwtAAAAAPO9ffrHiNJ0YCEmeswVdsqDu8Ab" data-callback='onSubmit' data-action='submit'>@LeadersSolutionWebSite.Resources.ABoutUSPage.SendMessage</button>
+
+                                        </div>
+                                        <input type="hidden" id="RecaptchaToken" name="RecaptchaToken">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-5" style="border-radius: 10px; background-image: url('@Url.Content("~/assets/images/customImages/rocks-together-1920-min.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                            <div class="contact-image-number style-two bgs-cover wow fadeInUp delay-0-4s">
+                                <div class="contact-informations text-white">
+                                    <h3>@LeadersSolutionWebSite.Resources.ABoutUSPage.DontHesitateToContactUs</h3>
+                                    <ul class="contact-info">
+                                        <li>
+                                            <i class="fas fa-phone-alt"></i>
+                                            <div class="content">
+                                                <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.CallUs</span>
+                                                <h5><a href="callto:+966534684570">00966-534-684-570</a></h5>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-envelope"></i>
+                                            <div class="content">
+                                                <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.WriteToUs</span>
+                                                <h5><a href="mailto:info@LeadersSolutions.sa">info@LeadersSolutions.sa</a></h5>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-clock"></i>
+                                            <div class="content">
+                                                <span>@LeadersSolutionWebSite.Resources.ABoutUSPage.OfficeHours</span>
+                                                <h5>Mon-Sat 9:00 - 7:00</h5>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Area End -->
+
+
+    }
+}
+
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            var message = "@ViewBag.Message";
+           
+            if (message) {
+                Snackbar.show({
+                    text: message,
+                    pos: 'top-center'
+                });  
+            }
+
+                       
+       });
+    </script>
+    <script>
+        function onClick(e) {
+            e.preventDefault();
+            grecaptcha.enterprise.ready(async () => {
+                const token = await grecaptcha.enterprise.execute('6LesxrwtAAAAAPO9ffrHiNJ0YCEmeswVdsqDu8Ab', { action: 'submit' });
+            });
+        }
+    </script>
+    <script>
+        function onSubmit(token) {
+            $("#RecaptchaToken").val(token);
+            var fields = ["name", "email", "mobile"];
+            let emailRegex = /^[^\s@@]+@@[^\s@@]+\.[^\s@@]+$/;
+            for (var i = 0; i < fields.length; i++) {
+                var value = document.getElementById(fields[i]).value;
+
+                if (!value) {
+                    document.getElementById(fields[i]).classList.add("myinput-error");
+                    Snackbar.show({
+                        text: '@LeadersSolutionWebSite.Resources.ABoutUSPage.FillAllRequiredFields',
+                        pos: 'top-center'
+                    });
+                    return false;
+                }
+            }
+            if (!emailRegex.test(document.getElementById("email").value)) {
+                document.getElementById("email").classList.add("myinput-error");                
+                Snackbar.show({
+                    text: '@LeadersSolutionWebSite.Resources.ABoutUSPage.EnterValidEmail',
+                    pos: 'top-center'
+                });
+                return false;
+            }
+            document.getElementById("contact_form").submit();
+        }
+    </script>
+    <script>
+        function removeError(element) {
+            element.classList.remove("myinput-error");
+        }
+
+    </script>
+
+}
+
+
+
+
+
+

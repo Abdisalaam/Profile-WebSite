@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AllServiceViewBtn" xml:space="preserve">
+    <value>View All Services</value>
+  </data>
+  <data name="ClientTestimonialsJobTitle" xml:space="preserve">
+    <value>CEO</value>
+  </data>
+  <data name="ClientTestimonialsJobTitle1" xml:space="preserve">
+    <value>Project Manager</value>
+  </data>
+  <data name="ClientTestimonialsJobTitle2" xml:space="preserve">
+    <value>Program Manager</value>
+  </data>
+  <data name="ClientTestimonialsJobTitle3" xml:space="preserve">
+    <value>CEO</value>
+  </data>
+  <data name="ClientTestimonialsJobTitle4" xml:space="preserve">
+    <value>Project Manager</value>
+  </data>
+  <data name="ClientTestimonialsName" xml:space="preserve">
+    <value>Mohammed Ali</value>
+  </data>
+  <data name="ClientTestimonialsName1" xml:space="preserve">
+    <value>Abdullah Mansoor</value>
+  </data>
+  <data name="ClientTestimonialsName2" xml:space="preserve">
+    <value>Fatima Mahmoud</value>
+  </data>
+  <data name="ClientTestimonialsName3" xml:space="preserve">
+    <value>Hosain Mohammed</value>
+  </data>
+  <data name="ClientTestimonialsName4" xml:space="preserve">
+    <value>Abdulrahman Saood</value>
+  </data>
+  <data name="ClientTestimonialsParagraf" xml:space="preserve">
+    <value>Leaders Solutions delivered a secure, scalable platform that transformed our citizen services. Their team understood our strategic goals and executed with precision. We now operate faster, smarter, and with greater transparency</value>
+  </data>
+  <data name="ClientTestimonialsParagraf1" xml:space="preserve">
+    <value>Leaders Solutions delivered a secure, scalable platform that transformed our citizen services. Their team understood our strategic goals and executed with precision. We now operate faster, smarter, and with greater transparency</value>
+  </data>
+  <data name="ClientTestimonialsParagraf2" xml:space="preserve">
+    <value>Leaders Solutions delivered a secure, scalable platform that transformed our citizen services. Their team understood our strategic goals and executed with precision. We now operate faster, smarter, and with greater transparency</value>
+  </data>
+  <data name="ClientTestimonialsParagraf3" xml:space="preserve">
+    <value>Leaders Solutions delivered a secure, scalable platform that transformed our citizen services. Their team understood our strategic goals and executed with precision. We now operate faster, smarter, and with greater transparency</value>
+  </data>
+  <data name="ClientTestimonialsParagraf4" xml:space="preserve">
+    <value>Leaders Solutions delivered a secure, scalable platform that transformed our citizen services. Their team understood our strategic goals and executed with precision. We now operate faster, smarter, and with greater transparency</value>
+  </data>
+  <data name="ConsultancyServices" xml:space="preserve">
+    <value>Consultancy Services</value>
+  </data>
+  <data name="ConsultancyServicesParagraf" xml:space="preserve">
+    <value>Our consultancy services empower organizations to make informed decisions</value>
+  </data>
+  <data name="CustomSoftwareDevelopment" xml:space="preserve">
+    <value>Custom Software</value>
+  </data>
+  <data name="CustomSoftwareDevelopmentParagraf" xml:space="preserve">
+    <value>We build software that reflects your vision, not limitations</value>
+  </data>
+  <data name="DeskTopAppDevelopment" xml:space="preserve">
+    <value>Desktop App</value>
+  </data>
+  <data name="DeskTopDevelopmentParagraf" xml:space="preserve">
+    <value>Our desktop app development services are designed to deliver robust solutions that empower your workforce</value>
+  </data>
+  <data name="LineOfBusinessFirstColH" xml:space="preserve">
+    <value>Robust IT Technology</value>
+  </data>
+  <data name="LineOfBusinessFirstColP" xml:space="preserve">
+    <value>At the heart of digital transformation lies the seamless integration of Enterprise Solutions, Cloud Solutions, and Data Center Solutions a unified ecosystem designed to empower organizations with agility, scalability, and resilience.</value>
+  </data>
+  <data name="LineOfBusinessFourthColH" xml:space="preserve">
+    <value>Intelligence Innovation</value>
+  </data>
+  <data name="LineOfBusinessFourthColP" xml:space="preserve">
+    <value>The Future of Business, Powered by AI at the Core of Digital Excellence Where Smart Systems Generates Smarter Outcomes</value>
+  </data>
+  <data name="LineOfBusinessSecondColH" xml:space="preserve">
+    <value>Beyond Protection</value>
+  </data>
+  <data name="LineOfBusinessSecondColP" xml:space="preserve">
+    <value>Security is no longer just about defense—it’s about enabling confidence, continuity, and innovation. Beyond Protection represents a new era of safeguarding digital assets, where resilience and trust are built into every layer of technology.</value>
+  </data>
+  <data name="LineOfBusinessThirdColH" xml:space="preserve">
+    <value>Empowering Minds</value>
+  </data>
+  <data name="LineOfBusinessThirdColP" xml:space="preserve">
+    <value>The foundation of national progress and enterprise excellence We equip individuals and organizations with the skills, insights, and confidence to lead in a rapidly evolving world</value>
+  </data>
+  <data name="LineOfBusinessTitle" xml:space="preserve">
+    <value>Core Lines of Business</value>
+  </data>
+  <data name="MobileAppDevelopment" xml:space="preserve">
+    <value>Mobile App</value>
+  </data>
+  <data name="MobileDevelopmentParagraf" xml:space="preserve">
+    <value>Our mobile app development services deliver intuitive, secure, and culturally authentic experiences that reflect Saudi excellence while driving growth and engagement</value>
+  </data>
+  <data name="NewsSectionH" xml:space="preserve">
+    <value>A powerful collaboration captured at a professional investment event, where two Leaders exchange a handshake</value>
+  </data>
+  <data name="NewsSectionH1" xml:space="preserve">
+    <value>At the forefront of digital transformation, the Black Hat event announces exclusive partnerships backed by investments exceeding $78 million</value>
+  </data>
+  <data name="NewsSectionH2" xml:space="preserve">
+    <value>The ceremony, hosted under the Ministry of Investment and supported by Leaders Solutions, showcases a powerful progress.</value>
+  </data>
+  <data name="NewsSectionTitle" xml:space="preserve">
+    <value>OUR RECENT NEWS</value>
+  </data>
+  <data name="OurAchievementsAward" xml:space="preserve">
+    <value>Awards Won</value>
+  </data>
+  <data name="OurAchievementsHappyClients" xml:space="preserve">
+    <value>Happy Clients</value>
+  </data>
+  <data name="OurAchievementsTitle" xml:space="preserve">
+    <value>Our Achievements</value>
+  </data>
+  <data name="OurAchievementsYears" xml:space="preserve">
+    <value>Years Experience</value>
+  </data>
+  <data name="OurClientTitle" xml:space="preserve">
+    <value>Leading Names We Serve</value>
+  </data>
+  <data name="OurSolutionSectionTitle" xml:space="preserve">
+    <value>Top Solutions</value>
+  </data>
+  <data name="ResidentEngineer" xml:space="preserve">
+    <value>Resident Engineer</value>
+  </data>
+  <data name="ResidentEngServicesParagraf" xml:space="preserve">
+    <value>Our Resident Engineer services provide you with highly skilled professionals who integrate seamlessly into your team, ensuring smooth operations and proactive problem-solving.</value>
+  </data>
+  <data name="SectionIntroDigitalH" xml:space="preserve">
+    <value>Digital Transformation</value>
+  </data>
+  <data name="SectionIntroDigitalSpan" xml:space="preserve">
+    <value>From visionary IT strategies to seamless execution, we help organizations lead with confidence and innovation</value>
+  </data>
+  <data name="SectionIntroH2" xml:space="preserve">
+    <value>Preparing for your success trusted source in IT services</value>
+  </data>
+  <data name="SectionIntroH4" xml:space="preserve">
+    <value>IT Support For Businesses</value>
+  </data>
+  <data name="SectionIntroH4Paragraf" xml:space="preserve">
+    <value>At Leaders Solutions, we empower large enterprises and public sector organizations across the Kingdom to unlock their full potential. By harnessing advanced IT systems and collaborating with world class technology partners, we guide our clients from strategic vision to measurable success driving profitability, performance, and sustainable growth.
+ Discover what’s possible with Leaders Solutions—and find the ideal path forward for your business today</value>
+  </data>
+  <data name="SectionIntroStrategiclH" xml:space="preserve">
+    <value>Strategic Solutions</value>
+  </data>
+  <data name="SectionIntroStrategiclSpan" xml:space="preserve">
+    <value>We deliver performance-driven technologies that elevate operations, enhance decision-making, and accelerate growth</value>
+  </data>
+  <data name="SectionIntroTechH" xml:space="preserve">
+    <value>Technologically Driving</value>
+  </data>
+  <data name="SectionIntroTechSpan" xml:space="preserve">
+    <value>Our services reflect the spirit of Saudi leadership—strategic, resilient, and deeply connected to our cultural values</value>
+  </data>
+  <data name="SectorEnergyH" xml:space="preserve">
+    <value>Energy &amp; Utilities</value>
+  </data>
+  <data name="SectorEnergyP" xml:space="preserve">
+    <value>We support energy providers, utility companies, and regulators in modernizing infrastructure, optimizing operations, and advancing sustainability goals</value>
+  </data>
+  <data name="SectorFinanceH" xml:space="preserve">
+    <value>Banking &amp; Finance</value>
+  </data>
+  <data name="SectorFinanceP" xml:space="preserve">
+    <value>We empower financial institutions with secure, scalable, and intelligent digital solutions that drive trust, performance, and innovation</value>
+  </data>
+  <data name="SectorGovermentH" xml:space="preserve">
+    <value>Government &amp; Public Sector</value>
+  </data>
+  <data name="SectorGovermentP" xml:space="preserve">
+    <value>We support ministries, municipalities, and public institutions in delivering secure, efficient, and digital services</value>
+  </data>
+  <data name="SectorHealthcareH" xml:space="preserve">
+    <value>Healthcare</value>
+  </data>
+  <data name="SectorHealthcareP" xml:space="preserve">
+    <value>We partner with healthcare providers, hospitals, and health authorities to accelerate digital transformation and improve patient outcomes</value>
+  </data>
+  <data name="SectorManufacturingH" xml:space="preserve">
+    <value>Manufacturing &amp; Retail</value>
+  </data>
+  <data name="SectorManufacturingP" xml:space="preserve">
+    <value>We empower manufacturers and retailers with intelligent technologies that streamline operations, enhance customer engagement, and drive growth</value>
+  </data>
+  <data name="SectorSmartCitiesH" xml:space="preserve">
+    <value>Smart Cities</value>
+  </data>
+  <data name="SectorSmartCitiesP" xml:space="preserve">
+    <value>We empower urban ecosystems with intelligent technologies that enhance livability, sustainability, and operational efficiency</value>
+  </data>
+  <data name="SectorTelecommunicationH" xml:space="preserve">
+    <value>Telecommunication</value>
+  </data>
+  <data name="SectorTelecommunicationP" xml:space="preserve">
+    <value>We empower telecom operators and infrastructure providers with scalable, secure, and intelligent solutions that drive connectivity, performance, and innovation.</value>
+  </data>
+  <data name="SectorTranspotH" xml:space="preserve">
+    <value>Transport &amp; Logistics</value>
+  </data>
+  <data name="SectorTranspotP" xml:space="preserve">
+    <value>We enable logistics providers, fleet operators, and transport authorities to optimize movement, visibility, and performance across every link of the supply chain</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Our Services</value>
+  </data>
+  <data name="ServicesHead" xml:space="preserve">
+    <value>We deal with the aspects of professional IT Services</value>
+  </data>
+  <data name="SlidersBTNOne" xml:space="preserve">
+    <value>Discover More</value>
+  </data>
+  <data name="SlidersBTNOne1" xml:space="preserve">
+    <value>Discover More</value>
+  </data>
+  <data name="SlidersBTNOne2" xml:space="preserve">
+    <value>Discover More</value>
+  </data>
+  <data name="SlidersBTNOne3" xml:space="preserve">
+    <value>Discover More</value>
+  </data>
+  <data name="SlidersBTNOne4" xml:space="preserve">
+    <value>Discover More</value>
+  </data>
+  <data name="SlidersBTNOne5" xml:space="preserve">
+    <value>Discover More</value>
+  </data>
+  <data name="SlidersBTNOne6" xml:space="preserve">
+    <value>Discover More</value>
+  </data>
+  <data name="SlidersBTNTwo" xml:space="preserve">
+    <value>Get Started</value>
+  </data>
+  <data name="SlidersBTNTwo1" xml:space="preserve">
+    <value>Get Started</value>
+  </data>
+  <data name="SlidersBTNTwo2" xml:space="preserve">
+    <value>Get Started</value>
+  </data>
+  <data name="SlidersBTNTwo3" xml:space="preserve">
+    <value>Get Started</value>
+  </data>
+  <data name="SlidersBTNTwo4" xml:space="preserve">
+    <value>Get Started</value>
+  </data>
+  <data name="SlidersBTNTwo5" xml:space="preserve">
+    <value>Get Started</value>
+  </data>
+  <data name="SlidersBTNTwo6" xml:space="preserve">
+    <value>Get Started</value>
+  </data>
+  <data name="SlidersSpan" xml:space="preserve">
+    <value>Cloud Services</value>
+  </data>
+  <data name="SlidersSpan1" xml:space="preserve">
+    <value>Data warehouse</value>
+  </data>
+  <data name="SlidersSpan2" xml:space="preserve">
+    <value>Artificial Intelligence</value>
+  </data>
+  <data name="SlidersSpan3" xml:space="preserve">
+    <value>Information Technology Service Management</value>
+  </data>
+  <data name="SlidersSpan4" xml:space="preserve">
+    <value>Cyber Security</value>
+  </data>
+  <data name="SlidersSpan5" xml:space="preserve">
+    <value>Process &amp; Data Management</value>
+  </data>
+  <data name="SlidersSpan6" xml:space="preserve">
+    <value>Data Management</value>
+  </data>
+  <data name="SlidersSpanH" xml:space="preserve">
+    <value>Unleash Digital Potential</value>
+  </data>
+  <data name="SlidersSpanH1" xml:space="preserve">
+    <value>Seamless Execution</value>
+  </data>
+  <data name="SlidersSpanH2" xml:space="preserve">
+    <value>Advanced Capabilities &amp; Future</value>
+  </data>
+  <data name="SlidersSpanH3" xml:space="preserve">
+    <value>Focus on Management and Delivery</value>
+  </data>
+  <data name="SlidersSpanH4" xml:space="preserve">
+    <value>Strategic Security and Outcome-Driven</value>
+  </data>
+  <data name="SlidersSpanH5" xml:space="preserve">
+    <value>Transforming Process into Performance</value>
+  </data>
+  <data name="SlidersSpanH6" xml:space="preserve">
+    <value>Redefining Data Management</value>
+  </data>
+  <data name="SlidersSpanP" xml:space="preserve">
+    <value>Infinite Scale, Absolute Reliability: Powering Innovation Without Limits.</value>
+  </data>
+  <data name="SlidersSpanP1" xml:space="preserve">
+    <value>Connecting Everything: Your Blueprint for a Unified Digital Ecosystem.</value>
+  </data>
+  <data name="SlidersSpanP2" xml:space="preserve">
+    <value>Beyond Automation: Unlock True Intelligence to Engineer Your Future.</value>
+  </data>
+  <data name="SlidersSpanP3" xml:space="preserve">
+    <value>Strategic ITSM That Drives Digital Outcomes.</value>
+  </data>
+  <data name="SlidersSpanP4" xml:space="preserve">
+    <value>Security as Strategy: Transforming Compliance into Competitive Advantage.</value>
+  </data>
+  <data name="SlidersSpanP5" xml:space="preserve">
+    <value>Ensuring Reliable, Scalable Operations for Every Service.</value>
+  </data>
+  <data name="SlidersSpanP6" xml:space="preserve">
+    <value>From Storage to Strategy empowering the Future with Intelligent Data Management.</value>
+  </data>
+  <data name="Solution" xml:space="preserve">
+    <value>Cybersecurity</value>
+  </data>
+  <data name="Solution1" xml:space="preserve">
+    <value>Business Intelligence</value>
+  </data>
+  <data name="Solution2" xml:space="preserve">
+    <value>Data Right &amp; Data Cloud Management</value>
+  </data>
+  <data name="Solution3" xml:space="preserve">
+    <value>Strategy &amp; Performance Management Automation</value>
+  </data>
+  <data name="Solution4" xml:space="preserve">
+    <value>Process Mining</value>
+  </data>
+  <data name="Solution5" xml:space="preserve">
+    <value>AI-Powered Innovation</value>
+  </data>
+  <data name="StrategicSectorSolutionsP" xml:space="preserve">
+    <value>At Leaders Solutions, we deliver transformative IT services and strategic consulting across sectors that shape the Kingdom’s future. From government and education to energy, healthcare,
+and finance, our tailored solutions enable organizations to lead with confidence,
+innovate with purpose, and perform with precision. We don’t just serve industries we elevate them, aligning every engagement with national priorities and global standards.</value>
+  </data>
+  <data name="StrategicSectorSolutionsTitle" xml:space="preserve">
+    <value>Strategic Solutions for Every Sector</value>
+  </data>
+  <data name="TestimonialsHeader" xml:space="preserve">
+    <value>What our client’s say about us</value>
+  </data>
+  <data name="TestimonialsSpan" xml:space="preserve">
+    <value>Leaders Solutions Testimonials</value>
+  </data>
+  <data name="WebDevelopment" xml:space="preserve">
+    <value>Web App</value>
+  </data>
+  <data name="WebDevelopmentParagraf" xml:space="preserve">
+    <value>Our web app development services deliver scalable, secure, and culturally authentic solutions that empower organizations</value>
+  </data>
+  <data name="GRCParagraph" xml:space="preserve">
+    <value>Protect your business and increase future confidence through comprehensive governance, risk management and compliance programs</value>
+  </data>
+  <data name="GRCTitle" xml:space="preserve">
+    <value>Governance, Risk management and Compliance</value>
+  </data>
+  <data name="QprSigningText1" xml:space="preserve">
+    <value>After 10 years of trusted collaboration with QPR Software, by the blessings of Allah Almighty, Leaders Solutions ( LS) acquired the territorial intellectual property rights in the Middle East &amp; Africa for QPR Metrics— the strategy &amp; performance management automation product. Also, LS became the exclusive partner in the Middle  &amp; Africa for QPR Process Mining product.
+</value>
+  </data>
+  <data name="QprSigningText2" xml:space="preserve">
+    <value>The two agreements were signed by His Excellency Sheikh Badr bin Majed Aldoweesh, the Founder and CEO of Leaders Solutions for Information Technology, and Mr. Heikki Veijola, the CEO of QPR Software.
+</value>
+  </data>
+  <data name="QprSigningText3" xml:space="preserve">
+    <value>This move reflects more than business growth years of shared success, mutual confidence, and a regional vision. It brings QPR’s global expertise closer to our clients through local presence and market understanding, and supports Saudi Vision 2030 by localizing technology and content, enabling technology transfer, skills development, and job creation.
+</value>
+  </data>
+  <data name="QprSigningText4" xml:space="preserve">
+    <value>This means faster, locally supported deployments of process‑intelligence and performance‑management solutions, deeper regional expertise, and end‑to‑end support for measurable operational improvements.
+</value>
+  </data>
+  <data name="QprSigningText5" xml:space="preserve">
+    <value>It’s worth mentioning, QPR is a Finnish company that was established  in 1991 and is a pioneer and market leader in strategy &amp; performance management automation.  It has more than two thousand clients in more than 50 countries around the world.</value>
+  </data>
+  <data name="QprSigningTitle" xml:space="preserve">
+    <value>Big news from Leaders Solutions</value>
+  </data>
+</root>

@@ -1,0 +1,239 @@
+﻿@{
+    ViewBag.Title = LeadersSolutionWebSite.Resources.LayoutPage.Services;
+    HttpCookie cookie = Request.Cookies["Language"];
+    string _align = "text-align:Right";
+
+
+}
+
+<head>
+    @{
+
+        if (cookie != null && cookie.Value != null)
+        {
+            if (cookie.Value == "en")
+            {
+                Layout = "~/Views/Shared/_LayoutNine.cshtml";
+
+                _align = "text-align:left";
+
+
+
+            }
+            else
+            {
+                Layout = "~/Views/Shared/_LayoutNine.cshtml";
+
+                _align = "text-align:right";
+
+
+
+            }
+        }
+        else
+        {
+            Layout = "~/Views/Shared/_LayoutNine.cshtml";
+            _align = "text-align:right";
+
+
+        }
+    }
+</head>
+
+@*<div class="header-top-wrap bg-blue py-10">
+        <div class="container">
+            <div class="header-top">
+                <div class="top-left">
+                    <ul>
+                        <li>Call Us: <a href="callto:0548978478">0548978478</a></li>
+                        <li>Email us: <a href="mailto:info@leadersSolution.com">info@leadersSolution.com</a></li>
+                    </ul>
+                </div>
+                <div class="top-right">
+                    <div class="office-time">
+                        <i class="far fa-clock"></i><span>08:00 am - 06:00 pm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>*@
+<!-- Page Banner Start -->
+@*<a href='@Url.Action("LSServises", "Home" ,new {id = 1})'>*@
+
+<section class="page-banner bgs-cover overlay rpt-100 pt-20" style="background-image: url('@Url.Content("~/assets/images/customImages/ITServices.jpeg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+    <div class="container text-center">
+        <div class="banner-inner text-center" style="backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+            <h1 class="text-center">@LeadersSolutionWebSite.Resources.ServicePage.Services</h1>
+            <h2 class="text-center">@LeadersSolutionWebSite.Resources.ServicePage.ServiceTitle</h2>
+            <p class="text-center">@LeadersSolutionWebSite.Resources.ServicePage.ServiceSubTitle</p>
+        </div>
+
+    </div>
+</section>
+<!-- Page Banner End -->
+<!-- GRC Start -->
+<section class="about-three py-20 rpy-20">
+    <div class="">
+        <div class="container">
+            <div class="py-30 rpy-30">
+                <h2  style="@_align; color:white;">@LeadersSolutionWebSite.Resources.ServicePage.GRCTitle</h2>
+                <h4 style="@_align">@LeadersSolutionWebSite.Resources.ServicePage.GRCParagraf</h4>
+                <p style="@_align">@LeadersSolutionWebSite.Resources.ServicePage.GRCText</p>
+            </div>
+            <div class="split-container-horizontal">
+                <div class="section top-section" style="background-image: url('@Url.Content("~/assets/images/LSServices/Governance-Risk-and-Compliance.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                    
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+<!-- GRC End -->
+<!-- Web Dev Start -->
+<section class="about-section bg-light-black pt-25 rpt-25">
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-5 col-lg-5">
+                <div class="about-image-shape rmb-70 wow fadeInLeft delay-0-2s">
+                    <img src="@Url.Content("~/assets/images/LSServices/webdevelopment1.jpg")" alt="Leaders Solutions">
+                </div>
+            </div>
+            <div class="col-md-7 col-lg-7 text-center">
+                <div class="about-content text-white pr-70 rpr-0 wow fadeInRight delay-0-2s">
+                    <div class="section-title mb-35">
+                        <h2 style="@_align; color:white;">@LeadersSolutionWebSite.Resources.ServicePage.WebDevelopment</h2>
+                        <h5 style="@_align">@LeadersSolutionWebSite.Resources.ServicePage.WebDevelopmentParagraf</h5>
+                    </div>
+                    <p style="@_align">
+                        @LeadersSolutionWebSite.Resources.ServicePage.WebDevText
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Web Dev Section End -->
+<!-- Resident eng Start -->
+<section class="about-three py-25 rpy-25">
+    <div class="">
+        <div class="container">
+            <div class="py-50 rpy-50">
+                <h2 style="@_align; color:white;">@LeadersSolutionWebSite.Resources.ServicePage.ResidentEngineer</h2>
+                <h4 style="@_align">@LeadersSolutionWebSite.Resources.ServicePage.ResidentEngServicesParagraf</h4>
+                <p style="@_align">@LeadersSolutionWebSite.Resources.ServicePage.ResidentServiceText</p>
+            </div>
+        </div>
+
+
+        <div class="split-container">
+            
+            <div class="servicecolumn left-side" style="background-image: url('@Url.Content("~/assets/images/LSServices/ResidentEng7.png")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+            </div>
+            <div class="servicecolumn left-side" style="background-image: url('@Url.Content("~/assets/images/LSServices/ResidentEng1 .png")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Resident eng End -->
+<!-- Custom Development Section Start -->
+<section class="hero-section-eight z-1 rel" id="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 text-center">
+                <div class="hero-content-eight mr-10">
+                    <h2 class="wow fadeInLeftBig delay-0-2s" style="@_align; color:white;">@LeadersSolutionWebSite.Resources.ServicePage.CustomSoftwareDevelopment</h2>
+                    <h5 class="wow fadeInLeftBig delay-0-4s mb-30" style="@_align">@LeadersSolutionWebSite.Resources.ServicePage.CustomSoftwareDevelopmentParagraf</h5>
+                    <p class="wow fadeInLeftBig delay-0-6s" style="@_align;">@LeadersSolutionWebSite.Resources.ServicePage.CustomSoftwareDevText</p>
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-eight-image wow fadeInRightBig delay-0-8s mr-10 ">
+                    <img src="@Url.Content("~/assets/images/LSServices/CustomDev1.jpg")" alt="Leaders Solutions">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Custom Development Section End -->
+<!-- Mobile Dev Section Start -->
+<section class="about-two pt-25 rpt-25 pb-25 rpb-25">
+    <div class="container">
+        <div class="about-wrap pt-20">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-two-image rmb-70 wow fadeInLeft delay-0-2s">
+                        <img src="@Url.Content("~/assets/images/LSServices/MobileAppDev1.png")" height="740px" alt="Leaders Solutions">
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-end">
+                    <div class="about-content pt-25 rpt-20 pr-25 rpr-0 wow fadeInRight delay-0-2s">
+                        <div class="section-title mb-35">
+                            <h2 style="@_align; color:white;">@LeadersSolutionWebSite.Resources.ServicePage.MobileAppDevelopment</h2>
+                            <h5 style="@_align">@LeadersSolutionWebSite.Resources.ServicePage.MobileDevelopmentParagraf</h5>
+                        </div>
+                        <p style="@_align">
+                            @LeadersSolutionWebSite.Resources.ServicePage.MobileDevText
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Mobile Dev Section End -->
+<!-- Consulting Start -->
+<section class="about-three py-25 rpy-25">
+    <div class="">
+        <div class="container">
+            <div class="py-30 rpy-30">
+                <h2 style="@_align; color:white;">@LeadersSolutionWebSite.Resources.ServicePage.ConsultancyServices</h2>
+                <h4 style="@_align">@LeadersSolutionWebSite.Resources.ServicePage.ConsultancyServicesParagraf</h4>
+                <p style="@_align">@LeadersSolutionWebSite.Resources.ServicePage.ConsultingServicesText</p>
+            </div>
+            <div class="split-container-horizontal">
+                
+                <div class="section top-section" style="background-image: url('@Url.Content("~/assets/images/LSServices/Consulting2.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+<!-- Consulting End -->
+<!-- DeskTop Dev Start -->
+<section class="about-three py-25 rpy-25">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-three-image rmb-60 mr-10 rmr-0 wow fadeInLeft delay-0-2s">
+                    <img src="@Url.Content("~/assets/images/LSServices/DeskTopDev2.jpg")" alt="Leaders Solutions">
+                    <img src="@Url.Content("~/assets/images/LSServices/DeskTopDev3.png")" alt="Leaders Solutions">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content pl-70 rpl-0 wow fadeInRight delay-0-2s">
+                    <div class="section-title mb-35">
+                        <h2 class="lsTextColor-terqui text-center">@LeadersSolutionWebSite.Resources.ServicePage.DeskTopAppDevelopment</h2>
+                        <h5 class="text-center">@LeadersSolutionWebSite.Resources.ServicePage.DeskTopDevelopmentParagraf</h5>
+                    </div>
+                    <p class="text-center">@LeadersSolutionWebSite.Resources.ServicePage.DeskTopDevText</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- DeskTop Dev End -->
+

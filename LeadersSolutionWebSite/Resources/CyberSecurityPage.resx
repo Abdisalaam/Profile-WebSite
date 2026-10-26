@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PageHeaderTitle" xml:space="preserve">
+    <value>Our Cybersecurity Solutions &amp; Services</value>
+  </data>
+  <data name="SystemIntegration" xml:space="preserve">
+    <value>System Integration</value>
+  </data>
+  <data name="SystemIntegrationText" xml:space="preserve">
+    <value>We integrate multi‑vendor security platforms to create unified, efficient, and scalable cybersecurity ecosystems with full visibility and control.</value>
+  </data>
+  <data name="PageSubHeaderTitle" xml:space="preserve">
+    <value>At Leaders Solutions, we empower organizations with end‑to‑end cybersecurity, governance, and digital transformation capabilities. Our services &amp; Solutions are designed to protect your environment, strengthen your resilience, and accelerate your strategic growth all aligned with Saudi national frameworks and global best practices.</value>
+  </data>
+  <data name="SolutionsHeaderTitle" xml:space="preserve">
+    <value>Comprehensive Cybersecurity Services &amp; Solutions  </value>
+  </data>
+  <data name="SolutionsHeaderText" xml:space="preserve">
+    <value>Empowering organizations with advanced protection, resilient architectures, and secure digital transformation. At Leaders Solutions, we deliver end‑to‑end cybersecurity capabilities designed to safeguard your environment, enhance operational resilience, and support sustainable growth aligned with Saudi national frameworks and global best practices.</value>
+  </data>
+  <data name="SolutionsasService" xml:space="preserve">
+    <value>Solutions as a Service</value>
+  </data>
+  <data name="SolutionsasServiceText" xml:space="preserve">
+    <value>We deliver cybersecurity capabilities through scalable, subscription‑based service models tailored to your organization’s needs.</value>
+  </data>
+  <data name="EndpointSecurity" xml:space="preserve">
+    <value>Endpoint Security </value>
+  </data>
+  <data name="NetworkSecurity" xml:space="preserve">
+    <value>Network Security</value>
+  </data>
+  <data name="DataSecurity" xml:space="preserve">
+    <value>Data Security</value>
+  </data>
+  <data name="EventsAndCompetitions" xml:space="preserve">
+    <value>Events &amp; Competitions </value>
+  </data>
+  <data name="EventsAndCompetitionsText" xml:space="preserve">
+    <value>We organize cybersecurity competitions, Capture‑the‑Flag (CTF) events, and innovation challenges to develop talent and promote cybersecurity culture.</value>
+  </data>
+  <data name="ManagementConsulting" xml:space="preserve">
+    <value>Management Consulting </value>
+  </data>
+  <data name="IncidentResponseAndForensics" xml:space="preserve">
+    <value>Incident Response &amp; Forensics</value>
+  </data>
+  <data name="BugBountyPrograms" xml:space="preserve">
+    <value>Bug Bounty Programs </value>
+  </data>
+  <data name="BugBountyProgramsText" xml:space="preserve">
+    <value>We offer ethical hacking programs that leverage global security researchers to identify and remediate vulnerabilities before they can be exploited.</value>
+  </data>
+  <data name="IncidentResponseAndForensicsText" xml:space="preserve">
+    <value>We deliver rapid incident response, threat containment, and digital forensics to minimize impact and restore secure operations.</value>
+  </data>
+  <data name="TechnicalAssessment" xml:space="preserve">
+    <value>Technical Assessment</value>
+  </data>
+  <data name="TechnicalConsulting" xml:space="preserve">
+    <value>Technical Consulting </value>
+  </data>
+  <data name="TechnicalConsultingText" xml:space="preserve">
+    <value>We provide expert guidance on designing, implementing, and optimizing cybersecurity architectures and solutions tailored to your business needs.</value>
+  </data>
+  <data name="TechnicalAssessmentText" xml:space="preserve">
+    <value>We perform penetration testing, vulnerability assessments, and red‑team exercises to validate the resilience of your systems and applications.</value>
+  </data>
+  <data name="RiskAssessment" xml:space="preserve">
+    <value>Risk Assessment </value>
+  </data>
+  <data name="CybersecurityTraining" xml:space="preserve">
+    <value>Cybersecurity Training</value>
+  </data>
+  <data name="CybersecurityAwareness" xml:space="preserve">
+    <value>Cybersecurity Awareness</value>
+  </data>
+  <data name="CybersecurityAwarenessText" xml:space="preserve">
+    <value>We deliver organization wide awareness programs, phishing simulations, and behavioral training to strengthen your human defense layer.</value>
+  </data>
+  <data name="CybersecurityTrainingText" xml:space="preserve">
+    <value>We offer structured training programs for technical and non‑technical staff to build cybersecurity knowledge and practical skills.</value>
+  </data>
+  <data name="RiskAssessmentText" xml:space="preserve">
+    <value>We identify, analyze, and prioritize cybersecurity risks across IT and operational environments to strengthen your overall security posture.</value>
+  </data>
+  <data name="ComplianceAssessment" xml:space="preserve">
+    <value>Compliance Assessment </value>
+  </data>
+  <data name="ComplianceAssessmentText" xml:space="preserve">
+    <value>We assess your compliance with national and international cybersecurity standards, identify gaps, and provide actionable recommendations to achieve full alignment.</value>
+  </data>
+  <data name="ManagementConsultingText" xml:space="preserve">
+    <value>We provide strategic advisory services in cybersecurity governance, digital transformation, and enterprise risk management — helping organizations build long‑term resilience.</value>
+  </data>
+  <data name="ManagedSOC" xml:space="preserve">
+    <value>Managed SOC </value>
+  </data>
+  <data name="ManpowerOutsourcing" xml:space="preserve">
+    <value>Manpower Outsourcing</value>
+  </data>
+  <data name="ManpowerOutsourcingText" xml:space="preserve">
+    <value>We provide certified cybersecurity professionals for on‑site or remote operations to support your projects and daily operations.</value>
+  </data>
+  <data name="ManagedSOCText" xml:space="preserve">
+    <value>We provide fully managed SOC services, including 24/7 monitoring, threat detection, and incident response ensuring continuous protection.</value>
+  </data>
+  <data name="IoTSecurity" xml:space="preserve">
+    <value>OT / ICS / IoT Security </value>
+  </data>
+  <data name="IoTSecurityText" xml:space="preserve">
+    <value>We protect industrial control systems and connected devices from operational disruptions and cyberattacks, ensuring safety and continuity in critical environments.</value>
+  </data>
+  <data name="CloudSecurity" xml:space="preserve">
+    <value>Cloud Security </value>
+  </data>
+  <data name="CloudSecurityText" xml:space="preserve">
+    <value>We secure cloud workloads, identities, and configurations across public, private, and hybrid environments using CASB, cloud posture management, and identity‑driven controls.</value>
+  </data>
+  <data name="CybersecurityOperations" xml:space="preserve">
+    <value>Cybersecurity Operations</value>
+  </data>
+  <data name="CybersecurityOperationsText" xml:space="preserve">
+    <value>We deliver centralized monitoring, threat detection, and incident response through advanced SOC and SIEM platforms — ensuring rapid visibility and action across your environment.</value>
+  </data>
+  <data name="IdentitySecurity" xml:space="preserve">
+    <value>Identity Security</value>
+  </data>
+  <data name="IdentitySecurityText" xml:space="preserve">
+    <value>We help organizations manage and protect digital identities through IAM, MFA, and privilege‑management controls. Our solutions ensure that only authorized users access your critical systems.</value>
+  </data>
+  <data name="ApplicationSecurity" xml:space="preserve">
+    <value>Application Security</value>
+  </data>
+  <data name="ProductAndSolutionDevelopment" xml:space="preserve">
+    <value>Product &amp; Solution Development</value>
+  </data>
+  <data name="ProductAndSolutionDevelopmentText" xml:space="preserve">
+    <value>We develop custom cybersecurity tools, integrations, and automation solutions tailored to your operational and regulatory requirements.</value>
+  </data>
+  <data name="ApplicationSecurityText" xml:space="preserve">
+    <value>We secure applications from development to deployment by identifying vulnerabilities, performing code analysis, and conducting penetration testing to prevent exploitation.</value>
+  </data>
+  <data name="DataSecurityText" xml:space="preserve">
+    <value>We protect your sensitive data through encryption, classification, and enterprise‑grade DLP solutions. Our approach ensures confidentiality, integrity, and compliance across your entire data lifecycle.</value>
+  </data>
+  <data name="NetworkSecurityText" xml:space="preserve">
+    <value>We safeguard your network infrastructure with next‑generation firewalls, segmentation, and intrusion prevention systems. Our solutions ensure secure, monitored, and controlled traffic across all network layers.</value>
+  </data>
+  <data name="EndpointSecurityText" xml:space="preserve">
+    <value>We secure all endpoint devices for laptops, servers, and mobile devices against malware, ransomware, and unauthorized access. Using advanced EDR platforms and continuous threat monitoring, we ensure your endpoints remain protected at all times. </value>
+  </data>
+</root>

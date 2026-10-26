@@ -1,0 +1,398 @@
+﻿@{
+    /**/
+
+    ViewBag.Title = LeadersSolutionWebSite.Resources.SolutionsPage.PageTitle;
+    ViewBag.Title = "Cyber Security";
+    HttpCookie cookie = Request.Cookies["Language"];
+    string _align = "text-align:Right";
+
+
+}
+
+<head>
+    @{
+
+        if (cookie != null && cookie.Value != null)
+        {
+            if (cookie.Value == "en")
+            {
+                Layout = "~/Views/Shared/_LayoutNine.cshtml";
+
+                _align = "text-align:left";
+
+
+
+            }
+            else
+            {
+                Layout = "~/Views/Shared/_LayoutNine.cshtml";
+
+                _align = "text-align:right";
+
+
+
+            }
+        }
+        else
+        {
+            Layout = "~/Views/Shared/_LayoutNine.cshtml";
+            _align = "text-align:right";
+
+
+        }
+
+
+
+    }
+</head>
+
+<section class="page-banner bgs-cover overlay rpt-100 pt-20" style="background-image: url('@Url.Content("~/assets/images/customImages/Cybersecurity.jpg")'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+    <div class="container">
+
+        <div class="banner-inner text-center" style="backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+            <h1 class="page-title">@LeadersSolutionWebSite.Resources.CyberSecurityPage.PageHeaderTitle</h1>
+            <h2 class="text-center">@LeadersSolutionWebSite.Resources.SolutionsPage.PageSubTitle</h2>
+            <p class="text-center">@LeadersSolutionWebSite.Resources.CyberSecurityPage.PageSubHeaderTitle</p>
+
+        </div>
+    </div>
+</section>
+<!-- Page Banner End -->
+<!-- Services Start -->
+<section class="services-seven rel text-center py-25 rpy-25">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title mb-75">
+                    <h3 class="text-white"> @LeadersSolutionWebSite.Resources.CyberSecurityPage.SolutionsHeaderTitle</h3>
+                    <h4>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.SolutionsHeaderText
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+                    @*<img src=@Url.Content("~/assets/images/customImages/big-data-infrastructure-e1645115738758.png") alt="Service">*@
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/Endpoint-Security.jpg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.EndpointSecurity</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.EndpointSecurityText
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/Network_security.png")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.NetworkSecurity</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.NetworkSecurityText
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/Data-security.png")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.DataSecurity</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.DataSecurityText
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/application-security.jpg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.ApplicationSecurity</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.ApplicationSecurityText
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/Identity-Security.png")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.IdentitySecurity</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.IdentitySecurityText
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/CybersecurityOperation.jpg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.CybersecurityOperations</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.CybersecurityOperationsText
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/CloudSecurity.jpg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.CloudSecurity</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.CloudSecurityText
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/OTSecurity.jpg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.IoTSecurity</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.IoTSecurityText
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/ManagementConsulting.jpg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.ManagementConsulting</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.ManagementConsultingText
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/Compliance-Assessments.jpg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.ComplianceAssessment</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.ComplianceAssessmentText
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/RiskAssessment.jpg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.RiskAssessment</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.RiskAssessmentText
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/RiskManagment.png")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.TechnicalAssessment</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.TechnicalAssessmentText
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/ITServices.jpeg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.TechnicalConsulting</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.TechnicalConsultingText
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/IncidentResponseAndForensics.jpg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.IncidentResponseAndForensics</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.IncidentResponseAndForensicsText
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/BugBountyPrograms.jpeg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.BugBountyPrograms</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.BugBountyProgramsText
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/ProductSolutionDevelopment.jpg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.ProductAndSolutionDevelopment</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.ProductAndSolutionDevelopmentText
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/Intelligent-Apps-Are-Changing.jpg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.SystemIntegration</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.SystemIntegrationText
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/ManagedSOC.jpg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.ManagedSOC</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.ManagedSOCText
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/SolutionsAsService.jpg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.SolutionsasService</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.SolutionsasServiceText
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/ManpowerOutsourcing.jpg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.ManpowerOutsourcing</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.ManpowerOutsourcingText
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/CybersecurityTraining.jpg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.CybersecurityTraining</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.CybersecurityTrainingText
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/Cybersecurity-Awareness-Training.jpg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.CybersecurityAwareness</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.CybersecurityAwarenessText
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="service-item-seven">
+
+                    <img class="curved-image" src="@Url.Content("~/assets/images/customImages/EventsAndCompetitions.jpg")" loading="lazy" width="500px" height="240px" alt="Gallery">
+                    <h3>@LeadersSolutionWebSite.Resources.CyberSecurityPage.EventsAndCompetitions</h3>
+                    <p>
+                        @LeadersSolutionWebSite.Resources.CyberSecurityPage.EventsAndCompetitionsText
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="circle-drop-one"></div>
+    <div class="circle-drop-two"></div>
+    <div class="service-triangle">
+
+        <img src=@Url.Content("~/assets/images/shapes/service-triangle.png") alt="Triangle">
+    </div>
+    <div class="service-line">
+
+        <img src=@Url.Content("~/assets/images/shapes/service-line.png") alt="Triangle">
+    </div>
+</section>
+<!-- Services End -->
+<!-- Wrok Progress Start -->
+
+<section class="work-progress-three bg-blue text-white pt-25 rpt-25 pb-25 rpb-25" style="background-image: url('@Url.Content("~/assets/images/background/progress.png")');">
+    <div class="container">
+        <div class="section-title text-center mb-35">
+
+
+            <h2>@LeadersSolutionWebSite.Resources.SolutionsPage.HowWeDeliver  <br>@LeadersSolutionWebSite.Resources.SolutionsPage.HeaderTitle</h2>
+        </div>
+        <div class="work-progress-inner-three">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="progress-item-two style-two wow fadeInUp delay-0-2s">
+                        <span class="progress-step">01</span>
+                        <div class="icon">
+                            <i class="flaticon flaticon-analysis-1"></i>
+
+                        </div>
+                        <h3>@LeadersSolutionWebSite.Resources.SolutionsPage.Point1Title</h3>
+                        <p>@LeadersSolutionWebSite.Resources.SolutionsPage.Point1TitleText</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="progress-item-two style-two wow fadeInUp delay-0-4s">
+                        <span class="progress-step">02</span>
+                        <div class="icon">
+                            <i class="flaticon flaticon-vector"></i>
+                        </div>
+                        <h3>@LeadersSolutionWebSite.Resources.SolutionsPage.Point2Title</h3>
+                        <p>@LeadersSolutionWebSite.Resources.SolutionsPage.Point2TitleText</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="progress-item-two style-two wow fadeInUp delay-0-6s no-border mb-0">
+                        <span class="progress-step">03</span>
+                        <div class="icon">
+                            <i class="flaticon flaticon-application"></i>
+                        </div>
+                        <h3>@LeadersSolutionWebSite.Resources.SolutionsPage.Point3Title</h3>
+                        <p>@LeadersSolutionWebSite.Resources.SolutionsPage.Point3TitleText</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="progress-item-two style-two wow fadeInUp delay-0-6s no-border mb-0">
+                        <span class="progress-step">04</span>
+                        <div class="icon">
+                            <i class="flaticon flaticon-blueprint"></i>
+                        </div>
+                        <h3>@LeadersSolutionWebSite.Resources.SolutionsPage.Point4Title</h3>
+                        <p>@LeadersSolutionWebSite.Resources.SolutionsPage.Point4TitleText</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="progress-item-two style-two wow fadeInUp delay-0-6s no-border mb-0">
+                        <span class="progress-step">05</span>
+                        <div class="icon">
+                            <i class="flaticon flaticon-plan"></i>
+                        </div>
+                        <h3>@LeadersSolutionWebSite.Resources.SolutionsPage.Point5Title</h3>
+                        <p>@LeadersSolutionWebSite.Resources.SolutionsPage.Point5TitleText</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="progress-item-two style-two wow fadeInUp delay-0-6s no-border mb-0">
+                        <span class="progress-step">06</span>
+                        <div class="icon">
+                            <i class="flaticon flaticon-technical-support-1"></i>
+                        </div>
+                        <h3>@LeadersSolutionWebSite.Resources.SolutionsPage.Point6Title</h3>
+                        <p>@LeadersSolutionWebSite.Resources.SolutionsPage.Point6TitleText</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Wrok Progress End -->
+

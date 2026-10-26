@@ -1,0 +1,361 @@
+﻿@{
+    ViewBag.Title = LeadersSolutionWebSite.Resources.ContactUsPage.PageTitle;
+    Layout = "~/Views/Shared/_LayoutNine.cshtml";
+    HttpCookie cookie = Request.Cookies["Language"];
+
+}
+<head>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LesxrwtAAAAAPO9ffrHiNJ0YCEmeswVdsqDu8Ab"></script>
+</head>
+
+
+<!-- Page Banner Start -->
+<section class="page-banner bgs-cover overlay rpt-100 pt-20" style="background-image: url('/assets/images/customImages/contactus.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+    <div class="container">
+        <div class="banner-inner text-center">
+            <h1 class="page-title">@LeadersSolutionWebSite.Resources.ContactUsPage.PageTitle</h1>
+            <h3 class="page-title">
+                <a href='@Url.Action("Index", "Home")' class="text-white">@LeadersSolutionWebSite.Resources.LayoutPage.CompanyName</a>
+                <span>
+                    <span> - </span>
+                    @LeadersSolutionWebSite.Resources.ContactUsPage.CommunicationGateway
+                </span>
+
+            </h3>
+        </div>
+    </div>
+</section>
+<!-- Page Banner End -->
+<!-- Contact Section Start -->
+@{
+
+    if (cookie != null && cookie.Value != null)
+    {
+        if (cookie.Value == "en")
+        {
+            <section class="contact-page py-120 rpy-100">
+                <div class="container">
+                    <div class="contact-info-area mb-80">
+                        <div class="contact-info-item wow fadeInUp delay-0-2s">
+                            <i class="far fa-map"></i>
+                            <p>
+                                @LeadersSolutionWebSite.Resources.ContactUsPage.CompanyAdress
+                            </p>
+                        </div>
+                        <div class="contact-info-item wow fadeInUp delay-0-4s">
+                            <i class="far fa-envelope"></i>
+                            <p><a href="mailto:info@LeadersSolutions.sa">info@LeadersSolutions.sa</a> <br><a href='@Url.Action("Index", "Home")'>www.leadersSolution.sa</a></p>
+                        </div>
+                        <div class="contact-info-item wow fadeInUp delay-0-6s">
+                            <i class="fas fa-phone-alt"></i>
+                            <p><a href="callto:+966534684570">00966-534-684-570</a></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4" style="border-radius: 10px; background-image: url('@Url.Content("~/assets/images/customImages/Testimonials.jpg")');">
+                            <div class="contact-form-left h-100 wow fadeInLeft delay-0-2s">
+                                <h2>@LeadersSolutionWebSite.Resources.ContactUsPage.LeaveAMessage</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="contact-form ml-40 rml-0 rmt-55 wow fadeInRight delay-0-2s">
+                                <h3 class="comment-title mb-35">@LeadersSolutionWebSite.Resources.ContactUsPage.SendmessageTitle</h3>
+                                <p>@LeadersSolutionWebSite.Resources.ContactUsPage.SendMessageText</p>
+                                <form id="contact_form" class="comment-form mt-35" name="contact_form" action="@Url.Action("SendMessage", "Home")" method="post">
+                                    @Html.AntiForgeryToken()
+                                    <div class="row clearfix justify-content-center">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="name"><i class="far fa-user"></i></label>
+                                                <input type="text" id="name" name="name" maxlength="300" class="form-control" oninput="removeError(this)" placeholder="@LeadersSolutionWebSite.Resources.ContactUsPage.YourFullName" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="mobile"><i class="far fa-mobile-alt"></i></label>
+                                                <input type="text" id="mobile" name="mobile" maxlength="15" class="form-control" oninput="removeError(this)" placeholder="@LeadersSolutionWebSite.Resources.ContactUsPage.YourPhone" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="email"><i class="far fa-envelope"></i></label>
+                                                <input type="email" id="email" name="email" maxlength="300" class="form-control" oninput="removeError(this)" placeholder="@LeadersSolutionWebSite.Resources.ContactUsPage.YourEmail" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="service"><i class="far fa-briefcase"></i> </label>
+                                                <select id="service" name="service">
+                                                    <option value="IT Service" selected>@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionOne</option>
+                                                    <option value="Solution">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionTwo</option>
+                                                    <option value="Contact">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionThree</option>
+                                                    <option value="Partnership">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionFour</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label for="comments"><i class="fas fa-pencil-alt"></i></label>
+                                                <textarea name="comments" id="comments" maxlength="500" class="form-control" rows="4" placeholder="@LeadersSolutionWebSite.Resources.ContactUsPage.WriteMessage" required=""></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12" id="recaptchaBTN">
+                                            <button class="g-recaptcha theme-btn" data-sitekey="6LesxrwtAAAAAPO9ffrHiNJ0YCEmeswVdsqDu8Ab" data-callback='onSubmit' data-action='submit'>@LeadersSolutionWebSite.Resources.ContactUsPage.SendMessageBTN</button>
+                                        </div>
+                                        <input type="hidden" id="RecaptchaToken" name="RecaptchaToken">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        }
+        else
+        {
+            <section class="contact-page py-120 rpy-100" dir="rtl" style="text-align:right">
+                <div class="container">
+                    <div class="contact-info-area mb-80">
+                        <div class="arcontact-info-item wow fadeInUp delay-0-2s">
+                            <i class="far fa-map"></i>
+                            <p>
+                                @LeadersSolutionWebSite.Resources.ContactUsPage.CompanyAdress
+                            </p>
+                        </div>
+                        <div class="arcontact-info-item wow fadeInUp delay-0-4s">
+                            <i class="far fa-envelope"></i>
+                            <p><a href="mailto:info@LeadersSolutions.sa">info@LeadersSolutions.sa</a> <br><a href='@Url.Action("Index", "Home")'>www.leadersSolution.sa</a></p>
+                        </div>
+                        <div class="arcontact-info-item wow fadeInUp delay-0-6s">
+                            <i class="fas fa-phone-alt"></i>
+                            <p><a href="callto:+966534684570">00966-534-684-570</a></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4" style="border-radius: 10px; background-image: url('@Url.Content("~/assets/images/customImages/Testimonials.jpg")');">
+                            <div class="arcontact-form-left h-100 wow fadeInLeft delay-0-2s">
+                                <h2>@LeadersSolutionWebSite.Resources.ContactUsPage.LeaveAMessage</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="contact-form ml-40 rml-0 rmt-55 wow fadeInRight delay-0-2s">
+                                <h3 class="arcomment-title mb-35">@LeadersSolutionWebSite.Resources.ContactUsPage.SendmessageTitle</h3>
+                                <p>@LeadersSolutionWebSite.Resources.ContactUsPage.SendMessageText</p>
+                                <form id="contact_form" class="arcomment-form mt-35" name="contact_form" action="@Url.Action("SendMessage", "Home")" method="post">
+                                    @Html.AntiForgeryToken()
+                                    <div class="row clearfix justify-content-center">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="name"><i class="far fa-user"></i></label>
+                                                <input type="text" id="name" name="name" maxlength="300" class="form-control" oninput="removeError(this)" placeholder="@LeadersSolutionWebSite.Resources.ContactUsPage.YourFullName" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="mobile"><i class="far fa-mobile-alt"></i></label>
+                                                <input type="text" id="mobile" name="mobile" maxlength="15" class="form-control" oninput="removeError(this)" placeholder="@LeadersSolutionWebSite.Resources.ContactUsPage.YourPhone" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="email"><i class="far fa-envelope"></i></label>
+                                                <input type="email" id="email" name="email" maxlength="300" class="form-control" oninput="removeError(this)" placeholder="@LeadersSolutionWebSite.Resources.ContactUsPage.YourEmail" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="service"><i class="far fa-briefcase"></i> </label>
+                                                <select id="service" name="service">
+                                                    <option value="IT Service" selected>@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionOne</option>
+                                                    <option value="Solution">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionTwo</option>
+                                                    <option value="Contact">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionThree</option>
+                                                    <option value="Partnership">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionFour</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label for="comments"><i class="fas fa-pencil-alt"></i></label>
+                                                <textarea name="comments" id="comments" maxlength="500" class="form-control" rows="4" placeholder="@LeadersSolutionWebSite.Resources.ContactUsPage.WriteMessage" required=""></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12" id="recaptchaBTN">
+                                            <button class="g-recaptcha theme-btn" data-sitekey="6LesxrwtAAAAAPO9ffrHiNJ0YCEmeswVdsqDu8Ab" data-callback='onSubmit' data-action='submit'>@LeadersSolutionWebSite.Resources.ContactUsPage.SendMessageBTN</button>
+                                        </div>
+                                        <input type="hidden" id="RecaptchaToken" name="RecaptchaToken">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        }
+    }
+    else
+    {
+        <section class="contact-page py-120 rpy-100" dir="rtl" style="text-align:right">
+            <div class="container">
+                <div class="contact-info-area mb-80">
+                    <div class="contact-info-item wow fadeInUp delay-0-2s">
+                        <i class="far fa-map"></i>
+                        <p>
+                            @LeadersSolutionWebSite.Resources.ContactUsPage.CompanyAdress
+                        </p>
+                    </div>
+                    <div class="contact-info-item wow fadeInUp delay-0-4s">
+                        <i class="far fa-envelope"></i>
+                        <p><a href="mailto:info@LeadersSolutions.sa">info@LeadersSolutions.sa</a> <br><a href='@Url.Action("Index", "Home")'>www.leadersSolution.sa</a></p>
+                    </div>
+                    <div class="contact-info-item wow fadeInUp delay-0-6s">
+                        <i class="fas fa-phone-alt"></i>
+                        <p><a href="callto:+966534684570">00966-534-684-570</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4" style="border-radius: 10px; background-image: url('@Url.Content("~/assets/images/customImages/Testimonials.jpg")');">
+                        <div class="arcontact-form-left h-100 wow fadeInLeft delay-0-2s">
+                            <h2>@LeadersSolutionWebSite.Resources.ContactUsPage.LeaveAMessage</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="contact-form ml-40 rml-0 rmt-55 wow fadeInRight delay-0-2s">
+                            <h3 class="arcomment-title mb-35">@LeadersSolutionWebSite.Resources.ContactUsPage.SendmessageTitle</h3>
+                            <p>@LeadersSolutionWebSite.Resources.ContactUsPage.SendMessageText</p>
+                            <form id="contact_form" class="arcomment-form mt-35" name="contact_form" action="@Url.Action("SendMessage", "Home")" method="post">
+                                @Html.AntiForgeryToken()
+                                <div class="row clearfix justify-content-center">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="name"><i class="far fa-user"></i></label>
+                                            <input type="text" id="name" name="name" maxlength="300" class="form-control" oninput="removeError(this)" placeholder="@LeadersSolutionWebSite.Resources.ContactUsPage.YourFullName" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="mobile"><i class="far fa-mobile-alt"></i></label>
+                                            <input type="text" id="mobile" name="mobile" maxlength="15" class="form-control" oninput="removeError(this)" placeholder="@LeadersSolutionWebSite.Resources.ContactUsPage.YourPhone" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="email"><i class="far fa-envelope"></i></label>
+                                            <input type="email" id="email" name="email" maxlength="300" class="form-control" oninput="removeError(this)" placeholder="@LeadersSolutionWebSite.Resources.ContactUsPage.YourEmail" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="service"><i class="far fa-briefcase"></i> </label>
+                                            <select id="service" name="service">
+                                                <option value="IT Service" selected>@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionOne</option>
+                                                <option value="Solution">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionTwo</option>
+                                                <option value="Contact">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionThree</option>
+                                                <option value="Partnership">@LeadersSolutionWebSite.Resources.ABoutUSPage.ServiceOptionFour</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label for="comments"><i class="fas fa-pencil-alt"></i></label>
+                                            <textarea name="comments" id="comments" maxlength="500" class="form-control" rows="4" placeholder="@LeadersSolutionWebSite.Resources.ContactUsPage.WriteMessage" required=""></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12" id="recaptchaBTN">
+                                        <button class="g-recaptcha theme-btn" data-sitekey="6LesxrwtAAAAAPO9ffrHiNJ0YCEmeswVdsqDu8Ab" data-callback='onSubmit' data-action='submit'>@LeadersSolutionWebSite.Resources.ContactUsPage.SendMessageBTN</button>
+                                    </div>
+                                    <input type="hidden" id="RecaptchaToken" name="RecaptchaToken">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    }
+}
+
+<!-- Contact Section End -->
+<!--======== Map =========-->
+<div class="contact-page-map">
+    <div class="our-location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927758.0370464313!2d46.163000437018475!3d24.724997748455827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2efd206051c2af%3A0x95fa987edf15f27d!2sRiverwalk!5e0!3m2!1snl!2ssa!4v1761473562902!5m2!1snl!2ssa" height="650" style="border:0; width: 100%;"
+                allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+<!--======== Map =========-->
+
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            var message = "@ViewBag.Message";
+
+            if (message) {
+                Snackbar.show({
+                    text: message,
+                    pos: 'top-center'
+                });
+            }
+
+
+       });
+    </script>
+    <script>
+        function onClick(e) {
+            e.preventDefault();
+            grecaptcha.enterprise.ready(async () => {
+                const token = await grecaptcha.enterprise.execute('6LesxrwtAAAAAPO9ffrHiNJ0YCEmeswVdsqDu8Ab', { action: 'submit' });
+            });
+        }
+    </script>
+    <script>
+        function onSubmit(token) {
+            $("#RecaptchaToken").val(token);
+            var fields = ["name", "email", "mobile"];
+            let emailRegex = /^[^\s@@]+@@[^\s@@]+\.[^\s@@]+$/;
+            for (var i = 0; i < fields.length; i++) {
+                var value = document.getElementById(fields[i]).value;
+
+                if (!value) {
+                    document.getElementById(fields[i]).classList.add("myinput-error");
+                    Snackbar.show({
+                        text: '@LeadersSolutionWebSite.Resources.ABoutUSPage.FillAllRequiredFields',
+                        pos: 'top-center'
+                    });
+                    return false;
+                }
+            }
+            if (!emailRegex.test(document.getElementById("email").value)) {
+                document.getElementById("email").classList.add("myinput-error");
+                Snackbar.show({
+                    text: '@LeadersSolutionWebSite.Resources.ABoutUSPage.EnterValidEmail',
+                    pos: 'top-center'
+                });
+                return false;
+            }
+            document.getElementById("contact_form").submit();
+        }
+    </script>
+    <script>
+        function removeError(element) {
+            element.classList.remove("myinput-error");
+        }
+
+    </script>
+
+}
+
+
+
+

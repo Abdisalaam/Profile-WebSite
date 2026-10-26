@@ -1,0 +1,170 @@
+﻿@{
+    ViewBag.Title = LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementPageTitle;
+    HttpCookie cookie = Request.Cookies["Language"];
+    string _align = "text-align:justify";
+    
+
+
+}
+
+<head>
+    @{
+
+        if (cookie != null && cookie.Value != null)
+        {
+            if (cookie.Value == "en")
+            {
+                Layout = "~/Views/Shared/_LayoutNine.cshtml";
+
+                _align = "text-align:justify";
+               
+
+
+            }
+            else
+            {
+                Layout = "~/Views/Shared/_LayoutNine.cshtml";
+
+                _align = "text-align:justify";
+               
+
+
+            }
+        }
+        else
+        {
+            Layout = "~/Views/Shared/_LayoutNine.cshtml";
+            _align = "text-align:justify";
+           
+
+        }
+    }
+
+</head>
+
+<!-- Service Details Start -->
+<section class="service-details pt-120 rpt-100 pb-100 rpb-80">
+    <div class="container">
+        <div class="row">
+
+            @{
+
+                if (cookie != null && cookie.Value != null)
+                {
+                    if (cookie.Value == "en")
+                    {
+                        <div class="col-lg-4">
+                            <div class="service-details-content wow fadeInRight delay-0-2s">
+                                <div class="image mb-40" >
+                                    <img  src="@Url.Content("~/assets/images/team/AbuBadrImage2.jpeg")" alt="Badr Aldoweesh" style="border-radius: 10px !important;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="service-sidebar rmb-55 wow fadeInLeft delay-0-2s">
+                                <div class="widget widget-services">
+                                    <p style="@_align; color:white;">
+                                        @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementPraisingAllah
+                                        <br />
+                                        @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementtPart1
+                                        <br />
+                                        @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementPart2
+                                        <br />
+                                        @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementPart3
+                                        <br />
+                                        @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementPart4
+                                        <br />
+                                        @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementPart5
+                                        <br />
+                                        @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOSignatureName
+                                        <br />
+                                        @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOJobTitle
+                                        <br />
+                                        @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOCompany
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    }
+                    else
+                    {
+
+
+                        <div class="col-lg-4">
+                            <div class="service-details-content wow fadeInRight delay-0-2s">
+                                <div class="image mb-40">
+                                    <img src="@Url.Content("~/assets/images/team/AbuBadrImage2.jpeg")" alt="Badr Aldoweesh" style="border-radius: 10px !important;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8" dir="rtl">
+                            <div class="service-sidebar rmb-55 wow fadeInLeft delay-0-2s">
+                                <div class="widget widget-services">
+                                    <p style="@_align; color:white;">
+                                        @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementPraisingAllah
+                                        <br />
+                                        @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementtPart1
+                                        <br />
+                                        @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementPart2
+                                        <br />
+                                        @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementPart3
+                                        <br />
+                                        @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementPart4
+                                        <br />
+                                        @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementPart5
+                                        <br />
+                                        @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOSignatureName
+                                        <br />
+                                        @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOJobTitle
+                                        <br />
+                                        @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOCompany
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="col-lg-4">
+                        <div class="service-details-content wow fadeInRight delay-0-2s">
+                            <div class="image mb-40">
+                                <img src="@Url.Content("~/assets/images/team/AbuBadrImage2.jpeg")" alt="Badr Aldoweesh" style="border-radius: 10px !important;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8" dir="rtl">
+                        <div class="service-sidebar rmb-55 wow fadeInLeft delay-0-2s">
+                            <div class="widget widget-services">
+                                <p style="@_align; color:white;">
+                                    @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementPraisingAllah
+                                    <br />
+                                    @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementtPart1
+                                    <br />
+                                    @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementPart2
+                                    <br />
+                                    @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementPart3
+                                    <br />
+                                    @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementPart4
+                                    <br />
+                                    @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOStatementPart5
+                                    <br />
+                                    @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOSignatureName
+                                    <br />
+                                    @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOJobTitle
+                                    <br />
+                                    @LeadersSolutionWebSite.Resources.CEOStatementPage.CEOCompany
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+
+        </div>
+    </div>
+</section>
+<!-- Service Details End -->
